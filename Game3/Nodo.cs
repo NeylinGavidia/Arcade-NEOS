@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca
+namespace Game3
 {
-    public class Arbol5
+    internal class Nodo
     {
-
     }
 }

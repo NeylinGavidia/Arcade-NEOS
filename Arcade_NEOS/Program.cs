@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Biblioteca;
+using Game1;
+using Game2;
+using Game3; 
+using Game4;
+using Game5;
 
 namespace Arcade_NEOS
 {
@@ -11,10 +15,9 @@ namespace Arcade_NEOS
     {
         static void Main(string[] args)
         {
-            Arbol5 b5 = new Arbol5();
+            
 
-            //EN CUANTO A METODOS Y CLASES, CADA UNO CREE A SU CONVENIENCIA, SI PUEDEN REUTILIZAR DE LOS QUE YA VAN CREANDO NORMAL, PERO SINO SE PUEDE
-            //MEJOR CREEN UNA CLASE APARTE PORQUE SINO VAN A MALOGRAR EL METODO DE LOS OTROS, POR ESO YO CREE UN ARBOL5 
+            //OLVIDENLO YA SE QUE HACER PERO IGUAL EN SU CLASE INDIQUEN EL NUMERO PARA QUE NO SE PIERDAN AL LLAMAR A LA CLASE
 
             int op = 0;
 

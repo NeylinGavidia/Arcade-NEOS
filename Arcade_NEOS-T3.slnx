@@ -1,4 +1,8 @@
 <Solution>
   <Project Path="Arcade_NEOS/Arcade_NEOS.csproj" Id="c097687e-7ffc-44e3-ae3e-dd9edc0acf5a" />
-  <Project Path="Biblioteca/Biblioteca.csproj" Id="68bb111d-bbc2-4f6d-ac5d-5107d7d0f01c" />
+  <Project Path="Game1/Game1.csproj" Id="611cc2b5-392c-4187-b1bc-a630911e3832" />
+  <Project Path="Game2/Game2.csproj" Id="8041d219-afe8-42a3-b986-cfe5337d0ac9" />
+  <Project Path="Game3/Game3.csproj" Id="3cc6ab80-f819-44d7-a4a4-b5be2d92fc79" />
+  <Project Path="Game4/Game4.csproj" Id="c32d9518-2cfd-4a9b-8c73-e34727907ca4" />
+  <Project Path="Game5/Game5.csproj" Id="eb6f338c-1f99-4fd1-b75d-32dc82696c93" />
 </Solution>
