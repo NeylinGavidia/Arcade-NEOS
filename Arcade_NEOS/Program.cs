@@ -16,7 +16,6 @@ namespace Arcade_NEOS
         static void Main(string[] args)
         {
             
-
             //OLVIDENLO YA SE QUE HACER PERO IGUAL EN SU CLASE INDIQUEN EL NUMERO PARA QUE NO SE PIERDAN AL LLAMAR A LA CLASE
 
             int op = 0;
