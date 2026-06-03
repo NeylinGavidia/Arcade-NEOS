@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Game5
 {
-    internal class Nodo
+    public class Arbol5
     {
-        public Pokemon dato;
-        public Nodo iz, de = null;
+        private Nodo raiz_pri;
     }
 }
