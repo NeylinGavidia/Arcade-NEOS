@@ -9,67 +9,76 @@ namespace Game5
     public class Arbol5
     {
         private Nodo raiz_pri;
-
         static int cont = 0;
-
-        public void Codigo(Pokemon d)
+        public void Insertar(Pokemon d)  //tuve que hacer esto por haber puesto el Nodo en privado qwq
         {
             d.code = cont;
             cont++;
+            Insertar(ref raiz_pri, d);
         }
-        public void Insertar(ref Nodo raiz, Pokemon d) 
+        private void Insertar(ref Nodo raiz, Pokemon d)
         {
             if (raiz == null)
             {
-
                 Nodo nuevo = new Nodo();
                 nuevo.dato = d;
                 raiz = nuevo;
             }
+            else if (d.code < raiz.dato.code)
+            {
+                Insertar(ref raiz.iz, d);
+            }
+            else if (d.code > raiz.dato.code)
+            {
+                Insertar(ref raiz.de, d);
+            }
             else
             {
-                if (d.code < raiz.dato.code) //para guiarlo a la izquierda
-                {
-                    Insertar(ref raiz.iz, d); //envia el dato a la izquierda, eso sognifica
-                }
-                else if (d.code > raiz.dato.code) //para enviarlo a la derecha
-                {
-                    Insertar(ref raiz.de, d);
-                }
-                else //cuando son iguales
-                {
-                    Console.WriteLine("Dato duplicado");
-                }
+                Console.WriteLine("Dato duplicado");
             }
         }
-        public void Mostrar(Nodo raiz, int nivel)
+        public void Mostrar()
+        {
+            Mostrar(raiz_pri, 0);
+        }
+        private void Mostrar(Nodo raiz, int nivel)
         {
             if (raiz != null)
             {
-                Mostrar(raiz.de, nivel + 1);//el arbol comienza a mostrarse desde la derecha y el nivel aumenta en 1
+                Mostrar(raiz.de, nivel + 1);
+
                 for (int i = 0; i < nivel; i++)
                 {
-                    Console.Write("                    ");
+                    Console.Write("        ");
                 }
-                Console.WriteLine(nivel + ": " + raiz.dato); //muestra el elemtno root
-                Mostrar(raiz.iz, nivel + 1); //sigue con la izquierda, menores
+
+                Console.WriteLine(raiz.dato);
+
+                Mostrar(raiz.iz, nivel + 1);
             }
         }
-        public bool Buscar(Nodo raiz, int d) //gual al insertar pero se quita la insercion y se modifica la recursividad
+        public Pokemon Buscar(int code)
+        {
+            return Buscar(raiz_pri, code);
+        }
+        private Pokemon Buscar(Nodo raiz, int code)
         {
             if (raiz == null)
             {
-                return false;
+                return null;
             }
-
-            if (raiz.dato.code == d)
+            if (code == raiz.dato.code)
             {
-                Console.Write("Persona encontrada: ");
-                Console.WriteLine($"{raiz.dato.name} ({raiz.dato.tipo})");
-                return true;
+                return raiz.dato;
             }
-
-            return Buscar(raiz.iz, d) || Buscar(raiz.de, d);
+            else if (code < raiz.dato.code)
+            {
+                return Buscar(raiz.iz, code);
+            }
+            else
+            {
+                return Buscar(raiz.de, code);
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Arcade_NEOS
 {
     public class Program
     {
+        static Random rnd = new Random(); //este es para el game5
         static void Main(string[] args)
         {
             
