@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game1
+namespace Game5
 {
-    public class Nodo
+    public class PokeDemo
     {
-        public Persona dato;
-        public Nodo sig = null;
-        public Nodo ant = null;
+        private Arbol5 arbol = new Arbol5();
+
+        
     }
 }

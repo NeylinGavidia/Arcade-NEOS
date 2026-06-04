@@ -17,6 +17,15 @@ namespace Game5
 
         public Pokemon() { }
 
+        public Pokemon(string name, string tipo, int atq, int def, int ps)
+        {
+            this.name = name;
+            this.tipo = tipo;
+            this.atq = atq;
+            this.def = def;
+            this.ps = ps;
+        }
+
         public override string ToString()
         {
             return $"\n----------------------------\n" +

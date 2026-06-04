@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetectiveNodo.cs" />
+    <Compile Include="ListaDobleCircular.cs" />
     <Compile Include="Nodo.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="Pila.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
