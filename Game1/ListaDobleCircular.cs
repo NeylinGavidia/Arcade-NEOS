@@ -33,22 +33,34 @@ namespace Game1
         public void Mostrar_PU()
         {
             Nodo temp = prim;
-
-            while (temp != null)
+            if (prim != null)
             {
-                Console.WriteLine(temp.dato);
-                temp = temp.sig;
+                do
+                {
+                    Console.WriteLine(temp.dato);
+                    temp = temp.sig;
+                } while (temp != prim);
+            }
+            else
+            {
+                Console.WriteLine("Lista vacía");
             }
         }
 
         public void Mostrar_UP()
         {
             Nodo temp = ult;
-
-            while (temp != null)
+            if (ult != null)
             {
-                Console.WriteLine(temp.dato);
-                temp = temp.ant;
+                do
+                {
+                    Console.WriteLine(temp.dato);
+                    temp = temp.ant;
+                } while (temp != ult);
+            }
+            else
+            {
+                Console.WriteLine("Lista vacía");
             }
         }
     }
