@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Game4
 {
-    internal class Nodo
+    public class Nodo
     {
+        public string nombSala;
+        public string descripcionSala; 
+
+        public int oro; // Oro disponible en la sala
+
+        public Enemigo enemigoSala; // Guarda el enemigo asociado a la sala actual
+
+        public Nodo izquierda; 
+        public Nodo derecha;
     }
 }

@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arbol4.cs" />
+    <Compile Include="Enemigo.cs" />
+    <Compile Include="Jugador.cs" />
     <Compile Include="Nodo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
