@@ -14,5 +14,16 @@ namespace Game5
         public int def;
         public int atq;
         public int ps;
+
+        public Pokemon() { }
+
+        public override string ToString()
+        {
+            return $"\n----------------------------\n" +
+                   $"Codigo:          #0{code}\n" +
+                   $"Nombre:          {name}\n" +
+                   $"Tipo:            {tipo}\n" +
+                   $"----------------------------\n";
+        }
     }
 }
