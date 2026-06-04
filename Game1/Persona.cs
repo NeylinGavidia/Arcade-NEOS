@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Game1
 {
-    internal class Persona
+    public class Persona
     {
+        public string nomb;
+        public string rol;
+        public string habi;
+        public string decl;
+
+        public override string ToString()
+        {
+            return "╔══════════════════════════════╗\n" +
+                   $"║ Nombre: {nomb}\n" +
+                   $"║ Habitación: {habi}\n" +
+                   "╚══════════════════════════════╝";
+        }
     }
 }
