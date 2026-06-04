@@ -15,10 +15,11 @@ namespace Game1
 
         public override string ToString()
         {
-            return "╔══════════════════════════════╗\n" +
-                   $"║ Nombre: {nomb}\n" +
-                   $"║ Habitación: {habi}\n" +
-                   "╚══════════════════════════════╝";
+            return "__________________________________________\n" +
+                   "Nombre: " + nomb + "\n" +
+                   "Rol: " + rol + "\n" +
+                   "Habitación: " + habi + "\n" +
+                   "___________________________________________\n";
         }
     }
 }
