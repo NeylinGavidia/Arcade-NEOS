@@ -96,29 +96,37 @@ namespace Game1
                 if (p == asesino)
                 {
                     p.rol = "Asesino";
-                    p.decl = "Yo no fui, no tengo nada que ver.\n" +
-                             "Estaba solo, nadie me vio.\n" +
-                             "No estuve en la escena del crimen.";
+                    p.decl = "No fui yo...\n" +
+                             "Estaba en otro lugar cuando pasó todo.\n" +
+                             "No tengo relación con la víctima.";
                 }
                 else if (p == victima)
                 {
                     p.rol = "Victima";
-                    p.decl = "No vi quién fue...\n" +
-                             "Solo recuerdo que alguien entró.\n" +
-                             "Después todo se volvió confuso.";
+                    p.decl = "Solo recuerdo que alguien entró...\n" +
+                             "Después todo se volvió confuso.\n" +
+                             "No vi quién fue.";
                 }
                 else
                 {
-                    if (p.habi == asesino.habi)
+                    int pista = r.Next(1, 4);
+                    if (pista == 1)
                     {
-                        p.decl = "Estuve en la misma habitación que la víctima.\n" +
-                                 "Vi a alguien salir rápido, pero no supe quién era.";
+                        p.decl = "Estaba en " + p.habi + ".\n" +
+                                 "Vi a alguien salir rápido.\n" +
+                                 "No pude reconocerlo.";
+                    }
+                    else if (pista == 2)
+                    {
+                        p.decl = "Yo no salí de " + p.habi + ".\n" +
+                                 "Todo estaba tranquilo.\n" +
+                                 "No vi nada extraño.";
                     }
                     else
                     {
-                        p.decl = "Yo estaba en " + p.habi + ".\n" +
-                                 "No vi nada sospechoso.\n" +
-                                 "Todo parecía normal.";
+                        p.decl = "Estaba en " + p.habi + ".\n" +
+                                 "Escuché un ruido fuerte.\n" +
+                                 "Pero no le di importancia.";
                     }
                 }
                 temp = temp.sig;
