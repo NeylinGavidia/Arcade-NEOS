@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Game1
 {
-    internal class Nodo
+    public class Nodo
     {
+        public Persona dato;
+        public Nodo sig = null;
+        public Nodo ant = null;
     }
 }
