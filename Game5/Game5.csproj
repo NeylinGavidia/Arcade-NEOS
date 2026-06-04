@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Arbol5.cs" />
     <Compile Include="Nodo.cs" />
+    <Compile Include="PokeDemo.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
