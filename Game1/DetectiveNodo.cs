@@ -93,14 +93,14 @@ namespace Game1
             {
                 Persona p = temp.dato;
                 p.rol = "Sospechoso";
-                if (p == asesino)
+                if (p.nomb == asesino.nomb)
                 {
                     p.rol = "Asesino";
                     p.decl = "No fui yo...\n" +
                              "Estaba en otro lugar cuando pasó todo.\n" +
                              "No tengo relación con la víctima.";
                 }
-                else if (p == victima)
+                else if (p.nomb == victima.nomb)
                 {
                     p.rol = "Victima";
                     p.decl = "Solo recuerdo que alguien entró...\n" +
