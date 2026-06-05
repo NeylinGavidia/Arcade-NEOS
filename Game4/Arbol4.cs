@@ -13,7 +13,22 @@ namespace Game4
         //Crea y conecta todas las salas de la mazmorra, asignando enemigos y oro a cada sala
         public void CrearMazmorra()
         {
+            Nodo entrada = new Nodo();
+            entrada.nombSala = "Entrada";
+            entrada.descripcionSala = "Te encuentras frente a la entrada de una antigua mazmorra.";
 
+            Nodo pasilloIzquierdo = new Nodo();
+            pasilloIzquierdo.nombSala = "Pasillo Izquierdo";
+            pasilloIzquierdo.descripcionSala = "Un pasillo oscuro que parece abandonado.";
+
+            Nodo pasilloDerecho = new Nodo();
+            pasilloDerecho.nombSala = "Pasillo Derecho";
+            pasilloDerecho.descripcionSala = "Escuchas el sonido de agua a lo lejos.";
+
+            raiz = entrada;
+
+            entrada.izquierda = pasilloIzquierdo;
+            entrada.derecha = pasilloDerecho;
         }
 
         // Devuelve el nombre de la sala actual
