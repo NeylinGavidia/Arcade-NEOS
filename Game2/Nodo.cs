@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game2
 {
-    internal class Nodo
+    public class Nodo
     {
 
     }
