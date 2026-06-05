@@ -18,7 +18,7 @@ namespace Arcade_NEOS
         {
             
             //OLVIDENLO YA SE QUE HACER PERO IGUAL EN SU CLASE INDIQUEN EL NUMERO PARA QUE NO SE PIERDAN AL LLAMAR A LA CLASE
-
+            //YASKEEEEEEEEEE(TAS LOCA ._.)
             int op = 0;
 
             do
