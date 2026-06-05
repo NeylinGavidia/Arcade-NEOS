@@ -32,7 +32,6 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblRol = new System.Windows.Forms.Label();
             this.lblHabitacion = new System.Windows.Forms.Label();
-            this.lblDialogo = new System.Windows.Forms.Label();
             this.txtHistorial = new System.Windows.Forms.TextBox();
             this.txtAcusar = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
@@ -86,35 +85,26 @@
             this.lblHabitacion.TabIndex = 3;
             this.lblHabitacion.Text = "Habitación";
             // 
-            // lblDialogo
-            // 
-            this.lblDialogo.AutoSize = true;
-            this.lblDialogo.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDialogo.ForeColor = System.Drawing.Color.White;
-            this.lblDialogo.Location = new System.Drawing.Point(43, 194);
-            this.lblDialogo.Name = "lblDialogo";
-            this.lblDialogo.Size = new System.Drawing.Size(14, 15);
-            this.lblDialogo.TabIndex = 4;
-            this.lblDialogo.Text = "-";
-            // 
             // txtHistorial
             // 
             this.txtHistorial.BackColor = System.Drawing.Color.Black;
-            this.txtHistorial.ForeColor = System.Drawing.Color.Gray;
-            this.txtHistorial.Location = new System.Drawing.Point(46, 392);
+            this.txtHistorial.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHistorial.ForeColor = System.Drawing.Color.LightGray;
+            this.txtHistorial.Location = new System.Drawing.Point(46, 316);
             this.txtHistorial.Multiline = true;
             this.txtHistorial.Name = "txtHistorial";
+            this.txtHistorial.ReadOnly = true;
             this.txtHistorial.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtHistorial.Size = new System.Drawing.Size(100, 20);
+            this.txtHistorial.Size = new System.Drawing.Size(258, 113);
             this.txtHistorial.TabIndex = 5;
             // 
             // txtAcusar
             // 
             this.txtAcusar.BackColor = System.Drawing.Color.White;
             this.txtAcusar.ForeColor = System.Drawing.Color.Black;
-            this.txtAcusar.Location = new System.Drawing.Point(46, 345);
+            this.txtAcusar.Location = new System.Drawing.Point(46, 275);
             this.txtAcusar.Name = "txtAcusar";
-            this.txtAcusar.Size = new System.Drawing.Size(100, 20);
+            this.txtAcusar.Size = new System.Drawing.Size(140, 20);
             this.txtAcusar.TabIndex = 6;
             // 
             // btnIniciar
@@ -133,7 +123,7 @@
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.Gray;
             this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Location = new System.Drawing.Point(173, 247);
+            this.btnSiguiente.Location = new System.Drawing.Point(173, 186);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 8;
@@ -145,7 +135,7 @@
             // 
             this.btnAnterior.BackColor = System.Drawing.Color.Gray;
             this.btnAnterior.ForeColor = System.Drawing.Color.White;
-            this.btnAnterior.Location = new System.Drawing.Point(46, 247);
+            this.btnAnterior.Location = new System.Drawing.Point(46, 186);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(75, 23);
             this.btnAnterior.TabIndex = 9;
@@ -157,7 +147,7 @@
             // 
             this.btnInterrogar.BackColor = System.Drawing.Color.Blue;
             this.btnInterrogar.ForeColor = System.Drawing.Color.White;
-            this.btnInterrogar.Location = new System.Drawing.Point(46, 293);
+            this.btnInterrogar.Location = new System.Drawing.Point(46, 229);
             this.btnInterrogar.Name = "btnInterrogar";
             this.btnInterrogar.Size = new System.Drawing.Size(75, 23);
             this.btnInterrogar.TabIndex = 10;
@@ -169,7 +159,7 @@
             // 
             this.btnAcusar.BackColor = System.Drawing.Color.Red;
             this.btnAcusar.ForeColor = System.Drawing.Color.White;
-            this.btnAcusar.Location = new System.Drawing.Point(173, 293);
+            this.btnAcusar.Location = new System.Drawing.Point(173, 229);
             this.btnAcusar.Name = "btnAcusar";
             this.btnAcusar.Size = new System.Drawing.Size(75, 23);
             this.btnAcusar.TabIndex = 11;
@@ -190,7 +180,6 @@
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtAcusar);
             this.Controls.Add(this.txtHistorial);
-            this.Controls.Add(this.lblDialogo);
             this.Controls.Add(this.lblHabitacion);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.lblNombre);
@@ -210,7 +199,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.Label lblHabitacion;
-        private System.Windows.Forms.Label lblDialogo;
         private System.Windows.Forms.TextBox txtHistorial;
         private System.Windows.Forms.TextBox txtAcusar;
         private System.Windows.Forms.Button btnIniciar;

@@ -11,8 +11,13 @@ namespace Game1
         Random r = new Random();
         public Persona asesino;
         public Persona victima;
-        public ListaDobleCircular lista = new ListaDobleCircular();
-        public Pila pila = new Pila();
+        public ListaDobleCircular ls = new ListaDobleCircular();
+        public Pila pl = new Pila();
+        string hab1 = null;
+        string hab2 = null;
+        string hab3 = null;
+        string hab4 = null;
+        string hab5 = null;
 
         public void CrearCaso(string n1, string n2, string n3, string n4, string n5)
         {
@@ -28,11 +33,11 @@ namespace Game1
             p4.nomb = n4;
             p5.nomb = n5;
 
-            lista.Insertar(p1);
-            lista.Insertar(p2);
-            lista.Insertar(p3);
-            lista.Insertar(p4);
-            lista.Insertar(p5);
+            ls.Insertar(p1);
+            ls.Insertar(p2);
+            ls.Insertar(p3);
+            ls.Insertar(p4);
+            ls.Insertar(p5);
 
             p1.habi = HabitacionRandom();
             p2.habi = HabitacionRandom();
@@ -41,7 +46,7 @@ namespace Game1
             p5.habi = HabitacionRandom();
 
             int a = r.Next(1, 6);
-            Nodo temp = lista.prim;
+            Nodo temp = ls.prim;
             for (int i = 1; i < a; i++)
             {
                 temp = temp.sig;
@@ -52,7 +57,7 @@ namespace Game1
             {
                 v = r.Next(1, 6);
             }
-            temp = lista.prim;
+            temp = ls.prim;
             for (int i = 1; i < v; i++)
             {
                 temp = temp.sig;
@@ -63,32 +68,59 @@ namespace Game1
 
         private string HabitacionRandom()
         {
-            int h = r.Next(1, 6);
-            if (h == 1)
+            string h;
+            do
             {
-                return "Biblioteca";
+                int rnum = r.Next(1, 6);
+                if (rnum == 1)
+                {
+                    h = "Biblioteca";
+                }
+                else if (rnum == 2)
+                {
+                    h = "Cocina";
+                }
+                else if (rnum == 3)
+                {
+                    h = "Sala";
+                }
+                else if (rnum == 4)
+                {
+                    h = "Laboratorio";
+                }
+                else
+                {
+                    h = "Sótano";
+                }
+
+            } while (h == hab1 || h == hab2 || h == hab3 || h == hab4 || h == hab5);
+
+            if (hab1 == null)
+            {
+                hab1 = h;
             }
-            else if (h == 2)
+            else if (hab2 == null)
             {
-                return "Cocina";
+                hab2 = h;
             }
-            else if (h == 3)
+            else if (hab3 == null)
             {
-                return "Sala";
+                hab3 = h;
             }
-            else if (h == 4)
+            else if (hab4 == null)
             {
-                return "Laboratorio";
+                hab4 = h;
             }
             else
             {
-                return "Sótano";
+                hab5 = h;
             }
+            return h;
         }
 
         private void CrearDeclaraciones()
         {
-            Nodo temp = lista.prim;
+            Nodo temp = ls.prim;
             do
             {
                 Persona p = temp.dato;
@@ -128,12 +160,12 @@ namespace Game1
                     }
                 }
                 temp = temp.sig;
-            } while (temp != lista.prim);
+            } while (temp != ls.prim);
         }
 
         public string Interrogar(Persona p)
         {
-            pila.Apilar(p);
+            pl.Apilar(p);
             return p.nomb + ": " + p.decl;
         }
 

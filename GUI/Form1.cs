@@ -24,23 +24,22 @@ namespace GUI
         {
             juego = new DetectiveNodo();
             juego.CrearCaso("Selene", "Dante", "Damián", "Astrid", "Bruno");
-            act = juego.lista.prim;
+            act = juego.ls.prim;
             Mostrar();
         }
 
         private void Mostrar()
         {
+            lblNombre.Text = "Nombre: " + act.dato.nomb;
             if (act.dato.nomb == juego.victima.nomb)
             {
-                lblNombre.Text = act.dato.nomb + " (Víctima)";
+                lblRol.Text = "Rol: Víctima";
             }
             else
             {
-                lblNombre.Text = act.dato.nomb;
+                lblRol.Text = "Rol: Sospechoso";
             }
-            lblRol.Text = "Sospechoso";
-            lblHabitacion.Text = act.dato.habi;
-            lblDialogo.Text = "";
+            lblHabitacion.Text = "Habitación: " + act.dato.habi;
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -57,7 +56,21 @@ namespace GUI
 
         private void btnInterrogar_Click(object sender, EventArgs e)
         {
-            txtHistorial.Text += juego.Interrogar(act.dato) + "\r\n";
+            string nuevo =
+                "\r\n═══════════════════════════\r\n" +
+                "🕵️ INVESTIGACIÓN\r\n" +
+                "═══════════════════════════\r\n" +
+                juego.Interrogar(act.dato) +
+                "\r\n═══════════════════════════\r\n";
+
+            if (txtHistorial.Text == "")
+            {
+                txtHistorial.Text = nuevo;
+            }
+            else
+            {
+                txtHistorial.Text = txtHistorial.Text + nuevo;
+            }
         }
 
         private void btnAcusar_Click(object sender, EventArgs e)
