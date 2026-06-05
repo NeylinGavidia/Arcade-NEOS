@@ -103,9 +103,7 @@ namespace Game1
                 else if (p.nomb == victima.nomb)
                 {
                     p.rol = "Victima";
-                    p.decl = "Solo recuerdo que alguien entró...\n" +
-                             "Después todo se volvió confuso.\n" +
-                             "No vi quién fue.";
+                    p.decl = "La víctima no puede ser interrogada.";
                 }
                 else
                 {

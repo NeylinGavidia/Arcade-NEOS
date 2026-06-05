@@ -24,18 +24,23 @@ namespace GUI
         {
             juego = new DetectiveNodo();
             juego.CrearCaso("Ana", "Luis", "Carlos", "Maria", "Pedro");
-
             act = juego.lista.prim;
-
             Mostrar();
         }
 
         private void Mostrar()
         {
-            lblNombre.Text = act.dato.nomb;
-            lblRol.Text = act.dato.rol;
+            if (act.dato.nomb == juego.victima.nomb)
+            {
+                lblNombre.Text = act.dato.nomb + " (Víctima)";
+            }
+            else
+            {
+                lblNombre.Text = act.dato.nomb;
+            }
+            lblRol.Text = "Sospechoso";
             lblHabitacion.Text = act.dato.habi;
-            lblDialogo.Text = act.dato.decl;
+            lblDialogo.Text = "";
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
