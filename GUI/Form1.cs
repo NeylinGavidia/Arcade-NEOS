@@ -23,7 +23,7 @@ namespace GUI
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             juego = new DetectiveNodo();
-            juego.CrearCaso("Ana", "Luis", "Carlos", "Maria", "Pedro");
+            juego.CrearCaso("Selene", "Dante", "Damián", "Astrid", "Bruno");
             act = juego.lista.prim;
             Mostrar();
         }
