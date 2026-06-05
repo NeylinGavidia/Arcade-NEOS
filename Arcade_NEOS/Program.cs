@@ -13,7 +13,7 @@ namespace Arcade_NEOS
 {
     public class Program
     {
-        static Random rnd = new Random(); //este es para el game5
+        
         static void Main(string[] args)
         {
             
@@ -58,8 +58,9 @@ namespace Arcade_NEOS
                             break;
                         case 5:
 
+                            PokeDemo juego = new PokeDemo();
+                            juego.Iniciar();
                             break;
-
                         default:
                             Console.WriteLine("Opcion no valida");
                             break;
