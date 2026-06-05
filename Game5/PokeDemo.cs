@@ -180,7 +180,7 @@ namespace Game5
             int dañoJugador = rnd.Next(3, 7);
             prival.ps -= dañoJugador;
 
-            Console.WriteLine($"\n{pjugador.name} uso "+atqp);
+            Console.WriteLine($"{pjugador.name} uso "+atqp);
             Console.WriteLine($"{prival.name} perdió {dañoJugador} PS.");
 
             if (prival.ps <= 0)
