@@ -21,19 +21,19 @@ namespace Game4
         public string IrIzquierda()
         {
             if (actual.izq == null)
+            {
                 return "No puedes avanzar.";
-
+            }
             actual = actual.izq;
-
             return ProcesarSala();
         }
         public string IrDerecha()
         {
             if (actual.der == null)
+            {
                 return "No puedes avanzar.";
-
+            }
             actual = actual.der;
-
             return ProcesarSala();
         }
         private string ProcesarSala()
@@ -42,27 +42,24 @@ namespace Game4
 
             if (actual.recompensaOro > 0)
             {
-                jugador.oroJugador += actual.recompensaOro;
-
+                jugador.oroJugador = jugador.oroJugador + actual.recompensaOro;
                 mensaje += $"\nEncontraste {actual.recompensaOro} monedas de oro.";
             }
 
             if (actual.recompensaVida > 0)
             {
-                jugador.vidaJugador += actual.recompensaVida;
-
+                jugador.vidaJugador = jugador.vidaJugador + actual.recompensaVida;
                 mensaje += $"\nRecuperaste {actual.recompensaVida} puntos de vida.";
             }
 
             if (actual.enemigo != null)
             {
-                jugador.vidaJugador -= actual.enemigo.ataqueEnemigo;
+                jugador.vidaJugador = jugador.vidaJugador - actual.enemigo.ataqueEnemigo;
+                jugador.oroJugador = jugador.oroJugador + actual.enemigo.recompensaOro;
 
-                jugador.oroJugador += actual.enemigo.recompensaOro;
-
-                mensaje += $"\nDerrotaste a {actual.enemigo.nombEnemigo}.";
-                mensaje += $"\nPerdiste {actual.enemigo.ataqueEnemigo} de vida.";
-                mensaje += $"\nGanaste {actual.enemigo.recompensaOro} de oro.";
+                mensaje = mensaje + "\nDerrotaste a " + actual.enemigo.nombEnemigo;
+                mensaje = mensaje + "\nPerdiste " + actual.enemigo.ataqueEnemigo + " de vida.";
+                mensaje = mensaje + "\nGanaste " + actual.enemigo.recompensaOro + " de oro.";
             }
 
             return mensaje;
