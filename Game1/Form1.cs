@@ -14,7 +14,7 @@ namespace Game1
     {
         DetectiveNodo dtn = new DetectiveNodo();
 
-        // controla la máquina de escribir
+        //controla la máquina de escribir
         string textoCompleto = "";
         int posicionLetra = 0;
 
@@ -33,7 +33,12 @@ namespace Game1
                 lstSospechosos.Items.Add(temp.dato.nomb);
                 temp = temp.sig;
             } while (temp != dtn.ls.prim);
-            txtPantalla.Text = "🕵️‍♂️ DETECTIVE NODO: ¡Caso iniciado!\r\nSelecciona un sospechoso en el expediente y dale a Interrogar.";
+            txtPantalla.Text = "==================================================\r\n" +
+                               " 🕒 HORA DEL REPORTE: 01:30 A.M.\r\n" +
+                               " LUGAR DEL CRIMEN: Mansión Hillside\r\n" +
+                               "==================================================\r\n\r\n" +
+                               "🕵️‍ DETECTIVE NODO: El crimen ocurrió hace poco más de una hora, entre la medianoche y las 12:30.\r\n\r\n" +
+                               "Los 5 sospechosos siguen dentro de la casa. Selecciona uno en el expediente para comenzar el interrogatorio.";
         }
 
         private void relojMaquina_Tick(object sender, EventArgs e)
@@ -96,14 +101,14 @@ namespace Game1
         private void btnHistorial_Click(object sender, EventArgs e)
         {
             Persona p = dtn.pl.Desapilar();
-            txtPantalla.Clear(); // limpia la pantalla
+            txtPantalla.Clear();
             if (p != null)
             {
-                textoCompleto = "📁 PILA: Se revisó el historial policial de -> " + p.nomb;
+                textoCompleto = "📁 HISTORIAL CONFIDENCIAL DESAPILADO:\r\n" + p.ToString();
             }
             else
             {
-                textoCompleto = "📁 PILA VACÍA: No quedan más sospechosos registrados en el historial.";
+                textoCompleto = "📁 PILA VACÍA: No quedan más expedientes en el historial clínico/policial.";
             }
             posicionLetra = 0;
             lstSospechosos.Enabled = false;
