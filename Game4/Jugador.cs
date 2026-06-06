@@ -10,16 +10,17 @@ namespace Game4
     {
         public string nombJugador;
         public int vidaJugador;
-        public int ataqueJugador;
         public int oroJugador;
-        public int enemigosderrotados;
-
+        public int ataqueJugador;
         public Jugador()
         {
+            vidaJugador = 100;
+            oroJugador = 0;
+            ataqueJugador = 20;
         }
         public override string ToString()
         {
-            return $"Nombre: {nombJugador} | Vida: {vidaJugador}";
+            return $"Nombre: {nombJugador} | Vida: {vidaJugador} | Oro: {oroJugador}";
         }
     }
 }

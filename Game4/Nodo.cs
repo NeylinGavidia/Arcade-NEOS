@@ -8,16 +8,15 @@ namespace Game4
 {
     public class Nodo
     {
-        public string nombSala;
-        public string descripcionSala; 
+        public string nombreSala;
+        public string descripcion;
 
-        public int oro; // Oro disponible en las sala
-        public int efectoVida; // Vida que se puede recuperar en las sala
-        public bool esFinal; // Indica si la sala es una sala final (sin enemigos ni tesoros)
+        public Nodo izq;
+        public Nodo der;
 
-        public Enemigo enemigoSala; // Guarda el enemigo asociado a la sala actual
+        public Enemigo enemigo;
 
-        public Nodo izquierda; 
-        public Nodo derecha;
+        public int recompensaOro;
+        public int recompensaVida;
     }
 }
