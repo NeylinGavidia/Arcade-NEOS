@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Game5
@@ -12,6 +13,7 @@ namespace Game5
         private Random rnd = new Random();
 
         private string player;
+        private string gender;
         private Pokemon pjugador;
         private Pokemon prival;
         string atqp;
@@ -24,32 +26,45 @@ namespace Game5
             ElegirPokemon();
             ElegirRival();
             Batalla();
+            EscenaSig();
             Final();
         }
 
         private void Intro()
         {
             Console.WriteLine("<----------- CARGANDO EL JUEGO *-* ----------->");
-            Console.WriteLine();
-            Console.WriteLine("Hola, bienvenido/a al pueblo Paleta.");
-            Console.WriteLine("Soy el profesor Oak.");
-            Console.WriteLine();
-
-            Console.Write("Cuéntame sobre ti, ¿cuál es tu nombre?: ");
-            player = Console.ReadLine();
-
-            Console.WriteLine($"\nHola, {player}");
-            Console.WriteLine("Profesor Oak: Hoy elegirás un Pokémon que te acompañará en tus aventuras.");
-            Console.WriteLine();
-            Console.ReadKey();
+            Thread.Sleep(1000);
             Console.Clear();
+            Console.WriteLine("Hola, bienvenido/a al pueblo Paleta."); Thread.Sleep(1000);
+            Console.WriteLine("Soy el profesor Oak."); Thread.Sleep(1000);
+            Console.WriteLine();
+
+            Console.Write("Primero, ¿eres chico o chica?");
+            int op = int.Parse(Console.ReadLine());
+            if (op == 1)
+            {
+                gender = "Chico"; //esto se entenderá mejor en la interfaz porque ahi se cambia la imagen xd
+            }
+            else
+            {
+                gender = "Chica";
+            }
+            Thread.Sleep(1000);
+            Console.Clear();
+            Console.Write("Cuéntame un poco sobre ti, ¿cuál es tu nombre?: ");
+            player = Console.ReadLine(); Console.Clear();
+
+            Console.WriteLine($"Hola, {player}"); Thread.Sleep(1000);
+            Console.WriteLine("Profesor Oak: Hoy elegirás un Pokémon que te acompañará en tus aventuras."); Thread.Sleep(1000);
+            Console.WriteLine();
+            Console.ReadKey(); Console.Clear();
         }
 
         private void CargarPokemon()
         {
-            arbol.Insertar(new Pokemon("Bulbasaur", "Planta", 10, 10, 20));
-            arbol.Insertar(new Pokemon("Squirtle", "Agua", 9, 12, 20));
-            arbol.Insertar(new Pokemon("Charmander", "Fuego", 12, 8, 20));
+            arbol.Insertar(new Pokemon("Bulbasaur", "Planta", 11, 10, 21));
+            arbol.Insertar(new Pokemon("Squirtle", "Agua", 10, 11, 20));
+            arbol.Insertar(new Pokemon("Charmander", "Fuego", 12, 9, 19));
         }
 
         private void ElegirPokemon()
@@ -86,11 +101,22 @@ namespace Game5
 
             } while (pjugador == null);
 
-            Console.WriteLine($"\nProfesor Oak: Excelente, elegiste a {pjugador.name}.");
+            Console.Clear();
+            Console.WriteLine($"Profesor Oak: Excelente, elegiste a {pjugador.name}."); 
+            Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine($"({pjugador.name} ha sido añadido a tu Pokédex)");
             Console.WriteLine();
-            Console.ReadKey();
-            Console.Clear();
+            Thread.Sleep(3000); Console.Clear();
+            Console.WriteLine("Profesor Oak: Ahora podrás ir de avent-");
+            Thread.Sleep(1000);
+            Console.WriteLine();
+            Console.WriteLine("Sistema: Pasos se oyen acercándose");
+            Thread.Sleep(2000);Console.Clear();
+            Console.WriteLine("!!!!!!!!!!!!!");
+            Thread.Sleep(3000);
+            Console.WriteLine("Sistema: Un misterioso chico llega .-.");
+            Thread.Sleep(3000); Console.Clear();
         }
 
         private void ElegirRival()
@@ -101,31 +127,26 @@ namespace Game5
             {
                 codigo = rnd.Next(1, 4);
                 prival = arbol.Buscar(codigo);
-                if (codigo == 1)
-                {
-                    atqr = "Placaje";
-                    break;
-                }
-                else if (codigo == 2)
-                {
-                    atqr = "Placaje";
-                    break;
-                }
-                else
-                {
-                    atqr = "Arañazo";
-                    break;
-                }
 
             } while (prival == null || prival.code == pjugador.code);
 
-            Console.WriteLine("Gary: ¡Una batalla, o ¿tienes miedo?");
-            Console.WriteLine("(Hora de pelear. Prepárate)");
-            Console.WriteLine();
+            if (prival.code == 3)
+            {
+                atqr = "Arañazo";
+            }
+            else
+            {
+                atqr = "Placaje";
+            }
 
+            Console.WriteLine("Gary: ¡Una batalla o ¿tienes miedo?");
+            Thread.Sleep(1500);  Console.WriteLine();
+            Console.WriteLine("(Hora de pelear. Prepárate)");
+            Console.ReadKey(); Console.Clear();
             Console.WriteLine($"Gary ha elegido a {prival.name} para pelear.");
-            Console.WriteLine($"Los PS de {prival.name} son {prival.ps}. Nivel 5");
-            Console.WriteLine($"Los PS de tu { pjugador.name} son {pjugador.ps}. Nivel 5");
+            Thread.Sleep(1500);
+            Console.WriteLine($"Los PS de {prival.name} son {prival.ps}. Nivel 5"); Thread.Sleep(2000);
+            Console.WriteLine($"Los PS de tu { pjugador.name} son {pjugador.ps}. Nivel 5"); Thread.Sleep(2000);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
@@ -161,9 +182,15 @@ namespace Game5
                         break;
 
                     case 4:
-                        Console.WriteLine($"\n({pjugador.name} ha huido)");
+                        Console.WriteLine($"\n({pjugador.name} ha huido) 0-0"); Thread.Sleep(1500);
+
                         Console.WriteLine("Gary: Sabía que no tenías coraje JAJAJA.");
                         pjugador.ps = 0;
+                        Thread.Sleep(1500); Console.Clear();
+                        Console.WriteLine("Sistema: Gary sale del laboratorio con decepción."); Thread.Sleep(2000); Console.Clear();
+                        Console.WriteLine("Profesor Oak: ..."); Thread.Sleep(3000);
+                        Console.WriteLine("Profesor Oak: *se aclara la garganta* Disculpa a mi sobrino, está muy empeñado en luchar.");
+                        Thread.Sleep(2000);
                         break;
 
                     default:
@@ -177,42 +204,101 @@ namespace Game5
 
         private void Atacar()
         {
-            int dañoJugador = rnd.Next(3, 7);
-            prival.ps -= dañoJugador;
+            int dañoJugador = rnd.Next(1, pjugador.atq + 1);
+            int dfj = dañoJugador - (prival.def / 2); //sino no consideraba para nada la defensa qwq
 
-            Console.WriteLine($"{pjugador.name} uso "+atqp);
-            Console.WriteLine($"{prival.name} perdió {dañoJugador} PS.");
+            if (dfj < 1)
+                dfj = 1;
+
+            prival.ps -= dfj;
+
+            Console.WriteLine($"{pjugador.name} uso " + atqp);
+            Thread.Sleep(1000);
+            Console.WriteLine($"{prival.name} perdió {dfj} PS.");
+            Thread.Sleep(1000);
+            Console.WriteLine();
 
             if (prival.ps <= 0)
             {
                 Console.WriteLine($"\n¡{prival.name} se debilitó!");
+                Thread.Sleep(1500); Console.Clear();
                 Console.WriteLine($"Gary: Tsk... ganaste esta vez, {player}.");
+                Console.ReadKey();
+                Console.Clear();
                 Console.WriteLine("Sistema: ¡Has ganado la batalla!");
+                Thread.Sleep(1500); Console.Clear();
+                Console.WriteLine($"Gary: Tsk, no importa. La próxima vez te ganaré {player}. ¡Me voy a entrenar!");
+                Thread.Sleep(1500);
+                Console.WriteLine("Sistema: Gary sale del laboratorio."); Thread.Sleep(2000); Console.Clear();
+                Console.WriteLine("Profesor Oak: Disculpa a mi sobrino, ese muchacho es demasiado orgulloso *suspira*");
+                Thread.Sleep(1000);
+                Console.WriteLine("Profesor Oak: ...");
                 return;
             }
 
-            int dañoRival = rnd.Next(3, 7);
-            pjugador.ps -= dañoRival;
+            int dañoRival = rnd.Next(1, prival.atq + 1);
+            int dfr = dañoRival - (pjugador.def / 2);
+            if (dfr < 1)
+                dfr = 1;
+            pjugador.ps -= dfr;
 
             Console.WriteLine($"{prival.name} uso "+atqr);
-            Console.WriteLine($"{pjugador.name} perdió {dañoRival} PS.");
-
+            Thread.Sleep(1000);
+            Console.WriteLine($"{pjugador.name} perdió {dfr} PS.");
+            Thread.Sleep(1000);
             Console.WriteLine($"\nPS de {pjugador.name}: {Math.Max(pjugador.ps, 0)}");
+            Thread.Sleep(1000);
             Console.WriteLine($"PS de {prival.name}: {Math.Max(prival.ps, 0)}\n");
 
             if (pjugador.ps <= 0)
             {
                 Console.WriteLine($"\n¡{pjugador.name} se debilitó!");
+                Thread.Sleep(1000);
                 Console.WriteLine("Gary: JAJAJA, sabía que mi Pokémon era mejor.");
+                Console.ReadKey();
+                Console.Clear();
                 Console.WriteLine("Sistema: Has perdido la batalla.");
+                Thread.Sleep(1500); Console.Clear();
+                Console.WriteLine("Gary: JAJAJA, ya no eres interesante. Iré a entrenar.");
+                Thread.Sleep(1500);
+                Console.WriteLine("Sistema: Gary sale del laboratorio."); Thread.Sleep(2000); Console.Clear();
+                Console.WriteLine("Profesor Oak: Disculpa a mi sobrino, tenía muchas ganas de competir contigo.");
+                Thread.Sleep(1500);
+                Console.WriteLine("Profesor Oak: Ahora tu pokemon debe descansar hasta recuperarse");
+                Thread.Sleep(1500);
+                Console.WriteLine("Profesor Oak: ...");
+                Console.ReadKey(); Console.Clear();
             }
         }
-
+        private void EscenaSig()
+        {
+            Thread.Sleep(500);
+            Console.WriteLine("Profesor Oak: De todos modos, toma esto...");
+            Thread.Sleep(2500); Console.Clear();
+            Console.WriteLine("Sistema: Recibiste [1 pokebola]");
+            Console.ReadKey(); Console.Clear();
+            Console.WriteLine("Profesor Oak: Esto te será muy útil en tu aventura de hoy en más"); Thread.Sleep(2000);
+            Console.WriteLine("Profesor Oak: Con esto podrás capturar más pokemones y completar tu Pokedex"); Thread.Sleep(2000);
+            Console.WriteLine("Profesor Oak: Increíble, ¿verdad?");
+            Console.ReadKey(); Console.Clear();
+            Console.WriteLine("Sistema: Pokebola se ha añadido a tu bolsa de objetos");
+            Console.ReadKey(); Console.Clear();
+            Console.WriteLine("Profesor Oak: Usa esto cuando el pokemon salvaje tenga menos vida, sino podría escapar"); Thread.Sleep(2500);
+            Console.WriteLine($"Profesor Oak: ¡Bueno! No te quito más tiempo. Ve y diviertete en tu aventura, {player}");
+            Console.ReadKey(); Console.Clear();
+            Console.WriteLine("Sistema: Sales del laboratorio y vas hacia las afueras del Pueblo Paleta");
+            Console.ReadKey(); Console.Clear();
+        }
         private void Final()
         {
+            Console.WriteLine("VERSIÓN DEMO ACABADA  TwT"); 
+            Thread.Sleep(2000); Console.Clear();
+            Console.WriteLine("Saliendo... OwO");
+            Thread.Sleep(2000); Console.Clear();
             Console.WriteLine($"\nGracias por jugar, {player.ToUpper()} <3");
-            Console.WriteLine("Presiona ENTER para salir.");
-            Console.ReadLine();
+            Console.WriteLine(); Console.WriteLine();
+            Console.WriteLine("----- Presiona ENTER para salir.----------");
+            Console.ReadKey();
         }
     }
 }
