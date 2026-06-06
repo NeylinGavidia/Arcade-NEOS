@@ -79,5 +79,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Game1\Game1.csproj">
+      <Project>{611cc2b5-392c-4187-b1bc-a630911e3832}</Project>
+      <Name>Game1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game2\Game2.csproj">
+      <Project>{8041d219-afe8-42a3-b986-cfe5337d0ac9}</Project>
+      <Name>Game2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game3\Game3.csproj">
+      <Project>{3cc6ab80-f819-44d7-a4a4-b5be2d92fc79}</Project>
+      <Name>Game3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game4\Game4.csproj">
+      <Project>{c32d9518-2cfd-4a9b-8c73-e34727907ca4}</Project>
+      <Name>Game4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game5\Game5.csproj">
+      <Project>{eb6f338c-1f99-4fd1-b75d-32dc82696c93}</Project>
+      <Name>Game5</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
