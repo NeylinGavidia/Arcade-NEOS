@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ArcadeGUI/ArcadeGUI.csproj" Id="f0055213-2a00-44ac-885e-fb634365e955" />
   <Project Path="Arcade_NEOS/Arcade_NEOS.csproj" Id="c097687e-7ffc-44e3-ae3e-dd9edc0acf5a" />
   <Project Path="Game1/Game1.csproj" Id="611cc2b5-392c-4187-b1bc-a630911e3832" />
   <Project Path="Game2/Game2.csproj" Id="8041d219-afe8-42a3-b986-cfe5337d0ac9" />
