@@ -54,7 +54,6 @@ namespace Game1
                 temp = temp.sig;
             }
             ases = temp.dato;
-            ases.rol = "Asesino";
 
             //se selecciona la victima
             int v = r.Next(1, 6);
@@ -68,17 +67,6 @@ namespace Game1
                 temp = temp.sig;
             }
             vict = temp.dato;
-            vict.rol = "Victima";
-
-            temp = ls.prim;
-            do
-            {
-                if (temp.dato.rol == null)
-                {
-                    temp.dato.rol = "Sospechoso";
-                }
-                temp = temp.sig;
-            } while (temp != ls.prim);
         }
 
         private string HabitacionRandom()

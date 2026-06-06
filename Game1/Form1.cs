@@ -131,5 +131,23 @@ namespace Game1
                 relojMaquina.Enabled = true;
             }
         }
+
+        private void lstSospechosos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string nombSelec = lstSospechosos.SelectedItem.ToString();
+            Nodo temp = dtn.ls.prim;
+            bool encontrado = false;
+
+            do
+            {
+                if (temp.dato.nomb == nombSelec)
+                {
+                    nodoAct = temp;
+                    encontrado = true;
+                    break;
+                }
+                temp = temp.sig;
+            } while (temp != dtn.ls.prim && !encontrado);
+        }
     }
 }

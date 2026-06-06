@@ -53,6 +53,7 @@
             this.lstSospechosos.Name = "lstSospechosos";
             this.lstSospechosos.Size = new System.Drawing.Size(216, 230);
             this.lstSospechosos.TabIndex = 0;
+            this.lstSospechosos.SelectedIndexChanged += new System.EventHandler(this.lstSospechosos_SelectedIndexChanged);
             // 
             // label1
             // 
