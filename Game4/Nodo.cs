@@ -13,6 +13,7 @@ namespace Game4
 
         public int oro; // Oro disponible en las sala
         public int efectoVida; // Vida que se puede recuperar en las sala
+        public bool esFinal; // Indica si la sala es una sala final (sin enemigos ni tesoros)
 
         public Enemigo enemigoSala; // Guarda el enemigo asociado a la sala actual
 
