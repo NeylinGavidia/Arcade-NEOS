@@ -8,6 +8,9 @@ namespace Game2
 {
     public class Nodo
     {
+       // public Fruta dato;
+        public Nodo izq;
+        public Nodo der;
 
     }
 }
