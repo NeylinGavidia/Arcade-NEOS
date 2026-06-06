@@ -110,13 +110,14 @@
             // 
             this.btnGame3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnGame3.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnGame3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnGame3.Location = new System.Drawing.Point(222, 504);
             this.btnGame3.Name = "btnGame3";
             this.btnGame3.Size = new System.Drawing.Size(189, 43);
             this.btnGame3.TabIndex = 4;
-            this.btnGame3.Text = "AUN NO SE";
+            this.btnGame3.Text = "Neosventure";
             this.btnGame3.UseVisualStyleBackColor = false;
+            this.btnGame3.Click += new System.EventHandler(this.btnGame3_Click);
             // 
             // btnGame4
             // 
@@ -159,11 +160,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label2.Location = new System.Drawing.Point(348, 358);
+            this.label2.Location = new System.Drawing.Point(297, 358);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 18);
+            this.label2.Size = new System.Drawing.Size(301, 18);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Haz click en el botón del juego";
+            this.label2.Text = "Haz click en el botón del juego para empezar";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -237,7 +238,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(921, 667);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
