@@ -15,7 +15,6 @@ namespace Game2
             Nodo nuevo = new Nodo();
 
             nuevo.dato = f;
-
             nuevo.sig = cima;
 
             cima = nuevo;
@@ -28,7 +27,6 @@ namespace Game2
             while (temp != null)
             {
                 Console.WriteLine(temp.dato.nombre);
-
                 temp = temp.sig;
             }
         }
