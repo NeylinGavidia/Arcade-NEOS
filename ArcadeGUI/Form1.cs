@@ -26,5 +26,10 @@ namespace ArcadeGUI
         {
 
         }
+
+        private void btnGame3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
