@@ -43,7 +43,7 @@ namespace Game3
             camarote.desc = "Obtienes Pieza 1";
             camarote.objeto = "Pieza1";
             Nodo bodega = new Nodo();
-            bodega.desc = "☠️ Trampa";
+            bodega.desc = "Trampa";
             bodega.derrota = true;
             barco.izq = camarote;
             barco.der = bodega;
@@ -90,12 +90,12 @@ namespace Game3
             puente.desc = "Obtienes Pieza 3";
             puente.objeto = "Pieza3";
             Nodo nadar = new Nodo();
-            nadar.desc = "☠️ Pirañas";
+            nadar.desc = "Pirañas";
             nadar.derrota = true;
             rio.izq = puente;
             rio.der = nadar;
             Nodo sonidos = new Nodo();
-            sonidos.desc = "☠️ Trampa";
+            sonidos.desc = "Trampa";
             sonidos.derrota = true;
             Nodo marcas = new Nodo();
             marcas.desc = "Obtienes Gema";
