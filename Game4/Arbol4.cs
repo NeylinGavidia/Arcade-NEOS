@@ -256,6 +256,7 @@ namespace Game4
             //Conecta la camara final(15) con el tesoro legendario(30) y el dragon(31)
             camaraFinal.izquierda = tesoroLegendario;
             camaraFinal.derecha = dragon;
+
         }
 
         // Devuelve el nombre de la sala actual
