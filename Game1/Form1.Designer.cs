@@ -37,6 +37,8 @@
             this.btnAcusar = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
             this.relojMaquina = new System.Windows.Forms.Timer(this.components);
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstSospechosos
@@ -83,7 +85,7 @@
             this.btnInterrogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInterrogar.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInterrogar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnInterrogar.Location = new System.Drawing.Point(36, 306);
+            this.btnInterrogar.Location = new System.Drawing.Point(169, 306);
             this.btnInterrogar.Name = "btnInterrogar";
             this.btnInterrogar.Size = new System.Drawing.Size(100, 37);
             this.btnInterrogar.TabIndex = 3;
@@ -95,11 +97,11 @@
             // 
             this.btnAcusar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnAcusar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcusar.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcusar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcusar.ForeColor = System.Drawing.Color.Red;
-            this.btnAcusar.Location = new System.Drawing.Point(261, 306);
+            this.btnAcusar.Location = new System.Drawing.Point(211, 360);
             this.btnAcusar.Name = "btnAcusar";
-            this.btnAcusar.Size = new System.Drawing.Size(124, 37);
+            this.btnAcusar.Size = new System.Drawing.Size(257, 37);
             this.btnAcusar.TabIndex = 4;
             this.btnAcusar.Text = "ACUSAR ASESINO";
             this.btnAcusar.UseVisualStyleBackColor = false;
@@ -111,7 +113,7 @@
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHistorial.Location = new System.Drawing.Point(512, 306);
+            this.btnHistorial.Location = new System.Drawing.Point(483, 306);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(147, 37);
             this.btnHistorial.TabIndex = 5;
@@ -124,6 +126,32 @@
             this.relojMaquina.Interval = 30;
             this.relojMaquina.Tick += new System.EventHandler(this.relojMaquina_Tick);
             // 
+            // btnAnterior
+            // 
+            this.btnAnterior.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnAnterior.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAnterior.Location = new System.Drawing.Point(36, 291);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(97, 23);
+            this.btnAnterior.TabIndex = 6;
+            this.btnAnterior.Text = "◀ Anterior";
+            this.btnAnterior.UseVisualStyleBackColor = false;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnSiguiente.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSiguiente.Location = new System.Drawing.Point(308, 291);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(97, 23);
+            this.btnSiguiente.TabIndex = 7;
+            this.btnSiguiente.Text = "▶ Siguiente";
+            this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,7 +159,9 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(697, 369);
+            this.ClientSize = new System.Drawing.Size(697, 409);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.btnAcusar);
             this.Controls.Add(this.btnInterrogar);
@@ -159,5 +189,7 @@
         private System.Windows.Forms.Button btnAcusar;
         private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.Timer relojMaquina;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnSiguiente;
     }
 }

@@ -17,6 +17,7 @@ namespace Game1
         //controla la máquina de escribir
         string textoCompleto = "";
         int posicionLetra = 0;
+        Nodo nodoAct = null;
 
         public Form1()
         {
@@ -33,10 +34,11 @@ namespace Game1
                 lstSospechosos.Items.Add(temp.dato.nomb);
                 temp = temp.sig;
             } while (temp != dtn.ls.prim);
-            txtPantalla.Text = "==================================================\r\n" +
+            nodoAct = dtn.ls.prim;
+            txtPantalla.Text = "========================================\r\n" +
                                " 🕒 HORA DEL REPORTE: 01:30 A.M.\r\n" +
                                " LUGAR DEL CRIMEN: Mansión Hillside\r\n" +
-                               "==================================================\r\n\r\n" +
+                               "========================================\r\n\r\n" +
                                "🕵️‍ DETECTIVE NODO: El crimen ocurrió hace poco más de una hora, entre la medianoche y las 12:30.\r\n\r\n" +
                                "Los 5 sospechosos siguen dentro de la casa. Selecciona uno en el expediente para comenzar el interrogatorio.";
         }
@@ -57,23 +59,14 @@ namespace Game1
 
         private void btnInterrogar_Click(object sender, EventArgs e)
         {
-            if (lstSospechosos.SelectedIndex != -1)
+            if (nodoAct != null)
             {
-                string nombre = lstSospechosos.SelectedItem.ToString();
-                Nodo temp = dtn.ls.prim;
-                do
-                {
-                    if (temp.dato.nomb == nombre)
-                    {
-                        txtPantalla.Clear(); //limpia texto para que no se sature :D
-                        textoCompleto = "📝 " + dtn.Interrogar(temp.dato);
-                        posicionLetra = 0;
-                        lstSospechosos.Enabled = false;
-                        relojMaquina.Enabled = true;
-                        break;
-                    }
-                    temp = temp.sig;
-                } while (temp != dtn.ls.prim);
+                txtPantalla.Clear();
+                textoCompleto = dtn.Interrogar(nodoAct.dato);
+                posicionLetra = 0;
+
+                lstSospechosos.Enabled = false;
+                relojMaquina.Enabled = true;
             }
         }
 
@@ -108,11 +101,35 @@ namespace Game1
             }
             else
             {
-                textoCompleto = "📁 PILA VACÍA: No quedan más expedientes en el historial clínico/policial.";
+                textoCompleto = "📁 PILA VACÍA: No quedan más expedientes en el historial policial.";
             }
             posicionLetra = 0;
             lstSospechosos.Enabled = false;
             relojMaquina.Enabled = true;
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (nodoAct != null)
+            {
+                nodoAct = nodoAct.ant;
+                txtPantalla.Clear();
+                textoCompleto = "📁 ARCHIVO CONFIDENCIAL: Perfil del Sospechoso <<<\r\n" + nodoAct.dato.ToString();
+                posicionLetra = 0;
+                relojMaquina.Enabled = true;
+            }
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            if (nodoAct != null)
+            {
+                nodoAct = nodoAct.sig;
+                txtPantalla.Clear();
+                textoCompleto = "📁 ARCHIVO CONFIDENCIAL: Perfil del Sospechoso >>>\r\n" + nodoAct.dato.ToString();
+                posicionLetra = 0;
+                relojMaquina.Enabled = true;
+            }
         }
     }
 }
