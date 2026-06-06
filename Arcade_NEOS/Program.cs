@@ -30,7 +30,7 @@ namespace Arcade_NEOS
                 Console.WriteLine("2. JUEGO 2 (LUZ)");
                 Console.WriteLine("3. JUEGO 3 (JHERSON)");
                 Console.WriteLine("4. JUEGO 4 (ANDERSON)");
-                Console.WriteLine("5. JUEGO 5 (YO)");
+                Console.WriteLine("5. POKENEOS (DEMO)");
                 Console.WriteLine("0. Salir");
                 Console.WriteLine();
                 Console.WriteLine("**********************");
