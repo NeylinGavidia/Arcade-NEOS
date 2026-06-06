@@ -23,82 +23,32 @@ namespace Game4
             pasilloIzquierdo.nombSala = "Pasillo Izquierdo";
             pasilloIzquierdo.descripcionSala = "Un pasillo oscuro que parece abandonado.";
 
-            //3.PASILLO DERECHO
-            Nodo pasilloDerecho = new Nodo(); //Nodo 3
-            pasilloDerecho.nombSala = "Pasillo Derecho";
-            pasilloDerecho.descripcionSala = "Escuchas el sonido de agua a lo lejos.";
-
             //4.SALA ABANDONADA
             Nodo salaAbandonada = new Nodo(); //Nodo 4
             salaAbandonada.nombSala = "Sala Abandonada";
             salaAbandonada.descripcionSala = "Una sala llena de polvo y muebles rotos.";
-
-            //5.CAMARA MISTERIOSA
-            Nodo camaraMisteriosa = new Nodo(); //Nodo 5
-            camaraMisteriosa.nombSala = "Camara Misteriosa";
-            camaraMisteriosa.descripcionSala = "Extraños simbolos cubren las paredes.";
-
-            //6.SALA INUNDADA
-            Nodo salaInundada = new Nodo(); //Nodo 6
-            salaInundada.nombSala = "Sala Inundada";
-            salaInundada.descripcionSala = "El agua cubre parte del suelo.";
-
-            //7.SALON DE CRISTAL
-            Nodo salonCristal = new Nodo(); //Nodo 7
-            salonCristal.nombSala = "Salon de Cristal";
-            salonCristal.descripcionSala = "Cristales brillantes iluminan la sala.";
 
             //8.BIBLIOTECA ANTIGUA
             Nodo bibliotecaAntigua = new Nodo(); //Nodo 8
             bibliotecaAntigua.nombSala = "Biblioteca Antigua";
             bibliotecaAntigua.descripcionSala = "Antiguos libros cubiertos de polvo llenan los estantes.";
 
-            //9.SOTANO ABANDONADO
-            Nodo sotanoAbandonado = new Nodo(); //Nodo 9
-            sotanoAbandonado.nombSala = "Sotano Abandonado";
-            sotanoAbandonado.descripcionSala = "El ambiente es frio y se escuchan ruidos extraños.";
-
-            //10.ESTATUA ANTIGUA
-            Nodo estatuaAntigua = new Nodo(); //Nodo 10
-            estatuaAntigua.nombSala = "Estatua Antigua";
-            estatuaAntigua.descripcionSala = "Una enorme estatua de piedra observa cada uno de tus movimientos.";
-
-            //11.PORTAL
-            Nodo portal = new Nodo(); //Nodo 11
-            portal.nombSala = "Portal";
-            portal.descripcionSala = "Un portal brillante emite una extraña energia.";
-
-            //12.PUENTE
-            Nodo puente = new Nodo(); //Nodo 12
-            puente.nombSala = "Puente";
-            puente.descripcionSala = "Un viejo puente de madera cruza sobre aguas oscuras.";
-
-            //13.CUEVA
-            Nodo cueva = new Nodo(); //Nodo 13
-            cueva.nombSala = "Cueva";
-            cueva.descripcionSala = "La cueva es oscura y apenas puedes ver el camino.";
-
-            //14.JARDIN OCULTO
-            Nodo jardinOculto = new Nodo(); //Nodo 14
-            jardinOculto.nombSala = "Jardin Oculto";
-            jardinOculto.descripcionSala = "Un pequeño jardin escondido florece dentro de la mazmorra.";
-
-            //15.CAMARA FINAL
-            Nodo camaraFinal = new Nodo(); //Nodo 15
-            camaraFinal.nombSala = "Camara Final";
-            camaraFinal.descripcionSala = "Has llegado a la ultima sala de la mazmorra.";
-
             //16.COFRE ANTIGUO
             Nodo cofreAntiguo = new Nodo(); //Nodo 16
             cofreAntiguo.nombSala = "Cofre Antiguo";
             cofreAntiguo.descripcionSala = "Encontraste un antiguo cofre lleno de oro.";
-            cofreAntiguo.oro = 50;
+            cofreAntiguo.oro = 50; // Asigna 50 unidades de oro al cofre antiguo
 
             //17.TRAMPA
             Nodo trampa = new Nodo(); //Nodo 17
             trampa.nombSala = "Trampa";
             trampa.descripcionSala = "Has activado una trampa oculta.";
             trampa.efectoVida = -20;
+
+            //9.SOTANO ABANDONADO
+            Nodo sotanoAbandonado = new Nodo(); //Nodo 9
+            sotanoAbandonado.nombSala = "Sotano Abandonado";
+            sotanoAbandonado.descripcionSala = "El ambiente es frio y se escuchan ruidos extraños.";
 
             //18.GOBLIN
             Nodo goblin = new Nodo(); //Nodo 18
@@ -116,6 +66,16 @@ namespace Game4
             tesoro1.descripcionSala = "Encontraste una pequeña bolsa de monedas.";
             tesoro1.oro = 30;
 
+            //5.CAMARA MISTERIOSA
+            Nodo camaraMisteriosa = new Nodo(); //Nodo 5
+            camaraMisteriosa.nombSala = "Camara Misteriosa";
+            camaraMisteriosa.descripcionSala = "Extraños simbolos cubren las paredes.";
+
+            //10.ESTATUA ANTIGUA
+            Nodo estatuaAntigua = new Nodo(); //Nodo 10
+            estatuaAntigua.nombSala = "Estatua Antigua";
+            estatuaAntigua.descripcionSala = "Una enorme estatua de piedra observa cada uno de tus movimientos.";
+
             //20.BENDICION
             Nodo bendicion = new Nodo(); //Nodo 20
             bendicion.nombSala = "Bendicion";
@@ -127,6 +87,11 @@ namespace Game4
             maldicion.nombSala = "Maldicion";
             maldicion.descripcionSala = "Una energia oscura cae sobre ti.";
             maldicion.efectoVida = -15;
+
+            //11.PORTAL
+            Nodo portal = new Nodo(); //Nodo 11
+            portal.nombSala = "Portal";
+            portal.descripcionSala = "Un portal brillante emite una extraña energia.";
 
             //22.SALA SECRETA
             Nodo salaSecreta = new Nodo(); //Nodo 22
@@ -144,6 +109,21 @@ namespace Game4
             murcielago.enemigoSala.ataqueEnemigo = 5;
             murcielago.enemigoSala.recompensaOro = 10;
 
+            //3.PASILLO DERECHO
+            Nodo pasilloDerecho = new Nodo(); //Nodo 3
+            pasilloDerecho.nombSala = "Pasillo Derecho";
+            pasilloDerecho.descripcionSala = "Escuchas el sonido de agua a lo lejos.";
+
+            //6.SALA INUNDADA
+            Nodo salaInundada = new Nodo(); //Nodo 6
+            salaInundada.nombSala = "Sala Inundada";
+            salaInundada.descripcionSala = "El agua cubre parte del suelo.";
+
+            //12.PUENTE
+            Nodo puente = new Nodo(); //Nodo 12
+            puente.nombSala = "Puente";
+            puente.descripcionSala = "Un viejo puente de madera cruza sobre aguas oscuras.";
+
             //24.CRUZAR
             Nodo cruzar = new Nodo(); //Nodo 24
             cruzar.nombSala = "Cruzar";
@@ -154,6 +134,11 @@ namespace Game4
             caerAgua.nombSala = "Caer al Agua";
             caerAgua.descripcionSala = "Resbalas y caes al agua.";
             caerAgua.efectoVida = -20;
+
+            //13.CUEVA
+            Nodo cueva = new Nodo(); //Nodo 13
+            cueva.nombSala = "Cueva";
+            cueva.descripcionSala = "La cueva es oscura y apenas puedes ver el camino.";
 
             //26.TESORO
             Nodo tesoro2 = new Nodo(); //Nodo 26
@@ -171,6 +156,16 @@ namespace Game4
             esqueleto.enemigoSala.ataqueEnemigo = 12;
             esqueleto.enemigoSala.recompensaOro = 40;
 
+            //7.SALON DE CRISTAL
+            Nodo salonCristal = new Nodo(); //Nodo 7
+            salonCristal.nombSala = "Salon de Cristal";
+            salonCristal.descripcionSala = "Cristales brillantes iluminan la sala.";
+
+            //14.JARDIN OCULTO
+            Nodo jardinOculto = new Nodo(); //Nodo 14
+            jardinOculto.nombSala = "Jardin Oculto";
+            jardinOculto.descripcionSala = "Un pequeño jardin escondido florece dentro de la mazmorra.";
+
             //28.CURACION
             Nodo curacion = new Nodo(); //Nodo 28
             curacion.nombSala = "Curacion";
@@ -183,11 +178,18 @@ namespace Game4
             cofre.descripcionSala = "Encuentras un cofre lleno de monedas.";
             cofre.oro = 40;
 
+            //15.CÁMARA FINAL
+            Nodo camaraFinal = new Nodo(); //Nodo 15
+            camaraFinal.nombSala = "Camara Final";
+            camaraFinal.descripcionSala = "Has llegado a la ultima sala de la mazmorra.";
+            camaraFinal.esFinal = true;
+
             //30.TESORO LEGENDARIO
             Nodo tesoroLegendario = new Nodo(); //Nodo 30
             tesoroLegendario.nombSala = "Tesoro Legendario";
             tesoroLegendario.descripcionSala = "Has encontrado el tesoro legendario.";
             tesoroLegendario.oro = 100;
+            tesoroLegendario.esFinal = true;
 
             //31.DRAGON
             Nodo dragon = new Nodo(); //Nodo 31
@@ -198,49 +200,70 @@ namespace Game4
             dragon.enemigoSala.vidaEnemigo = 80;
             dragon.enemigoSala.ataqueEnemigo = 25;
             dragon.enemigoSala.recompensaOro = 150;
+            dragon.esFinal = true;
 
             //CONEXIONES
 
-            bibliotecaAntigua.izquierda = cofreAntiguo;
-            bibliotecaAntigua.derecha = trampa;
+            // Establece la raíz del árbol como la entrada
+            raiz = entrada;
 
-            sotanoAbandonado.izquierda = goblin;
-            sotanoAbandonado.derecha = tesoro1;
+            //Conecta la entrada(1) con los pasillos izquierdo(2) y derecho(3) 
+            entrada.izquierda = pasilloIzquierdo;
+            entrada.derecha = pasilloDerecho;
 
+            //Conecta el pasillo izquierdo(2) con la sala abandonada(4) y la camara misteriosa(5)
+            pasilloIzquierdo.izquierda = salaAbandonada;
+            pasilloIzquierdo.derecha = camaraMisteriosa;
+
+            //Conecta la sala abandonada(4) con la biblioteca antigua(8) y el sotano abandonado(9)
             salaAbandonada.izquierda = bibliotecaAntigua;
             salaAbandonada.derecha = sotanoAbandonado;
 
-            estatuaAntigua.izquierda = bendicion;
-            estatuaAntigua.derecha = maldicion;
+            //Conecta la biblioteca antigua(8) con el cofre antiguo(16) y la trampa(17)
+            bibliotecaAntigua.izquierda = cofreAntiguo;
+            bibliotecaAntigua.derecha = trampa;
 
-            portal.izquierda = salaSecreta;
-            portal.derecha = murcielago;
+            //Conecta el sotano abandonado(9) con el goblin(18) y el tesoro(19)
+            sotanoAbandonado.izquierda = goblin;
+            sotanoAbandonado.derecha = tesoro1;
 
+            //Conecta la cámara misteriosa(5) con la estatua antigua(10) y el portal(11)
             camaraMisteriosa.izquierda = estatuaAntigua;
             camaraMisteriosa.derecha = portal;
 
-            entrada.izquierda = pasilloIzquierdo;
-            entrada.derecha = pasilloDerecho;
-            raiz = entrada;
+            //Conecta la estatua antigua(10) con la bendicion(20) y la maldicion(21)
+            estatuaAntigua.izquierda = bendicion;
+            estatuaAntigua.derecha = maldicion;
 
+            //Conecta el portal(11) con la sala secreta(22) y el murcielago(23)
+            portal.izquierda = salaSecreta;
+            portal.derecha = murcielago;
+
+            //Conecta el pasillo derecho(3) con la sala inundada(6) y el salon de cristal(7)
             pasilloDerecho.izquierda = salaInundada;
             pasilloDerecho.derecha = salonCristal;
 
+            //Conecta la sala inundada(6) con el puente(12) y la cueva(13)
             salaInundada.izquierda = puente;
             salaInundada.derecha = cueva;
 
-            salonCristal.izquierda = jardinOculto;
-            salonCristal.derecha = camaraFinal;
-
+            //Conecta el puente(12) con cruzar(24) y caer al agua(25)
             puente.izquierda = cruzar;
             puente.derecha = caerAgua;
 
+            //Conecta la cueva(13) con el tesoro(26) y el esqueleto(27)
             cueva.izquierda = tesoro2;
             cueva.derecha = esqueleto;
 
+            //Conecta el salon de cristal(7) con el jardin oculto(14) y la camara final(15)
+            salonCristal.izquierda = jardinOculto;
+            salonCristal.derecha = camaraFinal;
+
+            //Conecta el jardin oculto(14) con curacion(28) y el cofre(29)
             jardinOculto.izquierda = curacion;
             jardinOculto.derecha = cofre;
 
+            //Conecta la camara final(15) con el tesoro legendario(30) y el dragon(31)
             camaraFinal.izquierda = tesoroLegendario;
             camaraFinal.derecha = dragon;
         }
