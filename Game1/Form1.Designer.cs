@@ -47,9 +47,9 @@
             this.lstSospechosos.ForeColor = System.Drawing.Color.White;
             this.lstSospechosos.FormattingEnabled = true;
             this.lstSospechosos.ItemHeight = 19;
-            this.lstSospechosos.Location = new System.Drawing.Point(36, 22);
+            this.lstSospechosos.Location = new System.Drawing.Point(36, 41);
             this.lstSospechosos.Name = "lstSospechosos";
-            this.lstSospechosos.Size = new System.Drawing.Size(208, 249);
+            this.lstSospechosos.Size = new System.Drawing.Size(208, 230);
             this.lstSospechosos.TabIndex = 0;
             // 
             // label1
@@ -58,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Linen;
-            this.label1.Location = new System.Drawing.Point(43, 34);
+            this.label1.Location = new System.Drawing.Point(33, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 15);
             this.label1.TabIndex = 1;
