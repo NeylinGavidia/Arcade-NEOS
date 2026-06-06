@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game1", "Game1.csproj", "{611CC2B5-392C-4187-B1BC-A630911E3832}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "..\GUI\GUI.csproj", "{F7496B1E-5340-4316-9B18-CF125F7B04C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{611CC2B5-392C-4187-B1BC-A630911E3832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{611CC2B5-392C-4187-B1BC-A630911E3832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{611CC2B5-392C-4187-B1BC-A630911E3832}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7496B1E-5340-4316-9B18-CF125F7B04C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7496B1E-5340-4316-9B18-CF125F7B04C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7496B1E-5340-4316-9B18-CF125F7B04C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7496B1E-5340-4316-9B18-CF125F7B04C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
