@@ -44,6 +44,7 @@
     <Compile Include="Arbol2.cs" />
     <Compile Include="Cola2.cs" />
     <Compile Include="Fruta.cs" />
+    <Compile Include="JuegoFrutas2.cs" />
     <Compile Include="Nodo.cs" />
     <Compile Include="Pila2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

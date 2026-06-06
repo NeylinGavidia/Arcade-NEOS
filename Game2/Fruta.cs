@@ -10,14 +10,18 @@ namespace Game2
     {
         public int codigo;
         public string nombre;
+        public string color;
+        public string origen;
         public string pista;
 
         public override string ToString()
         {
-            return "----------------------\n" +
+            return "==================================\n" +
                    "Codigo: " + codigo + "\n" +
-                   "Fruta: " + nombre + "\n" +
-                   "----------------------";
+                   "Nombre: " + nombre + "\n" +
+                   "Color: " + color + "\n" +
+                   "Origen: " + origen + "\n" +
+                   "==================================\n";
         }
     }
 }
