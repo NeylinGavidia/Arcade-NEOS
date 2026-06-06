@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Game3
 {
-    internal class Nodo
+    public class Nodo
     {
+        public string desc;
+        public Nodo izq;
+        public Nodo der;
+        public string objeto;
+        public bool derrota;
     }
 }
