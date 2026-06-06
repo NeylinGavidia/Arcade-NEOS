@@ -89,6 +89,7 @@
             this.btnInterrogar.TabIndex = 3;
             this.btnInterrogar.Text = "INTERROGAR";
             this.btnInterrogar.UseVisualStyleBackColor = false;
+            this.btnInterrogar.Click += new System.EventHandler(this.btnInterrogar_Click);
             // 
             // btnAcusar
             // 
@@ -102,6 +103,7 @@
             this.btnAcusar.TabIndex = 4;
             this.btnAcusar.Text = "ACUSAR ASESINO";
             this.btnAcusar.UseVisualStyleBackColor = false;
+            this.btnAcusar.Click += new System.EventHandler(this.btnAcusar_Click);
             // 
             // btnHistorial
             // 
@@ -115,10 +117,12 @@
             this.btnHistorial.TabIndex = 5;
             this.btnHistorial.Text = "REVISAR HISTORIAL";
             this.btnHistorial.UseVisualStyleBackColor = false;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // relojMaquina
             // 
             this.relojMaquina.Interval = 30;
+            this.relojMaquina.Tick += new System.EventHandler(this.relojMaquina_Tick);
             // 
             // Form1
             // 
@@ -134,12 +138,13 @@
             this.Controls.Add(this.txtPantalla);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstSospechosos);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Detective Nodo";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
