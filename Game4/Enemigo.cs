@@ -13,6 +13,9 @@ namespace Game4
         public int ataqueEnemigo;
         public int recompensaOro;
 
+        public Enemigo()
+        {
+        }
         public override string ToString()
         {
             return $"Nombre: {nombEnemigo} | Vida: {vidaEnemigo}";

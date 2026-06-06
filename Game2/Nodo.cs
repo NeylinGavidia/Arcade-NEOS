@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Game2
 {
-    internal class Nodo
+    public class Nodo
     {
+       // public Fruta dato;
+        public Nodo izq;
+        public Nodo der;
 
     }
 }

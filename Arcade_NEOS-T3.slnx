@@ -5,4 +5,5 @@
   <Project Path="Game3/Game3.csproj" Id="3cc6ab80-f819-44d7-a4a4-b5be2d92fc79" />
   <Project Path="Game4/Game4.csproj" Id="c32d9518-2cfd-4a9b-8c73-e34727907ca4" />
   <Project Path="Game5/Game5.csproj" Id="eb6f338c-1f99-4fd1-b75d-32dc82696c93" />
+  <Project Path="GUI/GUI.csproj" Id="f7496b1e-5340-4316-9b18-cf125f7b04c6" />
 </Solution>

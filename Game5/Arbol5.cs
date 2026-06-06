@@ -9,7 +9,7 @@ namespace Game5
     public class Arbol5
     {
         private Nodo raiz_pri;
-        static int cont = 0;
+        static int cont = 1;
         public void Insertar(Pokemon d)  //tuve que hacer esto por haber puesto el Nodo en privado qwq
         {
             d.code = cont;
