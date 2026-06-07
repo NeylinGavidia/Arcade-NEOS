@@ -20,6 +20,7 @@ namespace ArcadeGUI
         public GUI()
         {
             InitializeComponent();
+            Cursor = Cursors.Hand;
         }
 
         private void label1_Click(object sender, EventArgs e)

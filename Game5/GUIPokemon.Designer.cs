@@ -35,18 +35,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlHistoria = new System.Windows.Forms.Panel();
+            this.pnlGenero = new System.Windows.Forms.Panel();
+            this.picChica = new System.Windows.Forms.PictureBox();
+            this.picChico = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerCarga = new System.Windows.Forms.Timer(this.components);
-            this.pnlGenero = new System.Windows.Forms.Panel();
-            this.picChico = new System.Windows.Forms.PictureBox();
-            this.picChica = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlGenero.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -106,6 +106,43 @@
             this.pnlHistoria.TabIndex = 1;
             this.pnlHistoria.Visible = false;
             // 
+            // pnlGenero
+            // 
+            this.pnlGenero.BackColor = System.Drawing.Color.Black;
+            this.pnlGenero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGenero.BackgroundImage")));
+            this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlGenero.Controls.Add(this.picChica);
+            this.pnlGenero.Controls.Add(this.picChico);
+            this.pnlGenero.Location = new System.Drawing.Point(0, 0);
+            this.pnlGenero.Name = "pnlGenero";
+            this.pnlGenero.Size = new System.Drawing.Size(904, 544);
+            this.pnlGenero.TabIndex = 2;
+            this.pnlGenero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGenero_Paint);
+            // 
+            // picChica
+            // 
+            this.picChica.BackColor = System.Drawing.Color.Transparent;
+            this.picChica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChica.BackgroundImage")));
+            this.picChica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picChica.Location = new System.Drawing.Point(519, 229);
+            this.picChica.Name = "picChica";
+            this.picChica.Size = new System.Drawing.Size(329, 302);
+            this.picChica.TabIndex = 1;
+            this.picChica.TabStop = false;
+            this.picChica.Click += new System.EventHandler(this.picChica_Click);
+            // 
+            // picChico
+            // 
+            this.picChico.BackColor = System.Drawing.Color.Transparent;
+            this.picChico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChico.BackgroundImage")));
+            this.picChico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picChico.Location = new System.Drawing.Point(39, 87);
+            this.picChico.Name = "picChico";
+            this.picChico.Size = new System.Drawing.Size(387, 324);
+            this.picChico.TabIndex = 0;
+            this.picChico.TabStop = false;
+            this.picChico.Click += new System.EventHandler(this.picChico_Click);
+            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
@@ -137,43 +174,6 @@
             this.timerCarga.Interval = 2000;
             this.timerCarga.Tick += new System.EventHandler(this.timerCarga_Tick_1);
             // 
-            // pnlGenero
-            // 
-            this.pnlGenero.BackColor = System.Drawing.Color.Black;
-            this.pnlGenero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGenero.BackgroundImage")));
-            this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlGenero.Controls.Add(this.picChica);
-            this.pnlGenero.Controls.Add(this.picChico);
-            this.pnlGenero.Location = new System.Drawing.Point(0, 0);
-            this.pnlGenero.Name = "pnlGenero";
-            this.pnlGenero.Size = new System.Drawing.Size(904, 544);
-            this.pnlGenero.TabIndex = 2;
-            this.pnlGenero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGenero_Paint);
-            // 
-            // picChico
-            // 
-            this.picChico.BackColor = System.Drawing.Color.Transparent;
-            this.picChico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChico.BackgroundImage")));
-            this.picChico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picChico.Location = new System.Drawing.Point(39, 87);
-            this.picChico.Name = "picChico";
-            this.picChico.Size = new System.Drawing.Size(387, 324);
-            this.picChico.TabIndex = 0;
-            this.picChico.TabStop = false;
-            this.picChico.Click += new System.EventHandler(this.picChico_Click);
-            // 
-            // picChica
-            // 
-            this.picChica.BackColor = System.Drawing.Color.Transparent;
-            this.picChica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChica.BackgroundImage")));
-            this.picChica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picChica.Location = new System.Drawing.Point(519, 229);
-            this.picChica.Name = "picChica";
-            this.picChica.Size = new System.Drawing.Size(329, 302);
-            this.picChica.TabIndex = 1;
-            this.picChica.TabStop = false;
-            this.picChica.Click += new System.EventHandler(this.picChica_Click);
-            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,10 +189,10 @@
             this.pnlCarga.PerformLayout();
             this.pnlHistoria.ResumeLayout(false);
             this.pnlHistoria.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlGenero.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

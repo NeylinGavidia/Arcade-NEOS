@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,10 +19,10 @@ namespace Game5
         {
             InitializeComponent();
 
-            pnlHistoria.Click += pnlHistoria_Click;
-            picChico.Click += picChico_Click;
-            picChica.Click += picChica_Click;
+            picChico.Cursor = Cursors.Hand; //esto es para que se vea mas bonito al seleccionar, con otro cursor
+            picChica.Cursor = Cursors.Hand;
 
+            pnlHistoria.Click += pnlHistoria_Click;
         }
         private void SiguienteDialogo()
         {
@@ -34,10 +35,14 @@ namespace Game5
             else if (pas == 2)
             {
                 textBox1.Text = "Primero, ¿eres chico o chica?";
-                pnlGenero.Visible = true;
-                pnlGenero.BringToFront();
+                
             }
             else if (pas == 3)
+            {
+                pnlGenero.Visible = true;
+                
+            }
+            else if (pas == 4)
             {
                 textBox1.Text = "Cuéntame un poco sobre ti, ¿cuál es tu nombre?";
             }
@@ -61,7 +66,7 @@ namespace Game5
         {
             pnlCarga.Visible = true;
             pnlHistoria.Visible = false;
-
+            pnlGenero.Visible = false;
             timerCarga.Interval = 2000;
             timerCarga.Start();
         }
@@ -103,23 +108,19 @@ namespace Game5
         {
             gender = "Chico";
             pnlGenero.Visible = false;
-            textBox1.Text = "Elegiste chico.";
+            textBox1.Text = "Entiendo, eres un chico.";
         }
 
         private void picChica_Click(object sender, EventArgs e)
         {
             gender = "Chica";
             pnlGenero.Visible = false;
-            textBox1.Text = "Elegiste chica.";
+            textBox1.Text = "Entiendo, eres una chica.";
         }
 
         private void pnlGenero_Paint(object sender, PaintEventArgs e)
         {
-            pnlGenero.Visible = true;
-            pnlGenero.BringToFront();
 
-            picChico.BringToFront();
-            picChica.BringToFront();
         }
     }
 
