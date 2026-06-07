@@ -15,20 +15,26 @@ namespace Game2
             Nodo nuevo = new Nodo();
 
             nuevo.dato = f;
+
             nuevo.sig = cima;
 
             cima = nuevo;
         }
 
-        public void Mostrar()
+        public string Mostrar()
         {
+            StringBuilder sb = new StringBuilder();
+
             Nodo temp = cima;
 
             while (temp != null)
             {
-                Console.WriteLine(temp.dato.nombre);
+                sb.AppendLine(temp.dato.nombre);
+
                 temp = temp.sig;
             }
+
+            return sb.ToString();
         }
     }
 }
