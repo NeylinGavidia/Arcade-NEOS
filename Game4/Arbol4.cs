@@ -104,7 +104,6 @@ namespace Game4
                 ataqueEnemigo = 25,
                 recompensaOro = 200
             };
-
             salonCristal.izq = jardin;
             salonCristal.der = camaraFinal;
         }
