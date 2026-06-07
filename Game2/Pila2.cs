@@ -23,18 +23,18 @@ namespace Game2
 
         public string Mostrar()
         {
-            StringBuilder sb = new StringBuilder();
+            string texto = "";
 
             Nodo temp = cima;
 
             while (temp != null)
             {
-                sb.AppendLine(temp.dato.nombre);
+                texto = texto + temp.dato.nombre + "\n";
 
                 temp = temp.sig;
             }
 
-            return sb.ToString();
+            return texto;
         }
     }
 }

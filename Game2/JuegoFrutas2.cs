@@ -38,31 +38,14 @@ namespace Game2
             f3.origen = "Planta";
             f3.pista = "Es pequeña y tiene semillas por fuera";
 
-            Fruta f4 = new Fruta();
-            f4.codigo = 4;
-            f4.nombre = "Platano";
-            f4.color = "Amarillo";
-            f4.origen = "Planta";
-            f4.pista = "Es alargada y amarilla";
-
-            Fruta f5 = new Fruta();
-            f5.codigo = 5;
-            f5.nombre = "Naranja";
-            f5.color = "Naranja";
-            f5.origen = "Arbol";
-            f5.pista = "Tiene mucho jugo y vitamina C";
 
             arbol.Insertar(f1);
             arbol.Insertar(f2);
             arbol.Insertar(f3);
-            arbol.Insertar(f4);
-            arbol.Insertar(f5);
 
             cola.Encolar(f1);
             cola.Encolar(f2);
             cola.Encolar(f3);
-            cola.Encolar(f4);
-            cola.Encolar(f5);
         }
 
         public Fruta ObtenerActual()
