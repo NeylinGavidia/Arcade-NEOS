@@ -130,7 +130,7 @@
             this.btnGame4.Name = "btnGame4";
             this.btnGame4.Size = new System.Drawing.Size(189, 43);
             this.btnGame4.TabIndex = 5;
-            this.btnGame4.Text = "Dungeon\'s";
+            this.btnGame4.Text = "Dungeon Tree";
             this.btnGame4.UseVisualStyleBackColor = false;
             this.btnGame4.Click += new System.EventHandler(this.btnGame4_Click);
             // 

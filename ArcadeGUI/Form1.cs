@@ -53,7 +53,9 @@ namespace ArcadeGUI
 
         private void btnGame5_Click(object sender, EventArgs e)
         {
-
+            GUIPokemon pokemon = new GUIPokemon();
+            pokemon.Show();
+            this.Hide();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
