@@ -33,6 +33,10 @@ namespace Game1
             lblTitulo.Font = new Font("Arial Black", 12, FontStyle.Italic);
             lblTitulo.ForeColor = Color.White; 
             lblTitulo.BackColor = Color.Transparent;
+            lblTitulo.AutoSize = false;
+            lblTitulo.Size = new Size(this.ClientSize.Width, 30);
+            lblTitulo.Location = new Point(0, 15);
+            lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
 
             dtn.CrearCaso("Selene", "Dante", "Damián", "Astrid", "Bruno");
             lstSospechosos.Items.Clear();
@@ -71,8 +75,8 @@ namespace Game1
             {
                 txtPantalla.Clear();
                 textoCompleto = dtn.Interrogar(nodoAct.dato);
+                relojMaquina.Enabled = false;
                 posicionLetra = 0;
-
                 lstSospechosos.Enabled = false;
                 relojMaquina.Enabled = true;
             }
@@ -123,8 +127,10 @@ namespace Game1
                 nodoAct = nodoAct.ant;
                 txtPantalla.Clear();
                 textoCompleto = "📁 ARCHIVO CONFIDENCIAL: Perfil del Sospechoso <<<\r\n" + nodoAct.dato.ToString();
+                relojMaquina.Enabled = false;
                 posicionLetra = 0;
                 relojMaquina.Enabled = true;
+                lstSospechosos.SelectedItem = nodoAct.dato.nomb;
             }
         }
 
@@ -135,8 +141,10 @@ namespace Game1
                 nodoAct = nodoAct.sig;
                 txtPantalla.Clear();
                 textoCompleto = "📁 ARCHIVO CONFIDENCIAL: Perfil del Sospechoso >>>\r\n" + nodoAct.dato.ToString();
+                relojMaquina.Enabled = false;
                 posicionLetra = 0;
                 relojMaquina.Enabled = true;
+                lstSospechosos.SelectedItem = nodoAct.dato.nomb;
             }
         }
 
