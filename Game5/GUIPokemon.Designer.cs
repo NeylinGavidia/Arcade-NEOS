@@ -108,6 +108,7 @@
             // 
             // pnlGenero
             // 
+            this.pnlGenero.AutoSize = true;
             this.pnlGenero.BackColor = System.Drawing.Color.Black;
             this.pnlGenero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGenero.BackgroundImage")));
             this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -181,7 +182,9 @@
             this.ClientSize = new System.Drawing.Size(904, 543);
             this.Controls.Add(this.pnlHistoria);
             this.Controls.Add(this.pnlCarga);
+            this.MaximizeBox = false;
             this.Name = "GUIPokemon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUIPokemon";
             this.Load += new System.EventHandler(this.GUIPokemon_Load);
             this.Click += new System.EventHandler(this.GUIPokemon_Click);
