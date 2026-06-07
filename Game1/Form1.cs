@@ -71,7 +71,12 @@ namespace Game1
 
         private void btnInterrogar_Click(object sender, EventArgs e)
         {
-            if (nodoAct != null)
+            if (lstSospechosos.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor, selecciona un sospechoso del expediente primero.", "Investigación");
+                return;
+            }
+            else if (nodoAct != null)
             {
                 txtPantalla.Clear();
                 textoCompleto = dtn.Interrogar(nodoAct.dato);
@@ -150,6 +155,7 @@ namespace Game1
 
         private void lstSospechosos_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (lstSospechosos.SelectedItem == null) return;
             string nombSelec = lstSospechosos.SelectedItem.ToString();
             Nodo temp = dtn.ls.prim;
             bool encontrado = false;
