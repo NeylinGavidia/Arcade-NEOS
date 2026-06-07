@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIPokemon));
             this.pnlCarga = new System.Windows.Forms.Panel();
             this.pnlHistoria = new System.Windows.Forms.Panel();
@@ -36,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.timerCarga = new System.Windows.Forms.Timer(this.components);
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,7 +46,6 @@
             // pnlCarga
             // 
             this.pnlCarga.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlCarga.Controls.Add(this.pnlHistoria);
             this.pnlCarga.Controls.Add(this.label2);
             this.pnlCarga.Controls.Add(this.label3);
             this.pnlCarga.Controls.Add(this.label1);
@@ -59,7 +60,7 @@
             this.pnlHistoria.Controls.Add(this.textBox1);
             this.pnlHistoria.Controls.Add(this.pictureBox1);
             this.pnlHistoria.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlHistoria.Location = new System.Drawing.Point(0, 0);
+            this.pnlHistoria.Location = new System.Drawing.Point(1, 0);
             this.pnlHistoria.Name = "pnlHistoria";
             this.pnlHistoria.Size = new System.Drawing.Size(904, 547);
             this.pnlHistoria.TabIndex = 1;
@@ -124,11 +125,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CARGANDO ...";
             // 
+            // timerCarga
+            // 
+            this.timerCarga.Interval = 2000;
+            this.timerCarga.Tick += new System.EventHandler(this.timerCarga_Tick_1);
+            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlHistoria);
             this.Controls.Add(this.pnlCarga);
             this.Name = "GUIPokemon";
             this.Text = "GUIPokemon";
@@ -152,5 +159,6 @@
         private System.Windows.Forms.Panel pnlHistoria;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer timerCarga;
     }
 }

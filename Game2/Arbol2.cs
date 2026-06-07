@@ -8,51 +8,28 @@ namespace Game2
 {
     public class Arbol2
     {
-        Nodo raiz = null;
+        private Nodo raiz = null;
 
-        int contador = 1;
-
-        public void Insertar(Fruta f)
+        public void Insertar(Fruta d)
         {
-            f.codigo = contador;
-            contador++;
-
-            Insertar(ref raiz, f);
+            Insertar(ref raiz, d);
         }
 
-        private void Insertar(ref Nodo raiz, Fruta f)
+        private void Insertar(ref Nodo raiz, Fruta d)
         {
             if (raiz == null)
             {
                 Nodo nuevo = new Nodo();
-                nuevo.dato = f;
-
+                nuevo.dato = d;
                 raiz = nuevo;
             }
-            else if (f.codigo < raiz.dato.codigo)
+            else if (d.codigo < raiz.dato.codigo)
             {
-                Insertar(ref raiz.iz, f);
+                Insertar(ref raiz.izq, d);
             }
-            else
+            else if (d.codigo > raiz.dato.codigo)
             {
-                Insertar(ref raiz.de, f);
-            }
-        }
-
-        public void Mostrar()
-        {
-            Mostrar(raiz);
-        }
-
-        private void Mostrar(Nodo raiz)
-        {
-            if (raiz != null)
-            {
-                Mostrar(raiz.iz);
-
-                Console.WriteLine(raiz.dato);
-
-                Mostrar(raiz.de);
+                Insertar(ref raiz.der, d);
             }
         }
 
@@ -70,10 +47,24 @@ namespace Game2
                 return raiz.dato;
 
             if (codigo < raiz.dato.codigo)
-                return Buscar(raiz.iz, codigo);
+                return Buscar(raiz.izq, codigo);
 
-            return Buscar(raiz.de, codigo);
+            return Buscar(raiz.der, codigo);
+        }
+
+        public void Mostrar()
+        {
+            Mostrar(raiz);
+        }
+
+        private void Mostrar(Nodo raiz)
+        {
+            if (raiz != null)
+            {
+                Mostrar(raiz.izq);
+                Console.WriteLine(raiz.dato);
+                Mostrar(raiz.der);
+            }
         }
     }
 }
-

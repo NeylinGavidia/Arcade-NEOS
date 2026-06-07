@@ -16,6 +16,9 @@ namespace Game5
         public GUIPokemon()
         {
             InitializeComponent();
+
+            textBox1.Click += textBox1_Click_1;
+            pnlHistoria.Click += pnlHistoria_Click;
         }
         private void SiguienteDialogo()
         {
@@ -34,10 +37,6 @@ namespace Game5
                 textBox1.Text = "Cuéntame un poco sobre ti, ¿cuál es tu nombre?";
             }
         }
-        private void textBox1_Click(object sender, EventArgs e)
-        {
-            SiguienteDialogo();
-        }
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -55,7 +54,11 @@ namespace Game5
 
         private void GUIPokemon_Load(object sender, EventArgs e)
         {
-           
+            pnlCarga.Visible = true;
+            pnlHistoria.Visible = false;
+
+            timerCarga.Interval = 2000;
+            timerCarga.Start();
         }
 
         private void GUIPokemon_Click(object sender, EventArgs e)
@@ -64,6 +67,20 @@ namespace Game5
         }
 
         private void textBox1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sí hizo click");
+            SiguienteDialogo();
+        }
+
+        private void timerCarga_Tick_1(object sender, EventArgs e)
+        {
+            timerCarga.Stop();
+            pnlCarga.Visible = false;
+            pnlHistoria.Visible = true;
+            pas = 0;
+            textBox1.Text = "Hola, bienvenido/a al pueblo Paleta.";
+        }
+        private void pnlHistoria_Click(object sender, EventArgs e)
         {
             SiguienteDialogo();
         }
