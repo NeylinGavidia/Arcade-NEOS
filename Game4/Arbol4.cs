@@ -87,7 +87,7 @@ namespace Game4
                 ataqueEnemigo = 15,
                 recompensaOro = 50
             };
-
+            //Comentario anonimo
             salaInundada.izq = puente;
             salaInundada.der = cueva;
 
