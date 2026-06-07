@@ -76,10 +76,21 @@ namespace Game2
             arbol.Insertar(f1);
             arbol.Insertar(f2);
             arbol.Insertar(f3);
+            arbol.Insertar(f4);
+            arbol.Insertar(f5);
+            arbol.Insertar(f6);
+            arbol.Insertar(f7);
+            arbol.Insertar(f8);
+
 
             cola.Encolar(f1);
             cola.Encolar(f2);
             cola.Encolar(f3);
+            cola.Encolar(f4);
+            cola.Encolar(f5);
+            cola.Encolar(f6);
+            cola.Encolar(f7);
+            cola.Encolar(f8);
         }
 
         public Fruta ObtenerActual()
@@ -93,6 +104,7 @@ namespace Game2
 
             if (seleccionada == null)
             {
+                vidas--;
                 return false;
             }
 
@@ -125,6 +137,21 @@ namespace Game2
         public void MostrarIntentos()
         {
             pila.Mostrar();
+        }
+        public string MensajeFinal()
+        {
+            if (puntaje >= 70)
+            {
+                return "¡Excelente! Eres un experto en frutas.";
+            }
+            else if (puntaje >= 40)
+            {
+                return "¡Buen trabajo!";
+            }
+            else
+            {
+                return "Sigue practicando.";
+            }
         }
     }
 }
