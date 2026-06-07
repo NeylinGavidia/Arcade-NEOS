@@ -21,20 +21,16 @@ namespace Game2
             cima = nuevo;
         }
 
-        public string Mostrar()
+        public void Mostrar()
         {
-            string texto = "";
 
             Nodo temp = cima;
 
             while (temp != null)
             {
-                texto = texto + temp.dato.nombre + "\n";
-
+                Console.WriteLine(temp.dato.nombre);
                 temp = temp.sig;
             }
-
-            return texto;
         }
     }
 }

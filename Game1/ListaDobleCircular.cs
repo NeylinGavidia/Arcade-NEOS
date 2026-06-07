@@ -29,39 +29,5 @@ namespace Game1
             ult.sig = prim;
             prim.ant = ult;
         }
-
-        public void Mostrar_PU()
-        {
-            Nodo temp = prim;
-            if (prim != null)
-            {
-                do
-                {
-                    Console.WriteLine(temp.dato);
-                    temp = temp.sig;
-                } while (temp != prim);
-            }
-            else
-            {
-                Console.WriteLine("Lista vacía");
-            }
-        }
-
-        public void Mostrar_UP()
-        {
-            Nodo temp = ult;
-            if (ult != null)
-            {
-                do
-                {
-                    Console.WriteLine(temp.dato);
-                    temp = temp.ant;
-                } while (temp != ult);
-            }
-            else
-            {
-                Console.WriteLine("Lista vacía");
-            }
-        }
     }
 }

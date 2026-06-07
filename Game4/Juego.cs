@@ -62,6 +62,12 @@ namespace Game4
                 mensaje = mensaje + "\nGanaste " + actual.enemigo.recompensaOro + " de oro.";
             }
 
+            if (actual.nombreSala == "Cámara Final")
+            {
+                mensaje += "\n\n¡Felicidades!";
+                mensaje += "\nHas derrotado al Dragón.";
+                mensaje += "\nHas completado Dungeon Tree.";
+            }
             return mensaje;
         }
     }

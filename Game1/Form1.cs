@@ -26,6 +26,18 @@ namespace Game1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            string tl =
+                " ───  🗂️  D E T E C T I V E   N O D O  🔍  ───";
+
+            lblTitulo.Text = tl;
+            lblTitulo.Font = new Font("Arial Black", 12, FontStyle.Italic);
+            lblTitulo.ForeColor = Color.White; 
+            lblTitulo.BackColor = Color.Transparent;
+            lblTitulo.AutoSize = false;
+            lblTitulo.Size = new Size(this.ClientSize.Width, 30);
+            lblTitulo.Location = new Point(0, 15);
+            lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
+
             dtn.CrearCaso("Selene", "Dante", "Damián", "Astrid", "Bruno");
             lstSospechosos.Items.Clear();
             Nodo temp = dtn.ls.prim;
@@ -59,12 +71,17 @@ namespace Game1
 
         private void btnInterrogar_Click(object sender, EventArgs e)
         {
-            if (nodoAct != null)
+            if (lstSospechosos.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor, selecciona un sospechoso del expediente primero.", "Investigación");
+                return;
+            }
+            else if (nodoAct != null)
             {
                 txtPantalla.Clear();
                 textoCompleto = dtn.Interrogar(nodoAct.dato);
+                relojMaquina.Enabled = false;
                 posicionLetra = 0;
-
                 lstSospechosos.Enabled = false;
                 relojMaquina.Enabled = true;
             }
@@ -115,8 +132,10 @@ namespace Game1
                 nodoAct = nodoAct.ant;
                 txtPantalla.Clear();
                 textoCompleto = "📁 ARCHIVO CONFIDENCIAL: Perfil del Sospechoso <<<\r\n" + nodoAct.dato.ToString();
+                relojMaquina.Enabled = false;
                 posicionLetra = 0;
                 relojMaquina.Enabled = true;
+                lstSospechosos.SelectedItem = nodoAct.dato.nomb;
             }
         }
 
@@ -127,13 +146,16 @@ namespace Game1
                 nodoAct = nodoAct.sig;
                 txtPantalla.Clear();
                 textoCompleto = "📁 ARCHIVO CONFIDENCIAL: Perfil del Sospechoso >>>\r\n" + nodoAct.dato.ToString();
+                relojMaquina.Enabled = false;
                 posicionLetra = 0;
                 relojMaquina.Enabled = true;
+                lstSospechosos.SelectedItem = nodoAct.dato.nomb;
             }
         }
 
         private void lstSospechosos_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (lstSospechosos.SelectedItem == null) return;
             string nombSelec = lstSospechosos.SelectedItem.ToString();
             Nodo temp = dtn.ls.prim;
             bool encontrado = false;
