@@ -12,7 +12,7 @@ namespace Game2
 
         public Nodo sig = null;
 
-        public Nodo iz = null;
-        public Nodo de = null;   
+        public Nodo izq = null;
+        public Nodo der = null;   
     }
 }
