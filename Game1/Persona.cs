@@ -9,17 +9,14 @@ namespace Game1
     public class Persona
     {
         public string nomb;
-        public string rol;
         public string habi;
-        public string decl;
 
         public override string ToString()
         {
-            return "==================================\n" +
-                   "Nombre: " + nomb + "\n" +
-                   "Rol: " + rol + "\n" +
-                   "Habitación: " + habi + "\n" +
-                   "==================================\n";
+            return "===================================\r\n" +
+                   "Nombre: " + nomb + "\r\n" +
+                   "Habitación: " + habi + "\r\n" +
+                   "===================================\r\n";
         }
     }
 }
