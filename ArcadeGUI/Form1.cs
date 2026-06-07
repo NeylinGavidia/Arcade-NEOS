@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Game1;
+using Game2;
+using Game3;
+using Game4;
+using Game5;
 
 namespace ArcadeGUI
 {
@@ -27,7 +32,31 @@ namespace ArcadeGUI
 
         }
 
+        private void btnGame1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGame2_Click(object sender, EventArgs e)
+        {
+
+        }
         private void btnGame3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGame4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGame5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
         {
 
         }

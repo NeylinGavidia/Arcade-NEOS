@@ -93,6 +93,7 @@
             this.btnGame1.TabIndex = 2;
             this.btnGame1.Text = "Detective";
             this.btnGame1.UseVisualStyleBackColor = false;
+            this.btnGame1.Click += new System.EventHandler(this.btnGame1_Click);
             // 
             // btnGame2
             // 
@@ -105,6 +106,7 @@
             this.btnGame2.TabIndex = 3;
             this.btnGame2.Text = "Frutivinanza";
             this.btnGame2.UseVisualStyleBackColor = false;
+            this.btnGame2.Click += new System.EventHandler(this.btnGame2_Click);
             // 
             // btnGame3
             // 
@@ -130,6 +132,7 @@
             this.btnGame4.TabIndex = 5;
             this.btnGame4.Text = "Dungeon\'s";
             this.btnGame4.UseVisualStyleBackColor = false;
+            this.btnGame4.Click += new System.EventHandler(this.btnGame4_Click);
             // 
             // btnGame5
             // 
@@ -142,6 +145,7 @@
             this.btnGame5.TabIndex = 6;
             this.btnGame5.Text = "PokeNeos";
             this.btnGame5.UseVisualStyleBackColor = false;
+            this.btnGame5.Click += new System.EventHandler(this.btnGame5_Click);
             // 
             // btnSalir
             // 
@@ -154,6 +158,7 @@
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label2
             // 
@@ -192,7 +197,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(171, 504);
