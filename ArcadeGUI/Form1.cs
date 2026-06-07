@@ -63,7 +63,17 @@ namespace ArcadeGUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            Salir sa = new Salir();
+            sa.Show();
+            this.Hide();
+            timer1.Interval = 2000;
+            timer1.Start();  
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            this.Close();
         }
     }
 }
