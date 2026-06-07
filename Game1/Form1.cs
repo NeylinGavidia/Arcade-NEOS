@@ -26,6 +26,14 @@ namespace Game1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            string tl =
+                " ───  🗂️  D E T E C T I V E   N O D O  🔍  ───";
+
+            lblTitulo.Text = tl;
+            lblTitulo.Font = new Font("Arial Black", 12, FontStyle.Italic);
+            lblTitulo.ForeColor = Color.White; 
+            lblTitulo.BackColor = Color.Transparent;
+
             dtn.CrearCaso("Selene", "Dante", "Damián", "Astrid", "Bruno");
             lstSospechosos.Items.Clear();
             Nodo temp = dtn.ls.prim;
