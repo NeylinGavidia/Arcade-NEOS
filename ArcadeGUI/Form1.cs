@@ -48,7 +48,9 @@ namespace ArcadeGUI
 
         private void btnGame4_Click(object sender, EventArgs e)
         {
-
+            DUNGEON_TREE dungeon_tree = new DUNGEON_TREE();
+            dungeon_tree.Show();
+            this.Hide();
         }
 
         private void btnGame5_Click(object sender, EventArgs e)
