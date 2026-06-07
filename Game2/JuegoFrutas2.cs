@@ -117,9 +117,8 @@ namespace Game2
                 return true;
             }
 
-            pila.Apilar(seleccionada);
-
             vidas--;
+            pila.Apilar(seleccionada);
 
             return false;
         }
