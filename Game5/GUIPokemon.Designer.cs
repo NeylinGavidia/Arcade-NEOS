@@ -144,12 +144,10 @@
             this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlGenero.Controls.Add(this.picChica);
             this.pnlGenero.Controls.Add(this.picChico);
-            this.pnlGenero.Enabled = false;
             this.pnlGenero.Location = new System.Drawing.Point(0, 0);
             this.pnlGenero.Name = "pnlGenero";
             this.pnlGenero.Size = new System.Drawing.Size(904, 544);
             this.pnlGenero.TabIndex = 2;
-            this.pnlGenero.Visible = false;
             this.pnlGenero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGenero_Paint);
             // 
             // picChico

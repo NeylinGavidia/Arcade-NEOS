@@ -17,15 +17,11 @@ namespace Game5
         public GUIPokemon()
         {
             InitializeComponent();
-            picChico.BringToFront();
-            picChica.BringToFront();
 
             pnlHistoria.Click += pnlHistoria_Click;
             picChico.Click += picChico_Click;
             picChica.Click += picChica_Click;
 
-            picChico.Cursor = Cursors.Hand;
-            picChica.Cursor = Cursors.Hand;
         }
         private void SiguienteDialogo()
         {
@@ -105,7 +101,6 @@ namespace Game5
 
         private void picChico_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Click en chico");
             gender = "Chico";
             pnlGenero.Visible = false;
             textBox1.Text = "Elegiste chico.";
@@ -113,7 +108,6 @@ namespace Game5
 
         private void picChica_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Click en chica");
             gender = "Chica";
             pnlGenero.Visible = false;
             textBox1.Text = "Elegiste chica.";
