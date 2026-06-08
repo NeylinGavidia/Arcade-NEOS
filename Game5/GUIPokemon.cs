@@ -53,7 +53,7 @@ namespace Game5
             }
             else if (pas == 5)
             {
-               
+                
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -148,10 +148,9 @@ namespace Game5
             player = txtName.Text.Trim(); //aqui para que quite espacios
 
             pnlName.Visible = false;
-            pnlHistoria.Visible = true;
-            pnlHistoria.BringToFront();
-
-            textBox1.Text = $"Hola, {player}. Hoy elegirás un Pokémon que te acompañará en tus aventuras.";
+            pnlHistoria2.Visible = true;
+            pnlHistoria2.BringToFront();
+            textBox4.Text = $"Profesor Oak: Hola, {player}. Hoy elegirás un Pokémon que te acompañará en tus aventuras.";
             pas = 5;
         }
     }

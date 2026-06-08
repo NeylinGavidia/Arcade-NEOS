@@ -42,10 +42,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerCarga = new System.Windows.Forms.Timer(this.components);
             this.pnlName = new System.Windows.Forms.Panel();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.btnOk = new System.Windows.Forms.Button();
+            this.pnlHistoria2 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -54,6 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlName.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnlHistoria2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -197,6 +202,27 @@
             this.pnlName.Visible = false;
             this.pnlName.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlName_Paint);
             // 
+            // btnOk
+            // 
+            this.btnOk.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnOk.Location = new System.Drawing.Point(574, 417);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(70, 31);
+            this.btnOk.TabIndex = 3;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Indigo;
+            this.txtName.Location = new System.Drawing.Point(29, 417);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(539, 31);
+            this.txtName.TabIndex = 2;
+            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
@@ -221,32 +247,49 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // txtName
+            // pnlHistoria2
             // 
-            this.txtName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.Indigo;
-            this.txtName.Location = new System.Drawing.Point(29, 417);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(539, 31);
-            this.txtName.TabIndex = 2;
+            this.pnlHistoria2.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlHistoria2.Controls.Add(this.textBox4);
+            this.pnlHistoria2.Controls.Add(this.pictureBox2);
+            this.pnlHistoria2.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlHistoria2.Location = new System.Drawing.Point(1, 0);
+            this.pnlHistoria2.Name = "pnlHistoria2";
+            this.pnlHistoria2.Size = new System.Drawing.Size(904, 547);
+            this.pnlHistoria2.TabIndex = 4;
+            this.pnlHistoria2.Visible = false;
             // 
-            // btnOk
+            // textBox4
             // 
-            this.btnOk.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOk.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnOk.Location = new System.Drawing.Point(574, 417);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(70, 31);
-            this.btnOk.TabIndex = 3;
-            this.btnOk.Text = "OK";
-            this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.Enabled = false;
+            this.textBox4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox4.Location = new System.Drawing.Point(14, 329);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(877, 187);
+            this.textBox4.TabIndex = 1;
+            this.textBox4.TabStop = false;
+            this.textBox4.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlHistoria2);
             this.Controls.Add(this.pnlName);
             this.Controls.Add(this.pnlHistoria);
             this.Controls.Add(this.pnlCarga);
@@ -267,6 +310,9 @@
             this.pnlName.ResumeLayout(false);
             this.pnlName.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnlHistoria2.ResumeLayout(false);
+            this.pnlHistoria2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +335,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Panel pnlHistoria2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
