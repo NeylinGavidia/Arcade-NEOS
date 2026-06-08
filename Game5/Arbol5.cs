@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace Game5
         public void Insertar(Pokemon d)  //tuve que hacer esto por haber puesto el Nodo en privado qwq
         {
             d.code = cont;
-            cont++;
+            cont+= 3;
             Insertar(ref raiz_pri, d);
         }
         private void Insertar(ref Nodo raiz, Pokemon d)

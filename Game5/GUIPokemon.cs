@@ -15,6 +15,9 @@ namespace Game5
 {
     public partial class GUIPokemon : Form
     {
+        private Arbol5 arbol = new Arbol5();
+        private Pokemon pjugador;
+        public string atqp;
         int pas = 0;
         string gender;
         string player;
@@ -73,11 +76,22 @@ namespace Game5
 
         private void GUIPokemon_Load(object sender, EventArgs e) //para que primero se muestre la carga y luego la historia
         {
+            CargarPokemon();
+
             pnlCarga.Visible = true;
             pnlHistoria.Visible = false;
             pnlGenero.Visible = false;
+            pnlName.Visible = false;
+            pnlPok.Visible = false;
+
             timerCarga.Interval = 2000;
             timerCarga.Start();
+        }
+        private void CargarPokemon() //trayendo metodos de PokeDemo qwq me complique la vida la verdad
+        {
+            arbol.Insertar(new Pokemon("Bulbasaur", "Planta", 11, 10, 21));
+            arbol.Insertar(new Pokemon("Charmander", "Fuego", 12, 9, 19));
+            arbol.Insertar(new Pokemon("Squirtle", "Agua", 10, 11, 20));
         }
 
         private void GUIPokemon_Click(object sender, EventArgs e)

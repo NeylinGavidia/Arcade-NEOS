@@ -60,11 +60,11 @@ namespace Game5
             Console.ReadKey(); Console.Clear();
         }
 
-        private void CargarPokemon()
+        public void CargarPokemon()
         {
             arbol.Insertar(new Pokemon("Bulbasaur", "Planta", 11, 10, 21));
-            arbol.Insertar(new Pokemon("Squirtle", "Agua", 10, 11, 20));
             arbol.Insertar(new Pokemon("Charmander", "Fuego", 12, 9, 19));
+            arbol.Insertar(new Pokemon("Squirtle", "Agua", 10, 11, 20));
         }
 
         private void ElegirPokemon()
@@ -87,11 +87,11 @@ namespace Game5
                 }
                 else
                 {
-                    if (pok == 1 || pok == 2)
+                    if (pok == 1 || pok == 3)
                     {
                         atqp = "Placaje";
                     }
-                    else if (pok == 3)
+                    else if (pok == 2)
                     {
                         atqp = "Arañazo";
                     }
@@ -130,7 +130,7 @@ namespace Game5
 
             } while (prival == null || prival.code == pjugador.code);
 
-            if (prival.code == 3)
+            if (prival.code == 2)
             {
                 atqr = "Arañazo";
             }
