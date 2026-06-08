@@ -81,5 +81,23 @@
   <ItemGroup>
     <None Include="Resources\uiu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmremove-transformed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2005f1f8335b2ea0e281984abc10baaf-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

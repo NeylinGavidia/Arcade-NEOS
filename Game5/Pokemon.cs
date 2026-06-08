@@ -33,7 +33,7 @@ namespace Game5
                    $"        Nombre: {name}\n" +
                    $"        Tipo:   {tipo}\n" +
                    $"\n--------------STATS----------------\n"+
-                   $"\n     Atq: {atq} Def: {def}  PS:{ps}"+
+                   $"\n     Atq: {atq} Def: {def}  PS: {ps}"+
                    $"\n-------------------------------------";
         }
     }

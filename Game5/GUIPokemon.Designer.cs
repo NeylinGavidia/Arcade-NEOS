@@ -29,17 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIPokemon));
             this.pnlCarga = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlHistoria = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.timerCarga = new System.Windows.Forms.Timer(this.components);
             this.pnlGenero = new System.Windows.Forms.Panel();
+            this.picChica = new System.Windows.Forms.PictureBox();
+            this.picChico = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timerCarga = new System.Windows.Forms.Timer(this.components);
             this.pnlName = new System.Windows.Forms.Panel();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlHistoria2 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlPok = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,29 +55,20 @@
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picSquirtle = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnOk = new System.Windows.Forms.Button();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.picChica = new System.Windows.Forms.PictureBox();
-            this.picChico = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlHistoria2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlPok.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -119,6 +118,7 @@
             // pnlHistoria
             // 
             this.pnlHistoria.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlHistoria.Controls.Add(this.pnlGenero);
             this.pnlHistoria.Controls.Add(this.textBox1);
             this.pnlHistoria.Controls.Add(this.pictureBox1);
             this.pnlHistoria.ForeColor = System.Drawing.SystemColors.Control;
@@ -127,6 +127,43 @@
             this.pnlHistoria.Size = new System.Drawing.Size(904, 547);
             this.pnlHistoria.TabIndex = 1;
             this.pnlHistoria.Visible = false;
+            // 
+            // pnlGenero
+            // 
+            this.pnlGenero.AutoSize = true;
+            this.pnlGenero.BackColor = System.Drawing.Color.Black;
+            this.pnlGenero.BackgroundImage = global::Game5.Properties.Resources.Gemini_Generated_Image_iqzh46iqzh46iqzh;
+            this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlGenero.Controls.Add(this.picChica);
+            this.pnlGenero.Controls.Add(this.picChico);
+            this.pnlGenero.Location = new System.Drawing.Point(0, 0);
+            this.pnlGenero.Name = "pnlGenero";
+            this.pnlGenero.Size = new System.Drawing.Size(904, 544);
+            this.pnlGenero.TabIndex = 5;
+            // 
+            // picChica
+            // 
+            this.picChica.BackColor = System.Drawing.Color.Transparent;
+            this.picChica.BackgroundImage = global::Game5.Properties.Resources.girl_removebg_preview;
+            this.picChica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picChica.Location = new System.Drawing.Point(519, 229);
+            this.picChica.Name = "picChica";
+            this.picChica.Size = new System.Drawing.Size(329, 302);
+            this.picChica.TabIndex = 1;
+            this.picChica.TabStop = false;
+            this.picChica.Click += new System.EventHandler(this.picChica_Click);
+            // 
+            // picChico
+            // 
+            this.picChico.BackColor = System.Drawing.Color.Transparent;
+            this.picChico.BackgroundImage = global::Game5.Properties.Resources._2005f1f8335b2ea0e281984abc10baaf_removebg_preview;
+            this.picChico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picChico.Location = new System.Drawing.Point(39, 87);
+            this.picChico.Name = "picChico";
+            this.picChico.Size = new System.Drawing.Size(390, 327);
+            this.picChico.TabIndex = 0;
+            this.picChico.TabStop = false;
+            this.picChico.Click += new System.EventHandler(this.picChico_Click);
             // 
             // textBox1
             // 
@@ -144,29 +181,24 @@
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click_1);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Game5.Properties.Resources.uiu;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // timerCarga
             // 
             this.timerCarga.Interval = 2000;
             this.timerCarga.Tick += new System.EventHandler(this.timerCarga_Tick_1);
             // 
-            // pnlGenero
-            // 
-            this.pnlGenero.AutoSize = true;
-            this.pnlGenero.BackColor = System.Drawing.Color.Black;
-            this.pnlGenero.BackgroundImage = global::Game5.Properties.Resources.Gemini_Generated_Image_iqzh46iqzh46iqzh;
-            this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlGenero.Controls.Add(this.picChica);
-            this.pnlGenero.Controls.Add(this.picChico);
-            this.pnlGenero.Location = new System.Drawing.Point(1, 0);
-            this.pnlGenero.Name = "pnlGenero";
-            this.pnlGenero.Size = new System.Drawing.Size(1014, 612);
-            this.pnlGenero.TabIndex = 2;
-            this.pnlGenero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGenero_Paint);
-            // 
             // pnlName
             // 
             this.pnlName.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlName.Controls.Add(this.pnlHistoria2);
             this.pnlName.Controls.Add(this.btnOk);
             this.pnlName.Controls.Add(this.txtName);
             this.pnlName.Controls.Add(this.textBox2);
@@ -174,139 +206,9 @@
             this.pnlName.ForeColor = System.Drawing.SystemColors.Control;
             this.pnlName.Location = new System.Drawing.Point(1, 0);
             this.pnlName.Name = "pnlName";
-            this.pnlName.Size = new System.Drawing.Size(904, 547);
-            this.pnlName.TabIndex = 2;
+            this.pnlName.Size = new System.Drawing.Size(904, 544);
+            this.pnlName.TabIndex = 6;
             this.pnlName.Visible = false;
-            this.pnlName.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlName_Paint);
-            // 
-            // pnlHistoria2
-            // 
-            this.pnlHistoria2.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlHistoria2.Controls.Add(this.pnlPok);
-            this.pnlHistoria2.Controls.Add(this.textBox4);
-            this.pnlHistoria2.Controls.Add(this.pictureBox2);
-            this.pnlHistoria2.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlHistoria2.Location = new System.Drawing.Point(0, 0);
-            this.pnlHistoria2.Name = "pnlHistoria2";
-            this.pnlHistoria2.Size = new System.Drawing.Size(904, 547);
-            this.pnlHistoria2.TabIndex = 4;
-            this.pnlHistoria2.Visible = false;
-            this.pnlHistoria2.Click += new System.EventHandler(this.pnlHistoria2_Click);
-            this.pnlHistoria2.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHistoria2_Paint);
-            // 
-            // pnlPok
-            // 
-            this.pnlPok.BackColor = System.Drawing.Color.Black;
-            this.pnlPok.BackgroundImage = global::Game5.Properties.Resources.Gemini_Generated_Image_9jsw1z9jsw1z9jsw;
-            this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlPok.Controls.Add(this.label6);
-            this.pnlPok.Controls.Add(this.label5);
-            this.pnlPok.Controls.Add(this.label4);
-            this.pnlPok.Controls.Add(this.picBulbasaur);
-            this.pnlPok.Controls.Add(this.pictCharmander);
-            this.pnlPok.Controls.Add(this.picSquirtle);
-            this.pnlPok.Location = new System.Drawing.Point(0, 0);
-            this.pnlPok.Name = "pnlPok";
-            this.pnlPok.Size = new System.Drawing.Size(904, 544);
-            this.pnlPok.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Aqua;
-            this.label6.Location = new System.Drawing.Point(686, 421);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 27);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Squirtle";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(390, 421);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 27);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Charmander";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(112, 421);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 27);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Bulbasaur";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // picBulbasaur
-            // 
-            this.picBulbasaur.BackColor = System.Drawing.Color.Transparent;
-            this.picBulbasaur.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBulbasaur.BackgroundImage")));
-            this.picBulbasaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picBulbasaur.Location = new System.Drawing.Point(89, 180);
-            this.picBulbasaur.Name = "picBulbasaur";
-            this.picBulbasaur.Size = new System.Drawing.Size(187, 158);
-            this.picBulbasaur.TabIndex = 4;
-            this.picBulbasaur.TabStop = false;
-            this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
-            // 
-            // pictCharmander
-            // 
-            this.pictCharmander.BackColor = System.Drawing.Color.Transparent;
-            this.pictCharmander.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictCharmander.BackgroundImage")));
-            this.pictCharmander.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictCharmander.Location = new System.Drawing.Point(351, 183);
-            this.pictCharmander.Name = "pictCharmander";
-            this.pictCharmander.Size = new System.Drawing.Size(202, 155);
-            this.pictCharmander.TabIndex = 3;
-            this.pictCharmander.TabStop = false;
-            this.pictCharmander.Click += new System.EventHandler(this.pictCharmander_Click);
-            // 
-            // picSquirtle
-            // 
-            this.picSquirtle.BackColor = System.Drawing.Color.Transparent;
-            this.picSquirtle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picSquirtle.BackgroundImage")));
-            this.picSquirtle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picSquirtle.Location = new System.Drawing.Point(655, 183);
-            this.picSquirtle.Name = "picSquirtle";
-            this.picSquirtle.Size = new System.Drawing.Size(193, 155);
-            this.picSquirtle.TabIndex = 2;
-            this.picSquirtle.TabStop = false;
-            this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.Location = new System.Drawing.Point(14, 329);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(877, 187);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.TabStop = false;
-            this.textBox4.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Game5.Properties.Resources.ii;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // btnOk
             // 
@@ -353,47 +255,139 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // picChica
+            // pnlHistoria2
             // 
-            this.picChica.BackColor = System.Drawing.Color.Transparent;
-            this.picChica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChica.BackgroundImage")));
-            this.picChica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picChica.Location = new System.Drawing.Point(519, 229);
-            this.picChica.Name = "picChica";
-            this.picChica.Size = new System.Drawing.Size(329, 302);
-            this.picChica.TabIndex = 1;
-            this.picChica.TabStop = false;
-            this.picChica.Click += new System.EventHandler(this.picChica_Click);
+            this.pnlHistoria2.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlHistoria2.Controls.Add(this.pnlPok);
+            this.pnlHistoria2.Controls.Add(this.textBox4);
+            this.pnlHistoria2.Controls.Add(this.pictureBox2);
+            this.pnlHistoria2.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlHistoria2.Location = new System.Drawing.Point(1, 0);
+            this.pnlHistoria2.Name = "pnlHistoria2";
+            this.pnlHistoria2.Size = new System.Drawing.Size(904, 544);
+            this.pnlHistoria2.TabIndex = 15;
+            this.pnlHistoria2.Visible = false;
             // 
-            // picChico
+            // textBox4
             // 
-            this.picChico.BackColor = System.Drawing.Color.Transparent;
-            this.picChico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChico.BackgroundImage")));
-            this.picChico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picChico.Location = new System.Drawing.Point(39, 87);
-            this.picChico.Name = "picChico";
-            this.picChico.Size = new System.Drawing.Size(387, 324);
-            this.picChico.TabIndex = 0;
-            this.picChico.TabStop = false;
-            this.picChico.Click += new System.EventHandler(this.picChico_Click);
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.Enabled = false;
+            this.textBox4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox4.Location = new System.Drawing.Point(14, 329);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(877, 187);
+            this.textBox4.TabIndex = 1;
+            this.textBox4.TabStop = false;
+            this.textBox4.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.BackgroundImage = global::Game5.Properties.Resources.uiu;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox2.BackgroundImage = global::Game5.Properties.Resources.ii;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pnlPok
+            // 
+            this.pnlPok.BackColor = System.Drawing.Color.Black;
+            this.pnlPok.BackgroundImage = global::Game5.Properties.Resources.wmremove_transformed;
+            this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPok.Controls.Add(this.label6);
+            this.pnlPok.Controls.Add(this.label5);
+            this.pnlPok.Controls.Add(this.label4);
+            this.pnlPok.Controls.Add(this.picBulbasaur);
+            this.pnlPok.Controls.Add(this.pictCharmander);
+            this.pnlPok.Controls.Add(this.picSquirtle);
+            this.pnlPok.Location = new System.Drawing.Point(0, 0);
+            this.pnlPok.Name = "pnlPok";
+            this.pnlPok.Size = new System.Drawing.Size(904, 544);
+            this.pnlPok.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Aqua;
+            this.label6.Location = new System.Drawing.Point(686, 421);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 27);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Squirtle";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(390, 421);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 27);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Charmander";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(112, 421);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 27);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Bulbasaur";
+            // 
+            // picBulbasaur
+            // 
+            this.picBulbasaur.BackColor = System.Drawing.Color.Transparent;
+            this.picBulbasaur.BackgroundImage = global::Game5.Properties.Resources._1;
+            this.picBulbasaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picBulbasaur.Location = new System.Drawing.Point(89, 180);
+            this.picBulbasaur.Name = "picBulbasaur";
+            this.picBulbasaur.Size = new System.Drawing.Size(187, 158);
+            this.picBulbasaur.TabIndex = 4;
+            this.picBulbasaur.TabStop = false;
+            this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
+            // 
+            // pictCharmander
+            // 
+            this.pictCharmander.BackColor = System.Drawing.Color.Transparent;
+            this.pictCharmander.BackgroundImage = global::Game5.Properties.Resources._44_449210_charmander_sticker_pokemon_fire_red_charmander_sprite_hd;
+            this.pictCharmander.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictCharmander.Location = new System.Drawing.Point(351, 183);
+            this.pictCharmander.Name = "pictCharmander";
+            this.pictCharmander.Size = new System.Drawing.Size(202, 155);
+            this.pictCharmander.TabIndex = 3;
+            this.pictCharmander.TabStop = false;
+            this.pictCharmander.Click += new System.EventHandler(this.pictCharmander_Click);
+            // 
+            // picSquirtle
+            // 
+            this.picSquirtle.BackColor = System.Drawing.Color.Transparent;
+            this.picSquirtle.BackgroundImage = global::Game5.Properties.Resources._147_1474864_pokemon_squirtle_icon_by_betatus_on_deviantart_squirtle;
+            this.picSquirtle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picSquirtle.Location = new System.Drawing.Point(655, 183);
+            this.picSquirtle.Name = "picSquirtle";
+            this.picSquirtle.Size = new System.Drawing.Size(193, 155);
+            this.picSquirtle.TabIndex = 2;
+            this.picSquirtle.TabStop = false;
+            this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
             // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlHistoria2);
             this.Controls.Add(this.pnlName);
-            this.Controls.Add(this.pnlGenero);
             this.Controls.Add(this.pnlHistoria);
             this.Controls.Add(this.pnlCarga);
             this.MaximizeBox = false;
@@ -407,22 +401,21 @@
             this.pnlHistoria.ResumeLayout(false);
             this.pnlHistoria.PerformLayout();
             this.pnlGenero.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlName.ResumeLayout(false);
             this.pnlName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlHistoria2.ResumeLayout(false);
             this.pnlHistoria2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlPok.ResumeLayout(false);
             this.pnlPok.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -440,19 +433,19 @@
         private System.Windows.Forms.PictureBox picChica;
         private System.Windows.Forms.PictureBox picChico;
         private System.Windows.Forms.Panel pnlName;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Panel pnlHistoria2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlPok;
-        private System.Windows.Forms.PictureBox picSquirtle;
-        private System.Windows.Forms.PictureBox picBulbasaur;
-        private System.Windows.Forms.PictureBox pictCharmander;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox picBulbasaur;
+        private System.Windows.Forms.PictureBox pictCharmander;
+        private System.Windows.Forms.PictureBox picSquirtle;
     }
 }

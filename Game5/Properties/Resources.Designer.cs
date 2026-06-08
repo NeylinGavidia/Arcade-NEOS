@@ -63,6 +63,46 @@ namespace Game5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _147_1474864_pokemon_squirtle_icon_by_betatus_on_deviantart_squirtle {
+            get {
+                object obj = ResourceManager.GetObject("147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2005f1f8335b2ea0e281984abc10baaf_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("2005f1f8335b2ea0e281984abc10baaf-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _44_449210_charmander_sticker_pokemon_fire_red_charmander_sprite_hd {
+            get {
+                object obj = ResourceManager.GetObject("44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_9jsw1z9jsw1z9jsw {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_9jsw1z9jsw1z9jsw", resourceCulture);
@@ -83,6 +123,16 @@ namespace Game5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap girl_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("girl-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ii {
             get {
                 object obj = ResourceManager.GetObject("ii", resourceCulture);
@@ -96,6 +146,16 @@ namespace Game5.Properties {
         internal static System.Drawing.Bitmap uiu {
             get {
                 object obj = ResourceManager.GetObject("uiu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wmremove_transformed {
+            get {
+                object obj = ResourceManager.GetObject("wmremove-transformed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
