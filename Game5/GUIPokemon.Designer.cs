@@ -53,9 +53,9 @@
             this.picSquirtle = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
-            this.lblb = new System.Windows.Forms.Label();
-            this.llbc = new System.Windows.Forms.Label();
-            this.lbls = new System.Windows.Forms.Label();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtC = new System.Windows.Forms.TextBox();
+            this.txtS = new System.Windows.Forms.TextBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -303,9 +303,9 @@
             this.pnlPok.BackColor = System.Drawing.Color.Black;
             this.pnlPok.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPok.BackgroundImage")));
             this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlPok.Controls.Add(this.lbls);
-            this.pnlPok.Controls.Add(this.llbc);
-            this.pnlPok.Controls.Add(this.lblb);
+            this.pnlPok.Controls.Add(this.txtS);
+            this.pnlPok.Controls.Add(this.txtC);
+            this.pnlPok.Controls.Add(this.txtB);
             this.pnlPok.Controls.Add(this.picBulbasaur);
             this.pnlPok.Controls.Add(this.pictCharmander);
             this.pnlPok.Controls.Add(this.picSquirtle);
@@ -350,35 +350,38 @@
             this.picBulbasaur.TabStop = false;
             this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
             // 
-            // lblb
+            // txtB
             // 
-            this.lblb.AutoSize = true;
-            this.lblb.Location = new System.Drawing.Point(100, 417);
-            this.lblb.Name = "lblb";
-            this.lblb.Size = new System.Drawing.Size(44, 16);
-            this.lblb.TabIndex = 5;
-            this.lblb.Text = "label4";
-            this.lblb.Click += new System.EventHandler(this.lblb_Click);
+            this.txtB.Location = new System.Drawing.Point(100, 417);
+            this.txtB.Multiline = true;
+            this.txtB.Name = "txtB";
+            this.txtB.ReadOnly = true;
+            this.txtB.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtB.Size = new System.Drawing.Size(155, 39);
+            this.txtB.TabIndex = 5;
+            this.txtB.TextChanged += new System.EventHandler(this.txtB_TextChanged);
             // 
-            // llbc
+            // txtC
             // 
-            this.llbc.AutoSize = true;
-            this.llbc.Location = new System.Drawing.Point(382, 417);
-            this.llbc.Name = "llbc";
-            this.llbc.Size = new System.Drawing.Size(44, 16);
-            this.llbc.TabIndex = 6;
-            this.llbc.Text = "label5";
-            this.llbc.Click += new System.EventHandler(this.llbc_Click);
+            this.txtC.Location = new System.Drawing.Point(382, 417);
+            this.txtC.Multiline = true;
+            this.txtC.Name = "txtC";
+            this.txtC.ReadOnly = true;
+            this.txtC.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtC.Size = new System.Drawing.Size(155, 39);
+            this.txtC.TabIndex = 6;
+            this.txtC.TextChanged += new System.EventHandler(this.txtC_TextChanged);
             // 
-            // lbls
+            // txtS
             // 
-            this.lbls.AutoSize = true;
-            this.lbls.Location = new System.Drawing.Point(662, 417);
-            this.lbls.Name = "lbls";
-            this.lbls.Size = new System.Drawing.Size(44, 16);
-            this.lbls.TabIndex = 7;
-            this.lbls.Text = "label6";
-            this.lbls.Click += new System.EventHandler(this.lbls_Click);
+            this.txtS.Location = new System.Drawing.Point(665, 417);
+            this.txtS.Multiline = true;
+            this.txtS.Name = "txtS";
+            this.txtS.ReadOnly = true;
+            this.txtS.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtS.Size = new System.Drawing.Size(155, 39);
+            this.txtS.TabIndex = 7;
+            this.txtS.TextChanged += new System.EventHandler(this.txtS_TextChanged);
             // 
             // GUIPokemon
             // 
@@ -443,8 +446,8 @@
         private System.Windows.Forms.PictureBox picSquirtle;
         private System.Windows.Forms.PictureBox picBulbasaur;
         private System.Windows.Forms.PictureBox pictCharmander;
-        private System.Windows.Forms.Label lbls;
-        private System.Windows.Forms.Label llbc;
-        private System.Windows.Forms.Label lblb;
+        private System.Windows.Forms.TextBox txtS;
+        private System.Windows.Forms.TextBox txtC;
+        private System.Windows.Forms.TextBox txtB;
     }
 }

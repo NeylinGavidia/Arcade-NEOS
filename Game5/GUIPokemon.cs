@@ -166,7 +166,7 @@ namespace Game5
         {
             if (txtName.Text.Trim() == "") // esto para que no quede vacio, es solo una validacion
             {
-                MessageBox.Show("Ingresa tu nombre.");
+                MessageBox.Show("Nombre no válido");
                 return;
             }
 
@@ -180,6 +180,8 @@ namespace Game5
         private void picBulbasaur_Click(object sender, EventArgs e)
         {
             ElegirPokemon(1);
+            Pokemon p = arbol.Buscar(1); //mejor lo hago en messagebox, ya no me complico mas
+            MessageBox.Show();
         }
 
         private void pictCharmander_Click(object sender, EventArgs e)
@@ -198,7 +200,7 @@ namespace Game5
 
             if (pjugador == null)
             {
-                MessageBox.Show("No se encontró el Pokémon.");
+                MessageBox.Show("No has elegido pokemon");
                 return;
             }
 
@@ -234,19 +236,19 @@ namespace Game5
             panel.BringToFront();
         }
 
-        private void lbls_Click(object sender, EventArgs e)
+        private void txtB_TextChanged(object sender, EventArgs e) //probando con esto de textbox
         {
-            
+            txtB.Text = arbol.ToString();
         }
 
-        private void llbc_Click(object sender, EventArgs e)
+        private void txtC_TextChanged(object sender, EventArgs e)
         {
-
+            txtC.Text = arbol.ToString();
         }
 
-        private void lblb_Click(object sender, EventArgs e) //mientras mas hago mas me complico qwq ahhhhhhhhh ahora quiere string
+        private void txtS_TextChanged(object sender, EventArgs e)
         {
-            lblb.Text = arbol.MostrarPok();
+            txtS.Text = arbol.MostrarPok();
         }
     }
 
