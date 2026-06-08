@@ -28,11 +28,13 @@ namespace Game5
 
         public override string ToString()
         {
-            return $"\n----------------------------\n" +
-                   $"Codigo:          #0{code}\n" +
-                   $"Nombre:          {name}\n" +
-                   $"Tipo:            {tipo}\n" +
-                   $"----------------------------\n";
+            return $"------------POKEMON------------\n" +
+                   $"\n        Codigo: #0{code}\n" +
+                   $"        Nombre: {name}\n" +
+                   $"        Tipo:   {tipo}\n" +
+                   $"\n--------------STATS----------------\n"+
+                   $"\n     Atq: {atq} Def: {def}  PS:{ps}"+
+                   $"\n-------------------------------------";
         }
     }
 }
