@@ -116,5 +116,8 @@
   <ItemGroup>
     <None Include="Resources\dark-pixel-jxr9sa3gdswz4no7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixel-art-flowers-reflection-trees-moon-hd-wallpaper-preview.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

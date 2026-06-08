@@ -69,5 +69,15 @@ namespace ArcadeGUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixel_art_flowers_reflection_trees_moon_hd_wallpaper_preview {
+            get {
+                object obj = ResourceManager.GetObject("pixel-art-flowers-reflection-trees-moon-hd-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
