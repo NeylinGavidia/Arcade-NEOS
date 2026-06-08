@@ -73,6 +73,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Salir.resx">
       <DependentUpon>Salir.cs</DependentUpon>
@@ -111,6 +112,9 @@
       <Project>{eb6f338c-1f99-4fd1-b75d-32dc82696c93}</Project>
       <Name>Game5</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-pixel-jxr9sa3gdswz4no7.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

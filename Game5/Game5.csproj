@@ -69,5 +69,17 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_9jsw1z9jsw1z9jsw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_iqzh46iqzh46iqzh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uiu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
