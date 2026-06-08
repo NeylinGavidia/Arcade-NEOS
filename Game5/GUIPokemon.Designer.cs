@@ -41,12 +41,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerCarga = new System.Windows.Forms.Timer(this.components);
+            this.pnlName = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.btnOk = new System.Windows.Forms.Button();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -116,7 +123,7 @@
             this.pnlGenero.Controls.Add(this.picChico);
             this.pnlGenero.Location = new System.Drawing.Point(0, 0);
             this.pnlGenero.Name = "pnlGenero";
-            this.pnlGenero.Size = new System.Drawing.Size(904, 544);
+            this.pnlGenero.Size = new System.Drawing.Size(909, 552);
             this.pnlGenero.TabIndex = 2;
             this.pnlGenero.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGenero_Paint);
             // 
@@ -175,11 +182,72 @@
             this.timerCarga.Interval = 2000;
             this.timerCarga.Tick += new System.EventHandler(this.timerCarga_Tick_1);
             // 
+            // pnlName
+            // 
+            this.pnlName.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlName.Controls.Add(this.btnOk);
+            this.pnlName.Controls.Add(this.txtName);
+            this.pnlName.Controls.Add(this.textBox2);
+            this.pnlName.Controls.Add(this.pictureBox4);
+            this.pnlName.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlName.Location = new System.Drawing.Point(1, 0);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(904, 547);
+            this.pnlName.TabIndex = 2;
+            this.pnlName.Visible = false;
+            this.pnlName.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlName_Paint);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(14, 329);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(877, 187);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Indigo;
+            this.txtName.Location = new System.Drawing.Point(29, 417);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(539, 31);
+            this.txtName.TabIndex = 2;
+            // 
+            // btnOk
+            // 
+            this.btnOk.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnOk.Location = new System.Drawing.Point(574, 417);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(70, 31);
+            this.btnOk.TabIndex = 3;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlName);
             this.Controls.Add(this.pnlHistoria);
             this.Controls.Add(this.pnlCarga);
             this.MaximizeBox = false;
@@ -196,6 +264,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlName.ResumeLayout(false);
+            this.pnlName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,5 +284,10 @@
         private System.Windows.Forms.Panel pnlGenero;
         private System.Windows.Forms.PictureBox picChica;
         private System.Windows.Forms.PictureBox picChico;
+        private System.Windows.Forms.Panel pnlName;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Button btnOk;
     }
 }

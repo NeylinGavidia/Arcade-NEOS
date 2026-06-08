@@ -5,9 +5,11 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Game5
 {
@@ -15,6 +17,7 @@ namespace Game5
     {
         int pas = 0;
         string gender;
+        string player;
         public GUIPokemon()
         {
             InitializeComponent();
@@ -44,7 +47,13 @@ namespace Game5
             }
             else if (pas == 4)
             {
-                textBox1.Text = "Cuéntame un poco sobre ti, ¿cuál es tu nombre?";
+                pnlHistoria.Visible = false;
+                pnlName.Visible = true;
+
+            }
+            else if (pas == 5)
+            {
+               
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -121,6 +130,29 @@ namespace Game5
         private void pnlGenero_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pnlName_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            if (txtName.Text.Trim() == "") // esto para que no quede vacio, es solo una validacion
+            {
+                MessageBox.Show("Ingresa tu nombre.");
+                return;
+            }
+
+            player = txtName.Text.Trim(); //aqui para que quite espacios
+
+            pnlName.Visible = false;
+            pnlHistoria.Visible = true;
+            pnlHistoria.BringToFront();
+
+            textBox1.Text = $"Hola, {player}. Hoy elegirás un Pokémon que te acompañará en tus aventuras.";
+            pas = 5;
         }
     }
 
