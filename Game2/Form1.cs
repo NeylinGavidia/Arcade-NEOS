@@ -22,8 +22,8 @@ namespace Game2
         {
             juego.CargarDatos();
 
-            lblVidas.Text = "❤️ Vidas: " + juego.vidas;
-            lblPuntaje.Text = "⭐ Puntaje: " + juego.puntaje;
+            lblVidas.Text = "Vidas: " + juego.vidas;
+            lblPuntaje.Text = "Puntaje: " + juego.puntaje;
 
             lblPista.Text = juego.ObtenerActual().pista;
         }
