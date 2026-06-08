@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblVidas = new System.Windows.Forms.Label();
             this.lblPuntaje = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.timerFrutas = new System.Windows.Forms.Timer(this.components);
             this.gbFrutas.SuspendLayout();
             this.gbIntentos.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(222, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(301, 40);
+            this.lblTitulo.Size = new System.Drawing.Size(327, 40);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "FRUTIVINANZA  ";
             // 
@@ -123,6 +125,7 @@
             this.btnVerificar.TabIndex = 7;
             this.btnVerificar.Text = "Verificar";
             this.btnVerificar.UseVisualStyleBackColor = false;
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // lstFrutas
             // 
@@ -132,6 +135,7 @@
             this.lstFrutas.Name = "lstFrutas";
             this.lstFrutas.Size = new System.Drawing.Size(313, 172);
             this.lstFrutas.TabIndex = 9;
+            this.lstFrutas.SelectedIndexChanged += new System.EventHandler(this.lstFrutas_SelectedIndexChanged);
             // 
             // gbFrutas
             // 
@@ -175,6 +179,7 @@
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = " X Salir ";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnMostrar
             // 
@@ -186,6 +191,7 @@
             this.btnMostrar.TabIndex = 11;
             this.btnMostrar.Text = "Mostrar Frutas ";
             this.btnMostrar.UseVisualStyleBackColor = false;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // label1
             // 
@@ -203,7 +209,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Purple;
-            this.label4.Location = new System.Drawing.Point(483, 9);
+            this.label4.Location = new System.Drawing.Point(520, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 40);
             this.label4.TabIndex = 15;
@@ -231,6 +237,11 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "⭐";
             // 
+            // timerFrutas
+            // 
+            this.timerFrutas.Interval = 5000;
+            this.timerFrutas.Tick += new System.EventHandler(this.timerFrutas_Tick);
+            // 
             // FrmFnutivinanza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -257,6 +268,7 @@
             this.Name = "FrmFnutivinanza";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRUTIVINANZA";
+            this.Load += new System.EventHandler(this.FrmFnutivinanza_Load);
             this.gbFrutas.ResumeLayout(false);
             this.gbIntentos.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -284,5 +296,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Timer timerFrutas;
     }
 }
