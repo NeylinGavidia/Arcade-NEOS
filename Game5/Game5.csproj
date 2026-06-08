@@ -99,5 +99,17 @@
   <ItemGroup>
     <None Include="Resources\girl-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

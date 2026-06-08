@@ -9,6 +9,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Game5
@@ -33,6 +34,7 @@ namespace Game5
 
             pnlHistoria.Click += pnlHistoria_Click;
             pnlHistoria2.Click += pnlHistoria2_Click;
+            pnlHistoria3.Click += pnlHistoria3_Click;
         }
         private void SiguienteDialogo()
         {
@@ -78,16 +80,21 @@ namespace Game5
             }
             else if (pas == 9)
             {
-                textBox4.Text = "!!!!!!!!!!!!!";
+                if (gender == "Chico")
+                {
+                    pictureBox7.Image = Properties.Resources.redu;
+                }
+                else
+                {
+                    pictureBox7.Image = Properties.Resources.iu1;
+                }
+
+                textBox5.Text = "!!!!!!!!!!!!!";
+                MostrarPanel(pnlHistoria3);
             }
             else if (pas == 10)
             {
-                textBox4.Text = "Sistema: Un misterioso chico llega .-.";
-            }
-            else if (pas == 11)
-            {
-
-            
+                textBox5.Text = "Sistema: Un misterioso chico llega .-.";
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -253,12 +260,26 @@ namespace Game5
             pnlName.Visible = false;
             pnlHistoria2.Visible = false;
             pnlPok.Visible = false;
+            pnlHistoria3.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
         }
 
         private void label4_Click_1(object sender, EventArgs e) //bueno se me fue la mano xd pero son labels ahora para poder ahcerlo transparente
+        {
+            
+        }
+        private void pnlHistoria3_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlHistoria3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }
