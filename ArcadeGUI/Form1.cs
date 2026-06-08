@@ -40,7 +40,9 @@ namespace ArcadeGUI
 
         private void btnGame2_Click(object sender, EventArgs e)
         {
-
+            FrmFnutivinanza frutivinanza = new FrmFnutivinanza();
+            frutivinanza.Show();
+            this.Hide();
         }
         private void btnGame3_Click(object sender, EventArgs e)
         {
@@ -74,6 +76,11 @@ namespace ArcadeGUI
         {
             timer1.Stop();
             this.Close();
+        }
+
+        private void GUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
