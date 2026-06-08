@@ -64,8 +64,8 @@ namespace Game2
                     lstIntentos.Items.Add(codigo);
                 }
 
-                lblVidas.Text = "❤️ Vidas: " + juego.vidas;
-                lblPuntaje.Text = "⭐ Puntaje: " + juego.puntaje;
+                lblVidas.Text = "Vidas: " + juego.vidas;
+                lblPuntaje.Text = "Puntaje: " + juego.puntaje;
 
                 if (!juego.Ganaste())
                 {
