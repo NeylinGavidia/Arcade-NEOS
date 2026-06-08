@@ -50,9 +50,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlPok = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picSquirtle = new System.Windows.Forms.PictureBox();
+            this.pictCharmander = new System.Windows.Forms.PictureBox();
+            this.picBulbasaur = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -64,9 +64,9 @@
             this.pnlHistoria2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlPok.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -296,46 +296,46 @@
             // pnlPok
             // 
             this.pnlPok.BackColor = System.Drawing.Color.Black;
-            this.pnlPok.Controls.Add(this.pictureBox6);
-            this.pnlPok.Controls.Add(this.pictureBox5);
-            this.pnlPok.Controls.Add(this.pictureBox3);
+            this.pnlPok.Controls.Add(this.picBulbasaur);
+            this.pnlPok.Controls.Add(this.pictCharmander);
+            this.pnlPok.Controls.Add(this.picSquirtle);
             this.pnlPok.Location = new System.Drawing.Point(0, 0);
             this.pnlPok.Name = "pnlPok";
             this.pnlPok.Size = new System.Drawing.Size(901, 544);
             this.pnlPok.TabIndex = 2;
             // 
-            // pictureBox3
+            // picSquirtle
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(49, 113);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(223, 200);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.picSquirtle.BackColor = System.Drawing.Color.Transparent;
+            this.picSquirtle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picSquirtle.BackgroundImage")));
+            this.picSquirtle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picSquirtle.Location = new System.Drawing.Point(632, 123);
+            this.picSquirtle.Name = "picSquirtle";
+            this.picSquirtle.Size = new System.Drawing.Size(210, 200);
+            this.picSquirtle.TabIndex = 2;
+            this.picSquirtle.TabStop = false;
             // 
-            // pictureBox5
+            // pictCharmander
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(340, 113);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(208, 200);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
+            this.pictCharmander.BackColor = System.Drawing.Color.Transparent;
+            this.pictCharmander.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictCharmander.BackgroundImage")));
+            this.pictCharmander.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictCharmander.Location = new System.Drawing.Point(343, 123);
+            this.pictCharmander.Name = "pictCharmander";
+            this.pictCharmander.Size = new System.Drawing.Size(210, 200);
+            this.pictCharmander.TabIndex = 3;
+            this.pictCharmander.TabStop = false;
             // 
-            // pictureBox6
+            // picBulbasaur
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(623, 113);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(210, 200);
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
+            this.picBulbasaur.BackColor = System.Drawing.Color.Transparent;
+            this.picBulbasaur.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBulbasaur.BackgroundImage")));
+            this.picBulbasaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picBulbasaur.Location = new System.Drawing.Point(58, 123);
+            this.picBulbasaur.Name = "picBulbasaur";
+            this.picBulbasaur.Size = new System.Drawing.Size(210, 200);
+            this.picBulbasaur.TabIndex = 4;
+            this.picBulbasaur.TabStop = false;
             // 
             // GUIPokemon
             // 
@@ -367,9 +367,9 @@
             this.pnlHistoria2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlPok.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,8 +396,8 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlPok;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picSquirtle;
+        private System.Windows.Forms.PictureBox picBulbasaur;
+        private System.Windows.Forms.PictureBox pictCharmander;
     }
 }

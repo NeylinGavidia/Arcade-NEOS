@@ -56,7 +56,9 @@ namespace Game5
             }
             else if (pas == 5)
             {
-                
+                pnlHistoria.Visible = false;
+                pnlPok.Visible = true;
+                pnlPok.BringToFront();
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -167,6 +169,7 @@ namespace Game5
             textBox4.Text = $"Profesor Oak: Hola, {player}. Hoy elegirás un Pokémon que te acompañará en tus aventuras.";
             pas = 5;
         }
+
     }
 
 }
