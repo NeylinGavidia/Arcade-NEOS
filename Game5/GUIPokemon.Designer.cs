@@ -53,6 +53,9 @@
             this.picSquirtle = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
+            this.lblb = new System.Windows.Forms.Label();
+            this.llbc = new System.Windows.Forms.Label();
+            this.lbls = new System.Windows.Forms.Label();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -298,6 +301,11 @@
             // pnlPok
             // 
             this.pnlPok.BackColor = System.Drawing.Color.Black;
+            this.pnlPok.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPok.BackgroundImage")));
+            this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPok.Controls.Add(this.lbls);
+            this.pnlPok.Controls.Add(this.llbc);
+            this.pnlPok.Controls.Add(this.lblb);
             this.pnlPok.Controls.Add(this.picBulbasaur);
             this.pnlPok.Controls.Add(this.pictCharmander);
             this.pnlPok.Controls.Add(this.picSquirtle);
@@ -311,9 +319,9 @@
             this.picSquirtle.BackColor = System.Drawing.Color.Transparent;
             this.picSquirtle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picSquirtle.BackgroundImage")));
             this.picSquirtle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picSquirtle.Location = new System.Drawing.Point(632, 123);
+            this.picSquirtle.Location = new System.Drawing.Point(655, 183);
             this.picSquirtle.Name = "picSquirtle";
-            this.picSquirtle.Size = new System.Drawing.Size(210, 200);
+            this.picSquirtle.Size = new System.Drawing.Size(193, 155);
             this.picSquirtle.TabIndex = 2;
             this.picSquirtle.TabStop = false;
             this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
@@ -323,9 +331,9 @@
             this.pictCharmander.BackColor = System.Drawing.Color.Transparent;
             this.pictCharmander.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictCharmander.BackgroundImage")));
             this.pictCharmander.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictCharmander.Location = new System.Drawing.Point(343, 123);
+            this.pictCharmander.Location = new System.Drawing.Point(351, 183);
             this.pictCharmander.Name = "pictCharmander";
-            this.pictCharmander.Size = new System.Drawing.Size(210, 200);
+            this.pictCharmander.Size = new System.Drawing.Size(202, 155);
             this.pictCharmander.TabIndex = 3;
             this.pictCharmander.TabStop = false;
             this.pictCharmander.Click += new System.EventHandler(this.pictCharmander_Click);
@@ -335,12 +343,42 @@
             this.picBulbasaur.BackColor = System.Drawing.Color.Transparent;
             this.picBulbasaur.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBulbasaur.BackgroundImage")));
             this.picBulbasaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picBulbasaur.Location = new System.Drawing.Point(58, 123);
+            this.picBulbasaur.Location = new System.Drawing.Point(89, 180);
             this.picBulbasaur.Name = "picBulbasaur";
-            this.picBulbasaur.Size = new System.Drawing.Size(210, 200);
+            this.picBulbasaur.Size = new System.Drawing.Size(187, 158);
             this.picBulbasaur.TabIndex = 4;
             this.picBulbasaur.TabStop = false;
             this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
+            // 
+            // lblb
+            // 
+            this.lblb.AutoSize = true;
+            this.lblb.Location = new System.Drawing.Point(100, 417);
+            this.lblb.Name = "lblb";
+            this.lblb.Size = new System.Drawing.Size(44, 16);
+            this.lblb.TabIndex = 5;
+            this.lblb.Text = "label4";
+            this.lblb.Click += new System.EventHandler(this.lblb_Click);
+            // 
+            // llbc
+            // 
+            this.llbc.AutoSize = true;
+            this.llbc.Location = new System.Drawing.Point(382, 417);
+            this.llbc.Name = "llbc";
+            this.llbc.Size = new System.Drawing.Size(44, 16);
+            this.llbc.TabIndex = 6;
+            this.llbc.Text = "label5";
+            this.llbc.Click += new System.EventHandler(this.llbc_Click);
+            // 
+            // lbls
+            // 
+            this.lbls.AutoSize = true;
+            this.lbls.Location = new System.Drawing.Point(662, 417);
+            this.lbls.Name = "lbls";
+            this.lbls.Size = new System.Drawing.Size(44, 16);
+            this.lbls.TabIndex = 7;
+            this.lbls.Text = "label6";
+            this.lbls.Click += new System.EventHandler(this.lbls_Click);
             // 
             // GUIPokemon
             // 
@@ -372,6 +410,7 @@
             this.pnlHistoria2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlPok.ResumeLayout(false);
+            this.pnlPok.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
@@ -404,5 +443,8 @@
         private System.Windows.Forms.PictureBox picSquirtle;
         private System.Windows.Forms.PictureBox picBulbasaur;
         private System.Windows.Forms.PictureBox pictCharmander;
+        private System.Windows.Forms.Label lbls;
+        private System.Windows.Forms.Label llbc;
+        private System.Windows.Forms.Label lblb;
     }
 }

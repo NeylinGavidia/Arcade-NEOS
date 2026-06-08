@@ -74,7 +74,7 @@ namespace Game5
             do
             {
                 Console.WriteLine("Elige tu Pokémon:");
-                arbol.Mostrar();
+                arbol.MostrarPok();
 
                 Console.Write("Código: ");
                 pok = int.Parse(Console.ReadLine());

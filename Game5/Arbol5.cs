@@ -37,25 +37,19 @@ namespace Game5
                 Console.WriteLine("Dato duplicado");
             }
         }
-        public void Mostrar()
+        public string MostrarPok() //cambiando a string el mostrar sino no funciona mi idea >:(
         {
-            Mostrar(raiz_pri, 0);
+            return Mostrar(raiz_pri);
         }
-        private void Mostrar(Nodo raiz, int nivel)
+        private string Mostrar(Nodo raiz)
         {
-            if (raiz != null)
+            if (raiz == null)
             {
-                Mostrar(raiz.de, nivel + 1);
-
-                for (int i = 0; i < nivel; i++)
-                {
-                    Console.Write("        ");
-                }
-
-                Console.WriteLine(raiz.dato);
-
-                Mostrar(raiz.iz, nivel + 1);
+                return "";
             }
+
+            return $"{Mostrar(raiz.iz)}\n {raiz.dato}\n {Mostrar(raiz.de)}"; //ojala funcione esto xd si lo hace increible xd
+
         }
         public Pokemon Buscar(int code)
         {

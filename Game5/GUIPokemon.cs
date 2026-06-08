@@ -234,6 +234,20 @@ namespace Game5
             panel.BringToFront();
         }
 
+        private void lbls_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void llbc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblb_Click(object sender, EventArgs e) //mientras mas hago mas me complico qwq ahhhhhhhhh ahora quiere string
+        {
+            lblb.Text = arbol.MostrarPok();
+        }
     }
 
 }
