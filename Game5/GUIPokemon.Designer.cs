@@ -267,6 +267,8 @@
             this.pnlHistoria2.Size = new System.Drawing.Size(904, 547);
             this.pnlHistoria2.TabIndex = 4;
             this.pnlHistoria2.Visible = false;
+            this.pnlHistoria2.Click += new System.EventHandler(this.pnlHistoria2_Click);
+            this.pnlHistoria2.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHistoria2_Paint);
             // 
             // textBox4
             // 
@@ -314,6 +316,7 @@
             this.picSquirtle.Size = new System.Drawing.Size(210, 200);
             this.picSquirtle.TabIndex = 2;
             this.picSquirtle.TabStop = false;
+            this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
             // 
             // pictCharmander
             // 
@@ -325,6 +328,7 @@
             this.pictCharmander.Size = new System.Drawing.Size(210, 200);
             this.pictCharmander.TabIndex = 3;
             this.pictCharmander.TabStop = false;
+            this.pictCharmander.Click += new System.EventHandler(this.pictCharmander_Click);
             // 
             // picBulbasaur
             // 
@@ -336,6 +340,7 @@
             this.picBulbasaur.Size = new System.Drawing.Size(210, 200);
             this.picBulbasaur.TabIndex = 4;
             this.picBulbasaur.TabStop = false;
+            this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
             // 
             // GUIPokemon
             // 

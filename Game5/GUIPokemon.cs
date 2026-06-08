@@ -27,8 +27,12 @@ namespace Game5
 
             picChico.Cursor = Cursors.Hand; //esto es para que se vea mas bonito al seleccionar, con otro cursor
             picChica.Cursor = Cursors.Hand;
+            picBulbasaur.Cursor = Cursors.Hand;
+            pictCharmander.Cursor = Cursors.Hand; // encima lo borre mal AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+            picSquirtle.Cursor = Cursors.Hand;
 
             pnlHistoria.Click += pnlHistoria_Click;
+            pnlHistoria2.Click += pnlHistoria2_Click;
         }
         private void SiguienteDialogo()
         {
@@ -41,24 +45,26 @@ namespace Game5
             else if (pas == 2)
             {
                 textBox1.Text = "Primero, ¿eres chico o chica?";
-                
+
             }
             else if (pas == 3)
             {
-                pnlGenero.Visible = true;
-                
+                MostrarPanel(pnlGenero);
+
             }
             else if (pas == 4)
             {
-                pnlHistoria.Visible = false;
-                pnlName.Visible = true;
+                MostrarPanel(pnlName);
 
             }
             else if (pas == 5)
             {
-                pnlHistoria.Visible = false;
-                pnlPok.Visible = true;
-                pnlPok.BringToFront();
+                MostrarPanel(pnlPok);
+
+            }
+            else if (pas == 6) //sigo y sigo intentando qwq
+            {
+               
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -80,11 +86,7 @@ namespace Game5
         {
             CargarPokemon();
 
-            pnlCarga.Visible = true;
-            pnlHistoria.Visible = false;
-            pnlGenero.Visible = false;
-            pnlName.Visible = false;
-            pnlPok.Visible = false;
+            MostrarPanel(pnlCarga);
 
             timerCarga.Interval = 2000;
             timerCarga.Start();
@@ -103,14 +105,13 @@ namespace Game5
 
         private void textBox1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void timerCarga_Tick_1(object sender, EventArgs e) //este timer esta chevere, ayuda a cambiar de paneles
         {
             timerCarga.Stop();
-            pnlCarga.Visible = false;
-            pnlHistoria.Visible = true;
+            MostrarPanel(pnlHistoria);
             pas = 0;
             textBox1.Text = "Hola, bienvenido/a al pueblo Paleta.";
         }
@@ -123,6 +124,10 @@ namespace Game5
 
             SiguienteDialogo();
         }
+        private void pnlHistoria2_Click(object sender, EventArgs e) // tanto para que con esto si funcion, soy gil
+        {
+            SiguienteDialogo();
+        }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -132,15 +137,17 @@ namespace Game5
         private void picChico_Click(object sender, EventArgs e)
         {
             gender = "Chico";
-            pnlGenero.Visible = false;
+            MostrarPanel(pnlHistoria);
             textBox1.Text = "Entiendo, eres un chico.";
+            pas = 3;
         }
 
         private void picChica_Click(object sender, EventArgs e)
         {
             gender = "Chica";
-            pnlGenero.Visible = false;
+            MostrarPanel(pnlHistoria);
             textBox1.Text = "Entiendo, eres una chica.";
+            pas = 3; //sino funciona con esto lloro qwq
         }
 
         private void pnlGenero_Paint(object sender, PaintEventArgs e)
@@ -150,7 +157,7 @@ namespace Game5
 
         private void pnlName_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -163,11 +170,66 @@ namespace Game5
 
             player = txtName.Text.Trim(); //aqui para que quite espacios
 
-            pnlName.Visible = false;
-            pnlHistoria2.Visible = true;
-            pnlHistoria2.BringToFront();
+            MostrarPanel(pnlHistoria2);
             textBox4.Text = $"Profesor Oak: Hola, {player}. Hoy elegirás un Pokémon que te acompañará en tus aventuras.";
-            pas = 5;
+            pas = 4; //esto tambien mal de 5 a 4, sino no funciona
+        }
+
+        private void picBulbasaur_Click(object sender, EventArgs e)
+        {
+            ElegirPokemon(1);
+        }
+
+        private void pictCharmander_Click(object sender, EventArgs e)
+        {
+            ElegirPokemon(4);
+        }
+
+        private void picSquirtle_Click(object sender, EventArgs e)
+        {
+            ElegirPokemon(7);
+        }
+
+        private void ElegirPokemon(int codigo) //trayendo de PokeDemo qwq odio esto auxilienme
+        {
+            pjugador = arbol.Buscar(codigo);
+
+            if (pjugador == null)
+            {
+                MessageBox.Show("No se encontró el Pokémon.");
+                return;
+            }
+
+            if (pjugador.name == "Charmander")
+            {
+                atqp = "Arañazo";
+            }
+            else
+            {
+                atqp = "Placaje";
+            }
+
+            MostrarPanel(pnlHistoria2);
+            pnlHistoria2.BringToFront();
+
+            textBox4.Text = $"Profesor Oak: Excelente, elegiste a {pjugador.name}.";
+        }
+
+        private void pnlHistoria2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void MostrarPanel(Panel panel) //tuve que agregar esto porque entre tanto panel ni yo entendia que estaba activo o no, ojala lo solucione
+        {
+            pnlCarga.Visible = false;
+            pnlHistoria.Visible = false;
+            pnlGenero.Visible = false;
+            pnlName.Visible = false;
+            pnlHistoria2.Visible = false;
+            pnlPok.Visible = false;
+
+            panel.Visible = true;
+            panel.BringToFront();
         }
 
     }
