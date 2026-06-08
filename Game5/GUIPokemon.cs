@@ -50,6 +50,7 @@ namespace Game5
             else if (pas == 3)
             {
                 MostrarPanel(pnlGenero);
+                pnlHistoria.Visible = true; //se soluciono esto qwq
 
             }
             else if (pas == 4)
@@ -60,6 +61,7 @@ namespace Game5
             else if (pas == 5)
             {
                 MostrarPanel(pnlPok);
+                pnlHistoria2.Visible = true; //por favor qwq SIIIIIIIIIIIII
 
             }
             else if (pas == 6) //sigo y sigo intentando qwq
