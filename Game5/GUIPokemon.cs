@@ -64,9 +64,30 @@ namespace Game5
                 pnlHistoria2.Visible = true; //por favor qwq SIIIIIIIIIIIII
 
             }
-            else if (pas == 6) //sigo y sigo intentando qwq
+            else if (pas == 6) //aqui debe ser asi para que pase de uno en uno para que muestre diversos mensaje en el mismo cuadro
             {
-               
+                textBox4.Text = $"({pjugador.name} ha sido añadido a tu Pokédex)";
+            }
+            else if (pas == 7)
+            {
+                textBox4.Text = "Profesor Oak: Ahora podrás ir de avent-";
+            }
+            else if (pas == 8)
+            {
+                textBox4.Text = "Sistema: Pasos se oyen acercándose";
+            }
+            else if (pas == 9)
+            {
+                textBox4.Text = "!!!!!!!!!!!!!";
+            }
+            else if (pas == 10)
+            {
+                textBox4.Text = "Sistema: Un misterioso chico llega .-.";
+            }
+            else if (pas == 11)
+            {
+
+            
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -179,20 +200,20 @@ namespace Game5
 
         private void picBulbasaur_Click(object sender, EventArgs e)
         {
-            ElegirPokemon(1);
             MessageBox.Show(arbol.Mostrar1(1)); //ahora si se puede? Si xd
+            ElegirPokemon(1);
         }
 
         private void pictCharmander_Click(object sender, EventArgs e)
         {
-            ElegirPokemon(4);
             MessageBox.Show(arbol.Mostrar1(4));
+            ElegirPokemon(4);
         }
 
         private void picSquirtle_Click(object sender, EventArgs e)
         {
-            ElegirPokemon(7);
             MessageBox.Show(arbol.Mostrar1(7));
+            ElegirPokemon(7);
         }
 
         private void ElegirPokemon(int codigo) //trayendo de PokeDemo qwq odio esto auxilienme
@@ -215,9 +236,9 @@ namespace Game5
             }
 
             MostrarPanel(pnlHistoria2);
-            pnlHistoria2.BringToFront();
 
             textBox4.Text = $"Profesor Oak: Excelente, elegiste a {pjugador.name}.";
+            pas = 5;
         }
 
         private void pnlHistoria2_Paint(object sender, PaintEventArgs e)
