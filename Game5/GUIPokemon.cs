@@ -180,17 +180,19 @@ namespace Game5
         private void picBulbasaur_Click(object sender, EventArgs e)
         {
             ElegirPokemon(1);
-            MessageBox.Show(arbol.Mostrar1(1)); //ahora si se puede?
+            MessageBox.Show(arbol.Mostrar1(1)); //ahora si se puede? Si xd
         }
 
         private void pictCharmander_Click(object sender, EventArgs e)
         {
             ElegirPokemon(4);
+            MessageBox.Show(arbol.Mostrar1(4));
         }
 
         private void picSquirtle_Click(object sender, EventArgs e)
         {
             ElegirPokemon(7);
+            MessageBox.Show(arbol.Mostrar1(7));
         }
 
         private void ElegirPokemon(int codigo) //trayendo de PokeDemo qwq odio esto auxilienme
@@ -235,19 +237,9 @@ namespace Game5
             panel.BringToFront();
         }
 
-        private void txtB_TextChanged(object sender, EventArgs e) //probando con esto de textbox
+        private void label4_Click_1(object sender, EventArgs e) //bueno se me fue la mano xd pero son labels ahora para poder ahcerlo transparente
         {
-           
-        }
 
-        private void txtC_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtS_TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 

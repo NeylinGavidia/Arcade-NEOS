@@ -53,9 +53,9 @@
             this.picSquirtle = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
-            this.txtB = new System.Windows.Forms.TextBox();
-            this.txtC = new System.Windows.Forms.TextBox();
-            this.txtS = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -303,9 +303,9 @@
             this.pnlPok.BackColor = System.Drawing.Color.Black;
             this.pnlPok.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPok.BackgroundImage")));
             this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlPok.Controls.Add(this.txtS);
-            this.pnlPok.Controls.Add(this.txtC);
-            this.pnlPok.Controls.Add(this.txtB);
+            this.pnlPok.Controls.Add(this.label6);
+            this.pnlPok.Controls.Add(this.label5);
+            this.pnlPok.Controls.Add(this.label4);
             this.pnlPok.Controls.Add(this.picBulbasaur);
             this.pnlPok.Controls.Add(this.pictCharmander);
             this.pnlPok.Controls.Add(this.picSquirtle);
@@ -350,38 +350,42 @@
             this.picBulbasaur.TabStop = false;
             this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
             // 
-            // txtB
+            // label4
             // 
-            this.txtB.Location = new System.Drawing.Point(100, 417);
-            this.txtB.Multiline = true;
-            this.txtB.Name = "txtB";
-            this.txtB.ReadOnly = true;
-            this.txtB.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtB.Size = new System.Drawing.Size(155, 39);
-            this.txtB.TabIndex = 5;
-            this.txtB.TextChanged += new System.EventHandler(this.txtB_TextChanged);
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(112, 421);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 27);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Bulbasaur";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
-            // txtC
+            // label5
             // 
-            this.txtC.Location = new System.Drawing.Point(382, 417);
-            this.txtC.Multiline = true;
-            this.txtC.Name = "txtC";
-            this.txtC.ReadOnly = true;
-            this.txtC.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtC.Size = new System.Drawing.Size(155, 39);
-            this.txtC.TabIndex = 6;
-            this.txtC.TextChanged += new System.EventHandler(this.txtC_TextChanged);
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(390, 421);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 27);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Charmander";
             // 
-            // txtS
+            // label6
             // 
-            this.txtS.Location = new System.Drawing.Point(665, 417);
-            this.txtS.Multiline = true;
-            this.txtS.Name = "txtS";
-            this.txtS.ReadOnly = true;
-            this.txtS.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtS.Size = new System.Drawing.Size(155, 39);
-            this.txtS.TabIndex = 7;
-            this.txtS.TextChanged += new System.EventHandler(this.txtS_TextChanged);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Aqua;
+            this.label6.Location = new System.Drawing.Point(686, 421);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 27);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Squirtle";
             // 
             // GUIPokemon
             // 
@@ -446,8 +450,8 @@
         private System.Windows.Forms.PictureBox picSquirtle;
         private System.Windows.Forms.PictureBox picBulbasaur;
         private System.Windows.Forms.PictureBox pictCharmander;
-        private System.Windows.Forms.TextBox txtS;
-        private System.Windows.Forms.TextBox txtC;
-        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
