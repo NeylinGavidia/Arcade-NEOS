@@ -237,12 +237,12 @@ namespace Game5
 
         private void txtB_TextChanged(object sender, EventArgs e) //probando con esto de textbox
         {
-            txtB.Text = arbol.ToString();
+           
         }
 
         private void txtC_TextChanged(object sender, EventArgs e)
         {
-            txtC.Text = arbol.ToString();
+            
         }
 
         private void txtS_TextChanged(object sender, EventArgs e)
