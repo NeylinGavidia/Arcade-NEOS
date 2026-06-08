@@ -37,7 +37,7 @@ namespace Game5
                 Console.WriteLine("Dato duplicado");
             }
         }
-        public void MostrarPok(Nodo raiz, int nivel) //no funciono, obviamente es que es diferente en interfaz, hare un metodo apra uno solo
+        public void MostrarPok() //no funciono, obviamente es que es diferente en interfaz, hare un metodo apra uno solo
         {
             Mostrar(raiz_pri, 0);
         }
@@ -56,6 +56,11 @@ namespace Game5
 
                 Mostrar(raiz.iz, nivel + 1);
             }
+        }
+        public string Mostrar1(int c) //este public qwq
+        {
+            Pokemon p = Buscar(c);
+            return $"{p}"; //sino no me deja agregar nada >:(
         }
         public Pokemon Buscar(int code)
         {

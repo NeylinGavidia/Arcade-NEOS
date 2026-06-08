@@ -180,8 +180,7 @@ namespace Game5
         private void picBulbasaur_Click(object sender, EventArgs e)
         {
             ElegirPokemon(1);
-            Pokemon p = arbol.Buscar(1); //mejor lo hago en messagebox, ya no me complico mas
-            MessageBox.Show();
+            MessageBox.Show(arbol.Mostrar1(1)); //ahora si se puede?
         }
 
         private void pictCharmander_Click(object sender, EventArgs e)
@@ -248,7 +247,7 @@ namespace Game5
 
         private void txtS_TextChanged(object sender, EventArgs e)
         {
-            txtS.Text = arbol.MostrarPok();
+            
         }
     }
 
