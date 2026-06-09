@@ -17,11 +17,14 @@ namespace Game5
     public partial class GUIPokemon : Form
     {
         private Arbol5 arbol = new Arbol5();
-        private Pokemon pjugador;
-        public string atqp;
+        private Pokemon pjugador; //pokemon jugador
+        private Pokemon prival; //pokemon rival
+        public string atqp; //tipo de ataque pokemon jugador
+        public string atqr; //tipo de ataque de pokemon rival
         int pas = 0;
         string gender;
         string player;
+        Random rnd = new Random(); //para randomizar;
         public GUIPokemon()
         {
             InitializeComponent();
@@ -36,6 +39,7 @@ namespace Game5
             pnlHistoria2.Click += pnlHistoria2_Click;
             pnlHistoria3.Click += pnlHistoria3_Click;
             pnlMisterioso.Click += pnlMisterioso_Click;
+            pnlRival.Click += pnlRival_Click;
         }
         private void SiguienteDialogo()
         {
@@ -100,26 +104,38 @@ namespace Game5
             else if (pas == 11)
             {
                 textBox6.Text = "Chico misterioso: Yo también elegiré un pokémon";
+                MostrarPanel(pnlMisterioso);
             }
             else if (pas == 12) //aqui ya agrego el metodo de elegir
             {
-                textBox6.Text = "El chico toma una pokebola de la mesa";
+                ElegirRival();
+                MostrarPanel(pnlRival);
+                if (gender == "Chico")
+                {
+                    pictureBox8.Image = Properties.Resources.redg;
+                }
+                else
+                {
+                    pictureBox7.Image = Properties.Resources.leag;
+                }
+
+                textBox7.Text = "El chico toma una pokebola de la mesa";
             }
             else if (pas == 13)
             {
-                textBox6.Text = "Chico misterioso: Me quedaré con esta";
+                textBox7.Text = "Chico misterioso: Me quedaré con esta";
             }
             else if (pas == 14) //desde aqui profesor aparece y gary de fondo xd es decir otro panel
             {
-                textBox6.Text = $"Profesor Oak: Lo siento {player}, ¿recuerdas a mis sobrino Gary? Jugaban juntos de pequeños";
+                textBox7.Text = $"Profesor Oak: Lo siento {player}, ¿recuerdas a mis sobrino Gary? Jugaban juntos de pequeños";
             }
             else if (pas == 15)
             {
-                textBox6.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
+                textBox7.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
             }
             else if (pas == 14)
             {
-                textBox6.Text = "Te apresuras a salir";
+                textBox7.Text = "Te apresuras a salir";
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -272,6 +288,26 @@ namespace Game5
             textBox4.Text = $"Profesor Oak: Excelente, elegiste a {pjugador.name}.";
             pas = 5;
         }
+        private void ElegirRival()
+        {
+            int codigo;
+
+            do
+            {
+                codigo = rnd.Next(1, 4);
+                prival = arbol.Buscar(codigo);
+
+            } while (prival == null || prival.code == pjugador.code);
+
+            if (prival.code == 2)
+            {
+                atqr = "Arañazo";
+            }
+            else
+            {
+                atqr = "Placaje";
+            }
+        }
 
         private void pnlHistoria2_Paint(object sender, PaintEventArgs e)
         {
@@ -286,6 +322,8 @@ namespace Game5
             pnlHistoria2.Visible = false;
             pnlPok.Visible = false;
             pnlHistoria3.Visible = false;
+            pnlMisterioso.Visible = false;
+            pnlRival.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
@@ -312,6 +350,11 @@ namespace Game5
         {
             SiguienteDialogo();
         }
+        private void pnlRival_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+
 
     }
 

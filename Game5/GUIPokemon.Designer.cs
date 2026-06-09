@@ -46,6 +46,9 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.pnlMisterioso = new System.Windows.Forms.Panel();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.pnlRival = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pnlPok = new System.Windows.Forms.Panel();
@@ -67,6 +70,8 @@
             this.pnlHistoria2.SuspendLayout();
             this.pnlHistoria3.SuspendLayout();
             this.pnlMisterioso.SuspendLayout();
+            this.pnlRival.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.pnlPok.SuspendLayout();
@@ -267,13 +272,14 @@
             // pnlMisterioso
             // 
             this.pnlMisterioso.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlMisterioso.Controls.Add(this.pnlRival);
             this.pnlMisterioso.Controls.Add(this.textBox6);
             this.pnlMisterioso.Controls.Add(this.pictureBox3);
             this.pnlMisterioso.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlMisterioso.Location = new System.Drawing.Point(1, 1);
+            this.pnlMisterioso.Location = new System.Drawing.Point(1, 0);
             this.pnlMisterioso.Name = "pnlMisterioso";
             this.pnlMisterioso.Size = new System.Drawing.Size(904, 544);
-            this.pnlMisterioso.TabIndex = 20;
+            this.pnlMisterioso.TabIndex = 21;
             this.pnlMisterioso.Visible = false;
             // 
             // textBox6
@@ -290,6 +296,44 @@
             this.textBox6.TabIndex = 1;
             this.textBox6.TabStop = false;
             this.textBox6.Text = "\r\n";
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox7.Enabled = false;
+            this.textBox7.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox7.Location = new System.Drawing.Point(14, 329);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(877, 187);
+            this.textBox7.TabIndex = 1;
+            this.textBox7.TabStop = false;
+            this.textBox7.Text = "\r\n";
+            // 
+            // pnlRival
+            // 
+            this.pnlRival.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlRival.Controls.Add(this.textBox7);
+            this.pnlRival.Controls.Add(this.pictureBox8);
+            this.pnlRival.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlRival.Location = new System.Drawing.Point(0, 1);
+            this.pnlRival.Name = "pnlRival";
+            this.pnlRival.Size = new System.Drawing.Size(904, 544);
+            this.pnlRival.TabIndex = 23;
+            this.pnlRival.Visible = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::Game5.Properties.Resources.redg;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -496,6 +540,9 @@
             this.pnlHistoria3.PerformLayout();
             this.pnlMisterioso.ResumeLayout(false);
             this.pnlMisterioso.PerformLayout();
+            this.pnlRival.ResumeLayout(false);
+            this.pnlRival.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.pnlPok.ResumeLayout(false);
@@ -547,5 +594,8 @@
         private System.Windows.Forms.Panel pnlMisterioso;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel pnlRival;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
