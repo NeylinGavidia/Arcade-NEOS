@@ -40,7 +40,11 @@ namespace Game5
             pnlHistoria3.Click += pnlHistoria3_Click;
             pnlMisterioso.Click += pnlMisterioso_Click;
             pnlRival.Click += pnlRival_Click;
+            pnlOakyGary.Click += pnlOakyGary_Click;
+            pnlGary.Click += pnlGary_Click;
+            pnlReto.Click += pnlReto_Click;
         }
+
         private void SiguienteDialogo()
         {
             pas++;
@@ -116,7 +120,7 @@ namespace Game5
                 }
                 else
                 {
-                    pictureBox7.Image = Properties.Resources.leag;
+                    pictureBox8.Image = Properties.Resources.leag;
                 }
 
                 textBox7.Text = "El chico toma una pokebola de la mesa";
@@ -127,15 +131,92 @@ namespace Game5
             }
             else if (pas == 14) //desde aqui profesor aparece y gary de fondo xd es decir otro panel
             {
-                textBox7.Text = $"Profesor Oak: Lo siento {player}, ¿recuerdas a mis sobrino Gary? Jugaban juntos de pequeños";
+                MostrarPanel(pnlOakyGary);
+                textBox8.Text = $"Profesor Oak: Lo siento {player}, ¿recuerdas a mi sobrino Gary? Jugaban juntos de pequeños";
             }
             else if (pas == 15)
             {
-                textBox7.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
+                textBox8.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
             }
-            else if (pas == 14)
+            else if (pas == 16)
             {
-                textBox7.Text = "Te apresuras a salir";
+                textBox8.Text = "Te apresuras a salir";
+            }
+            else if (pas == 17)
+            {
+                MostrarPanel(pnlGary);
+                textBox9.Text = $"Gary: Espera {player}";
+            }
+            else if (pas == 18)
+            {
+                textBox9.Text = "Gary: Probemos nuestro pokemones, ¿o tienes miedo?";
+            }
+            else if (pas == 19)
+            {
+                MostrarPanel(pnlReto);
+                if (gender == "Chico")
+                {
+                    pictureBox9.Image = Properties.Resources.images__1_;
+                }
+                else
+                {
+                    pictureBox9.Image = Properties.Resources.leafvsgary;
+                }
+
+                textBox10.Text = "La batalla comienza";
+            }
+            else if (pas == 20)
+            {
+                textBox10.Text = $"Has elegido a {pjugador.name}";
+            }
+            else if (pas == 21)
+            {
+                textBox10.Text = $"Gary elegido a {prival.name}";
+            }
+        }
+        //ELECCCIONES DE POKEMON
+        private void ElegirPokemon(int codigo) //trayendo de PokeDemo qwq odio esto auxilienme
+        {
+            pjugador = arbol.Buscar(codigo);
+
+            if (pjugador == null)
+            {
+                MessageBox.Show("No has elegido pokemon");
+                return;
+            }
+
+            if (pjugador.name == "Charmander")
+            {
+                atqp = "Arañazo";
+            }
+            else
+            {
+                atqp = "Placaje";
+            }
+
+            MostrarPanel(pnlHistoria2);
+
+            textBox4.Text = $"Profesor Oak: Excelente, elegiste a {pjugador.name}.";
+            pas = 5;
+        }
+        private void ElegirRival()
+        {
+            int codigo;
+
+            do
+            {
+                codigo = rnd.Next(1, 4);
+                prival = arbol.Buscar(codigo);
+
+            } while (prival == null || prival.code == pjugador.code);
+
+            if (prival.code == 2)
+            {
+                atqr = "Arañazo";
+            }
+            else
+            {
+                atqr = "Placaje";
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -164,8 +245,8 @@ namespace Game5
         }
         private void CargarPokemon() //trayendo metodos de PokeDemo qwq me complique la vida la verdad
         {
-            arbol.Insertar(new Pokemon("Bulbasaur", "Planta", 11, 10, 21));
-            arbol.Insertar(new Pokemon("Charmander", "Fuego", 12, 9, 19));
+            arbol.Insertar(new Pokemon("Bulbasaur", "Planta", 11, 10, 20));
+            arbol.Insertar(new Pokemon("Charmander", "Fuego", 12, 9, 20));
             arbol.Insertar(new Pokemon("Squirtle", "Agua", 10, 11, 20));
         }
 
@@ -264,51 +345,6 @@ namespace Game5
             ElegirPokemon(7);
         }
 
-        private void ElegirPokemon(int codigo) //trayendo de PokeDemo qwq odio esto auxilienme
-        {
-            pjugador = arbol.Buscar(codigo);
-
-            if (pjugador == null)
-            {
-                MessageBox.Show("No has elegido pokemon");
-                return;
-            }
-
-            if (pjugador.name == "Charmander")
-            {
-                atqp = "Arañazo";
-            }
-            else
-            {
-                atqp = "Placaje";
-            }
-
-            MostrarPanel(pnlHistoria2);
-
-            textBox4.Text = $"Profesor Oak: Excelente, elegiste a {pjugador.name}.";
-            pas = 5;
-        }
-        private void ElegirRival()
-        {
-            int codigo;
-
-            do
-            {
-                codigo = rnd.Next(1, 4);
-                prival = arbol.Buscar(codigo);
-
-            } while (prival == null || prival.code == pjugador.code);
-
-            if (prival.code == 2)
-            {
-                atqr = "Arañazo";
-            }
-            else
-            {
-                atqr = "Placaje";
-            }
-        }
-
         private void pnlHistoria2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -324,6 +360,9 @@ namespace Game5
             pnlHistoria3.Visible = false;
             pnlMisterioso.Visible = false;
             pnlRival.Visible = false;
+            pnlOakyGary.Visible = false;
+            pnlGary.Visible = false;
+            pnlReto.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
@@ -354,8 +393,18 @@ namespace Game5
         {
             SiguienteDialogo();
         }
-
-
+        private void pnlOakyGary_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlGary_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlReto_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
     }
 
 }
