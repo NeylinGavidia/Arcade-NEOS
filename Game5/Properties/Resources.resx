@@ -121,20 +121,8 @@
   <data name="iu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2005f1f8335b2ea0e281984abc10baaf-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2005f1f8335b2ea0e281984abc10baaf-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="wmremove-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wmremove-transformed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gemini_Generated_Image_iqzh46iqzh46iqzh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gemini_Generated_Image_iqzh46iqzh46iqzh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="girl-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\girl-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,22 +130,37 @@
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gemini_Generated_Image_9jsw1z9jsw1z9jsw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_9jsw1z9jsw1z9jsw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2005f1f8335b2ea0e281984abc10baaf-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2005f1f8335b2ea0e281984abc10baaf-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="uiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uiu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gemini_Generated_Image_iqzh46iqzh46iqzh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_iqzh46iqzh46iqzh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="redu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\redu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gggg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gggg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

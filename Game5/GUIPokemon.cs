@@ -35,6 +35,7 @@ namespace Game5
             pnlHistoria.Click += pnlHistoria_Click;
             pnlHistoria2.Click += pnlHistoria2_Click;
             pnlHistoria3.Click += pnlHistoria3_Click;
+            pnlMisterioso.Click += pnlMisterioso_Click;
         }
         private void SiguienteDialogo()
         {
@@ -92,9 +93,33 @@ namespace Game5
                 textBox5.Text = "!!!!!!!!!!!!!";
                 MostrarPanel(pnlHistoria3);
             }
-            else if (pas == 10)
+            else if (pas == 10) //aqui gary misterioso
             {
                 textBox5.Text = "Sistema: Un misterioso chico llega .-.";
+            }
+            else if (pas == 11)
+            {
+                textBox6.Text = "Chico misterioso: Yo también elegiré un pokémon";
+            }
+            else if (pas == 12) //aqui ya agrego el metodo de elegir
+            {
+                textBox6.Text = "El chico toma una pokebola de la mesa";
+            }
+            else if (pas == 13)
+            {
+                textBox6.Text = "Chico misterioso: Me quedaré con esta";
+            }
+            else if (pas == 14) //desde aqui profesor aparece y gary de fondo xd es decir otro panel
+            {
+                textBox6.Text = $"Profesor Oak: Lo siento {player}, ¿recuerdas a mis sobrino Gary? Jugaban juntos de pequeños";
+            }
+            else if (pas == 15)
+            {
+                textBox6.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
+            }
+            else if (pas == 14)
+            {
+                textBox6.Text = "Te apresuras a salir";
             }
         }
         private void label3_Click(object sender, EventArgs e)
@@ -283,6 +308,11 @@ namespace Game5
         {
 
         }
+        private void pnlMisterioso_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+
     }
 
 }

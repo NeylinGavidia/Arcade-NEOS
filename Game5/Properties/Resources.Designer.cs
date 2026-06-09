@@ -123,6 +123,16 @@ namespace Game5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gggg {
+            get {
+                object obj = ResourceManager.GetObject("gggg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap girl_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("girl-removebg-preview", resourceCulture);

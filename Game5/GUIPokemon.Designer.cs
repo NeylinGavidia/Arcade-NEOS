@@ -42,6 +42,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pnlHistoria2 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pnlHistoria3 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.pnlMisterioso = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pnlPok = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,13 +61,14 @@
             this.picChica = new System.Windows.Forms.PictureBox();
             this.picChico = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlHistoria3 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlName.SuspendLayout();
             this.pnlHistoria2.SuspendLayout();
+            this.pnlHistoria3.SuspendLayout();
+            this.pnlMisterioso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.pnlPok.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
@@ -72,8 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlHistoria3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -231,6 +236,82 @@
             this.textBox4.TabStop = false;
             this.textBox4.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
             // 
+            // pnlHistoria3
+            // 
+            this.pnlHistoria3.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlHistoria3.Controls.Add(this.pnlMisterioso);
+            this.pnlHistoria3.Controls.Add(this.textBox5);
+            this.pnlHistoria3.Controls.Add(this.pictureBox7);
+            this.pnlHistoria3.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlHistoria3.Location = new System.Drawing.Point(0, -1);
+            this.pnlHistoria3.Name = "pnlHistoria3";
+            this.pnlHistoria3.Size = new System.Drawing.Size(904, 544);
+            this.pnlHistoria3.TabIndex = 19;
+            this.pnlHistoria3.Visible = false;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox5.Location = new System.Drawing.Point(14, 329);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(877, 187);
+            this.textBox5.TabIndex = 1;
+            this.textBox5.TabStop = false;
+            this.textBox5.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
+            // 
+            // pnlMisterioso
+            // 
+            this.pnlMisterioso.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlMisterioso.Controls.Add(this.textBox6);
+            this.pnlMisterioso.Controls.Add(this.pictureBox3);
+            this.pnlMisterioso.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlMisterioso.Location = new System.Drawing.Point(1, 1);
+            this.pnlMisterioso.Name = "pnlMisterioso";
+            this.pnlMisterioso.Size = new System.Drawing.Size(904, 544);
+            this.pnlMisterioso.TabIndex = 20;
+            this.pnlMisterioso.Visible = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox6.Enabled = false;
+            this.textBox6.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox6.Location = new System.Drawing.Point(14, 329);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(877, 187);
+            this.textBox6.TabIndex = 1;
+            this.textBox6.TabStop = false;
+            this.textBox6.Text = "\r\n";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Game5.Properties.Resources.gggg;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
             // pnlPok
             // 
             this.pnlPok.BackColor = System.Drawing.Color.Black;
@@ -386,43 +467,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pnlHistoria3
-            // 
-            this.pnlHistoria3.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlHistoria3.Controls.Add(this.textBox5);
-            this.pnlHistoria3.Controls.Add(this.pictureBox7);
-            this.pnlHistoria3.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlHistoria3.Location = new System.Drawing.Point(0, -1);
-            this.pnlHistoria3.Name = "pnlHistoria3";
-            this.pnlHistoria3.Size = new System.Drawing.Size(904, 544);
-            this.pnlHistoria3.TabIndex = 19;
-            this.pnlHistoria3.Visible = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox5.Location = new System.Drawing.Point(14, 329);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(877, 187);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.TabStop = false;
-            this.textBox5.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -448,6 +492,12 @@
             this.pnlName.PerformLayout();
             this.pnlHistoria2.ResumeLayout(false);
             this.pnlHistoria2.PerformLayout();
+            this.pnlHistoria3.ResumeLayout(false);
+            this.pnlHistoria3.PerformLayout();
+            this.pnlMisterioso.ResumeLayout(false);
+            this.pnlMisterioso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.pnlPok.ResumeLayout(false);
             this.pnlPok.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
@@ -459,9 +509,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlHistoria3.ResumeLayout(false);
-            this.pnlHistoria3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -497,5 +544,8 @@
         private System.Windows.Forms.Panel pnlHistoria3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel pnlMisterioso;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
