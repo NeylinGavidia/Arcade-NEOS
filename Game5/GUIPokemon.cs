@@ -73,11 +73,19 @@ namespace Game5
             else if (pas == 5)
             {
                 MostrarPanel(pnlPok);
-                pnlHistoria2.Visible = true; //por favor qwq SIIIIIIIIIIIII
 
             }
             else if (pas == 6) //aqui debe ser asi para que pase de uno en uno para que muestre diversos mensaje en el mismo cuadro
             {
+                if (pjugador == null)
+                {
+                    MessageBox.Show("Primero elige un Pokémon.");
+                    pas = 5;
+                    MostrarPanel(pnlPok);
+                    return;
+                }
+
+                MostrarPanel(pnlHistoria2);
                 textBox4.Text = $"({pjugador.name} ha sido añadido a tu Pokédex)";
             }
             else if (pas == 7)
@@ -239,16 +247,31 @@ namespace Game5
         }
         private void ElegirRival()
         {
+            int opcion;
             int codigo;
 
             do
             {
-                codigo = rnd.Next(1, 4);
+                opcion = rnd.Next(1, 4);
+
+                if (opcion == 1)
+                {
+                    codigo = 1;
+                }
+                else if (opcion == 2)
+                {
+                    codigo = 4;
+                }
+                else
+                {
+                    codigo = 7;
+                }
+
                 prival = arbol.Buscar(codigo);
 
             } while (prival == null || prival.code == pjugador.code);
 
-            if (prival.code == 2)
+            if (prival.name == "Charmander")
             {
                 atqr = "Arañazo";
             }

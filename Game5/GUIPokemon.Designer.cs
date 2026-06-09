@@ -63,13 +63,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pnlPok = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.picBulbasaur = new System.Windows.Forms.PictureBox();
-            this.pictCharmander = new System.Windows.Forms.PictureBox();
-            this.picSquirtle = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlGenero = new System.Windows.Forms.Panel();
@@ -78,6 +71,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlVidaP = new System.Windows.Forms.Panel();
             this.pnlVidaR = new System.Windows.Forms.Panel();
+            this.pnlPok = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.picBulbasaur = new System.Windows.Forms.PictureBox();
+            this.pictCharmander = new System.Windows.Forms.PictureBox();
+            this.picSquirtle = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlName.SuspendLayout();
@@ -96,16 +96,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.pnlPok.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlGenero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlPok.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -238,7 +238,6 @@
             // pnlHistoria2
             // 
             this.pnlHistoria2.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlHistoria2.Controls.Add(this.pnlPok);
             this.pnlHistoria2.Controls.Add(this.textBox4);
             this.pnlHistoria2.Controls.Add(this.pictureBox2);
             this.pnlHistoria2.ForeColor = System.Drawing.SystemColors.Control;
@@ -538,94 +537,6 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // pnlPok
-            // 
-            this.pnlPok.BackColor = System.Drawing.Color.Black;
-            this.pnlPok.BackgroundImage = global::Game5.Properties.Resources.wmremove_transformed;
-            this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlPok.Controls.Add(this.label6);
-            this.pnlPok.Controls.Add(this.label5);
-            this.pnlPok.Controls.Add(this.label4);
-            this.pnlPok.Controls.Add(this.picBulbasaur);
-            this.pnlPok.Controls.Add(this.pictCharmander);
-            this.pnlPok.Controls.Add(this.picSquirtle);
-            this.pnlPok.Location = new System.Drawing.Point(0, 0);
-            this.pnlPok.Name = "pnlPok";
-            this.pnlPok.Size = new System.Drawing.Size(904, 544);
-            this.pnlPok.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Aqua;
-            this.label6.Location = new System.Drawing.Point(686, 421);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 27);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Squirtle";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(390, 421);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 27);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Charmander";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(112, 421);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 27);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Bulbasaur";
-            // 
-            // picBulbasaur
-            // 
-            this.picBulbasaur.BackColor = System.Drawing.Color.Transparent;
-            this.picBulbasaur.BackgroundImage = global::Game5.Properties.Resources._1;
-            this.picBulbasaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picBulbasaur.Location = new System.Drawing.Point(89, 180);
-            this.picBulbasaur.Name = "picBulbasaur";
-            this.picBulbasaur.Size = new System.Drawing.Size(187, 158);
-            this.picBulbasaur.TabIndex = 4;
-            this.picBulbasaur.TabStop = false;
-            this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
-            // 
-            // pictCharmander
-            // 
-            this.pictCharmander.BackColor = System.Drawing.Color.Transparent;
-            this.pictCharmander.BackgroundImage = global::Game5.Properties.Resources._44_449210_charmander_sticker_pokemon_fire_red_charmander_sprite_hd;
-            this.pictCharmander.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictCharmander.Location = new System.Drawing.Point(351, 183);
-            this.pictCharmander.Name = "pictCharmander";
-            this.pictCharmander.Size = new System.Drawing.Size(202, 155);
-            this.pictCharmander.TabIndex = 3;
-            this.pictCharmander.TabStop = false;
-            this.pictCharmander.Click += new System.EventHandler(this.pictCharmander_Click);
-            // 
-            // picSquirtle
-            // 
-            this.picSquirtle.BackColor = System.Drawing.Color.Transparent;
-            this.picSquirtle.BackgroundImage = global::Game5.Properties.Resources._147_1474864_pokemon_squirtle_icon_by_betatus_on_deviantart_squirtle;
-            this.picSquirtle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picSquirtle.Location = new System.Drawing.Point(655, 183);
-            this.picSquirtle.Name = "picSquirtle";
-            this.picSquirtle.Size = new System.Drawing.Size(193, 155);
-            this.picSquirtle.TabIndex = 2;
-            this.picSquirtle.TabStop = false;
-            this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Game5.Properties.Resources.ii;
@@ -709,6 +620,94 @@
             this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
             this.pnlVidaR.TabIndex = 3;
             // 
+            // pnlPok
+            // 
+            this.pnlPok.BackColor = System.Drawing.Color.Black;
+            this.pnlPok.BackgroundImage = global::Game5.Properties.Resources.wmremove_transformed;
+            this.pnlPok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPok.Controls.Add(this.label6);
+            this.pnlPok.Controls.Add(this.label5);
+            this.pnlPok.Controls.Add(this.label4);
+            this.pnlPok.Controls.Add(this.picBulbasaur);
+            this.pnlPok.Controls.Add(this.pictCharmander);
+            this.pnlPok.Controls.Add(this.picSquirtle);
+            this.pnlPok.Location = new System.Drawing.Point(8, 7);
+            this.pnlPok.Name = "pnlPok";
+            this.pnlPok.Size = new System.Drawing.Size(904, 544);
+            this.pnlPok.TabIndex = 37;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Aqua;
+            this.label6.Location = new System.Drawing.Point(686, 421);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 27);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Squirtle";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(390, 421);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 27);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Charmander";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(112, 421);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 27);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Bulbasaur";
+            // 
+            // picBulbasaur
+            // 
+            this.picBulbasaur.BackColor = System.Drawing.Color.Transparent;
+            this.picBulbasaur.BackgroundImage = global::Game5.Properties.Resources._1;
+            this.picBulbasaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picBulbasaur.Location = new System.Drawing.Point(89, 180);
+            this.picBulbasaur.Name = "picBulbasaur";
+            this.picBulbasaur.Size = new System.Drawing.Size(187, 158);
+            this.picBulbasaur.TabIndex = 4;
+            this.picBulbasaur.TabStop = false;
+            this.picBulbasaur.Click += new System.EventHandler(this.picBulbasaur_Click);
+            // 
+            // pictCharmander
+            // 
+            this.pictCharmander.BackColor = System.Drawing.Color.Transparent;
+            this.pictCharmander.BackgroundImage = global::Game5.Properties.Resources._44_449210_charmander_sticker_pokemon_fire_red_charmander_sprite_hd;
+            this.pictCharmander.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictCharmander.Location = new System.Drawing.Point(351, 183);
+            this.pictCharmander.Name = "pictCharmander";
+            this.pictCharmander.Size = new System.Drawing.Size(202, 155);
+            this.pictCharmander.TabIndex = 3;
+            this.pictCharmander.TabStop = false;
+            this.pictCharmander.Click += new System.EventHandler(this.pictCharmander_Click);
+            // 
+            // picSquirtle
+            // 
+            this.picSquirtle.BackColor = System.Drawing.Color.Transparent;
+            this.picSquirtle.BackgroundImage = global::Game5.Properties.Resources._147_1474864_pokemon_squirtle_icon_by_betatus_on_deviantart_squirtle;
+            this.picSquirtle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picSquirtle.Location = new System.Drawing.Point(655, 183);
+            this.picSquirtle.Name = "picSquirtle";
+            this.picSquirtle.Size = new System.Drawing.Size(193, 155);
+            this.picSquirtle.TabIndex = 2;
+            this.picSquirtle.TabStop = false;
+            this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
+            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -723,6 +722,7 @@
             this.Controls.Add(this.pnlMisterioso);
             this.Controls.Add(this.pnlHistoria3);
             this.Controls.Add(this.pnlHistoria2);
+            this.Controls.Add(this.pnlPok);
             this.Controls.Add(this.pnlName);
             this.Controls.Add(this.pnlHistoria);
             this.Controls.Add(this.pnlCarga);
@@ -761,17 +761,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.pnlPok.ResumeLayout(false);
-            this.pnlPok.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlGenero.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlPok.ResumeLayout(false);
+            this.pnlPok.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -797,13 +797,6 @@
         private System.Windows.Forms.Panel pnlHistoria2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel pnlPok;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox picBulbasaur;
-        private System.Windows.Forms.PictureBox pictCharmander;
-        private System.Windows.Forms.PictureBox picSquirtle;
         private System.Windows.Forms.Panel pnlHistoria3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -827,5 +820,12 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel pnlVidaR;
         private System.Windows.Forms.Panel pnlVidaP;
+        private System.Windows.Forms.Panel pnlPok;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox picBulbasaur;
+        private System.Windows.Forms.PictureBox pictCharmander;
+        private System.Windows.Forms.PictureBox picSquirtle;
     }
 }
