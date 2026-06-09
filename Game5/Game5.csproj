@@ -135,5 +135,29 @@
   <ItemGroup>
     <None Include="Resources\leafvsgary.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvschar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvssqui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvschar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvssqui1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charvsbul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charvssqu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squivsbul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squivschar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

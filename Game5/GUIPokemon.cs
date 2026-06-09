@@ -43,6 +43,7 @@ namespace Game5
             pnlOakyGary.Click += pnlOakyGary_Click;
             pnlGary.Click += pnlGary_Click;
             pnlReto.Click += pnlReto_Click;
+            pnlBatalla.Click += pnlBatalla_Click;
         }
 
         private void SiguienteDialogo()
@@ -163,7 +164,7 @@ namespace Game5
                     pictureBox9.Image = Properties.Resources.leafvsgary;
                 }
 
-                textBox10.Text = "La batalla comienza";
+                textBox10.Text = "La batalla comienza. ¡Preparate!";
             }
             else if (pas == 20)
             {
@@ -172,6 +173,43 @@ namespace Game5
             else if (pas == 21)
             {
                 textBox10.Text = $"Gary elegido a {prival.name}";
+            }
+            else if (pas == 22)
+            {
+                MostrarPanel(pnlBatalla);
+                pnlVidaR.Visible = true;
+                pnlVidaP.Visible = true;
+
+                if (pjugador.code == 1 && prival.code == 4) //que gusto de complicarme la vida qwq
+                {
+                    pictureBox10.Image = Properties.Resources.bulvschar;
+                }
+                else if(pjugador.code == 1 && prival.code == 7)
+                {
+                    pictureBox10.Image = Properties.Resources.bulvssqui;
+                }
+                else if (pjugador.code == 4 && prival.code == 1)
+                {
+                    pictureBox10.Image = Properties.Resources.charvsbul;
+                }
+                else if (pjugador.code == 4 && prival.code == 7)
+                {
+                    pictureBox10.Image = Properties.Resources.charvssqu;
+                }
+                else if (pjugador.code == 7 && prival.code == 1)
+                {
+                    pictureBox10.Image = Properties.Resources.squivsbul;
+                }
+                else
+                {
+                    pictureBox10.Image = Properties.Resources.squivschar;
+                }
+                textBox11.Text = $"Los PS de {prival.name} son {prival.ps}. Nivel 5";
+                
+            }
+            else if (pas == 23)
+            {
+                textBox11.Text = $"Los PS de tu {pjugador.name} son {pjugador.ps}. Nivel 5";
             }
         }
         //ELECCCIONES DE POKEMON
@@ -363,6 +401,7 @@ namespace Game5
             pnlOakyGary.Visible = false;
             pnlGary.Visible = false;
             pnlReto.Visible = false;
+            pnlBatalla.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
@@ -380,7 +419,6 @@ namespace Game5
         {
 
         }
-
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
@@ -402,6 +440,10 @@ namespace Game5
             SiguienteDialogo();
         }
         private void pnlReto_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlBatalla_Click(object sender, EventArgs e)
         {
             SiguienteDialogo();
         }

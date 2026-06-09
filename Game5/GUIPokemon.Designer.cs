@@ -54,6 +54,9 @@
             this.pnlGary = new System.Windows.Forms.Panel();
             this.pnlReto = new System.Windows.Forms.Panel();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.pnlBatalla = new System.Windows.Forms.Panel();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -73,6 +76,8 @@
             this.picChica = new System.Windows.Forms.PictureBox();
             this.picChico = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlVidaP = new System.Windows.Forms.Panel();
+            this.pnlVidaR = new System.Windows.Forms.Panel();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlName.SuspendLayout();
@@ -83,6 +88,8 @@
             this.pnlOakyGary.SuspendLayout();
             this.pnlGary.SuspendLayout();
             this.pnlReto.SuspendLayout();
+            this.pnlBatalla.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -424,6 +431,49 @@
             this.textBox10.TabStop = false;
             this.textBox10.Text = "\r\n";
             // 
+            // pnlBatalla
+            // 
+            this.pnlBatalla.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlBatalla.Controls.Add(this.pnlVidaR);
+            this.pnlBatalla.Controls.Add(this.pnlVidaP);
+            this.pnlBatalla.Controls.Add(this.textBox11);
+            this.pnlBatalla.Controls.Add(this.pictureBox10);
+            this.pnlBatalla.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlBatalla.Location = new System.Drawing.Point(0, -1);
+            this.pnlBatalla.Name = "pnlBatalla";
+            this.pnlBatalla.Size = new System.Drawing.Size(905, 544);
+            this.pnlBatalla.TabIndex = 36;
+            this.pnlBatalla.Visible = false;
+            this.pnlBatalla.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox11.Enabled = false;
+            this.textBox11.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox11.Location = new System.Drawing.Point(14, 329);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(877, 187);
+            this.textBox11.TabIndex = 1;
+            this.textBox11.TabStop = false;
+            this.textBox11.Text = "\r\n";
+            this.textBox11.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::Game5.Properties.Resources.squivschar;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
             // pictureBox9
             // 
             this.pictureBox9.BackgroundImage = global::Game5.Properties.Resources.images__1_;
@@ -643,12 +693,29 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pnlVidaP
+            // 
+            this.pnlVidaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaP.Location = new System.Drawing.Point(656, 245);
+            this.pnlVidaP.Name = "pnlVidaP";
+            this.pnlVidaP.Size = new System.Drawing.Size(183, 12);
+            this.pnlVidaP.TabIndex = 2;
+            // 
+            // pnlVidaR
+            // 
+            this.pnlVidaR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaR.Location = new System.Drawing.Point(193, 85);
+            this.pnlVidaR.Name = "pnlVidaR";
+            this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
+            this.pnlVidaR.TabIndex = 3;
+            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlBatalla);
             this.Controls.Add(this.pnlReto);
             this.Controls.Add(this.pnlGary);
             this.Controls.Add(this.pnlOakyGary);
@@ -685,6 +752,9 @@
             this.pnlGary.PerformLayout();
             this.pnlReto.ResumeLayout(false);
             this.pnlReto.PerformLayout();
+            this.pnlBatalla.ResumeLayout(false);
+            this.pnlBatalla.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -752,5 +822,10 @@
         private System.Windows.Forms.Panel pnlReto;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Panel pnlBatalla;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel pnlVidaR;
+        private System.Windows.Forms.Panel pnlVidaP;
     }
 }

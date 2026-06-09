@@ -103,6 +103,66 @@ namespace Game5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bulvschar {
+            get {
+                object obj = ResourceManager.GetObject("bulvschar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bulvschar1 {
+            get {
+                object obj = ResourceManager.GetObject("bulvschar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bulvssqui {
+            get {
+                object obj = ResourceManager.GetObject("bulvssqui", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bulvssqui1 {
+            get {
+                object obj = ResourceManager.GetObject("bulvssqui1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap charvsbul {
+            get {
+                object obj = ResourceManager.GetObject("charvsbul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap charvssqu {
+            get {
+                object obj = ResourceManager.GetObject("charvssqu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_9jsw1z9jsw1z9jsw {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_9jsw1z9jsw1z9jsw", resourceCulture);
@@ -246,6 +306,26 @@ namespace Game5.Properties {
         internal static System.Drawing.Bitmap redu {
             get {
                 object obj = ResourceManager.GetObject("redu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap squivsbul {
+            get {
+                object obj = ResourceManager.GetObject("squivsbul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap squivschar {
+            get {
+                object obj = ResourceManager.GetObject("squivschar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
