@@ -119,5 +119,23 @@
   <ItemGroup>
     <None Include="Resources\pixel-art-flowers-reflection-trees-moon-hd-wallpaper-preview.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1625048.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1320570.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5044792.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4390986.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poké_Ball_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\459254.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

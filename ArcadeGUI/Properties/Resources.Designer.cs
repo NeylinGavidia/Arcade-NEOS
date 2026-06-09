@@ -63,6 +63,56 @@ namespace ArcadeGUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1320570 {
+            get {
+                object obj = ResourceManager.GetObject("1320570", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1625048 {
+            get {
+                object obj = ResourceManager.GetObject("1625048", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4390986 {
+            get {
+                object obj = ResourceManager.GetObject("4390986", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _459254 {
+            get {
+                object obj = ResourceManager.GetObject("459254", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5044792 {
+            get {
+                object obj = ResourceManager.GetObject("5044792", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dark_pixel_jxr9sa3gdswz4no7 {
             get {
                 object obj = ResourceManager.GetObject("dark-pixel-jxr9sa3gdswz4no7", resourceCulture);
@@ -76,6 +126,16 @@ namespace ArcadeGUI.Properties {
         internal static System.Drawing.Bitmap pixel_art_flowers_reflection_trees_moon_hd_wallpaper_preview {
             get {
                 object obj = ResourceManager.GetObject("pixel-art-flowers-reflection-trees-moon-hd-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Poké_Ball_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("Poké_Ball_icon.svg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
