@@ -52,7 +52,11 @@ namespace Game3
                 if (existe == false)
                 {
                     inventario.Add(actual.objeto);
+                    System.Windows.Forms.MessageBox.Show(
+                        "Has obtenido: " + actual.objeto +
+                        "\n\nRegresas al mapa principal.");
                 }
+                actual = arbol.raiz;
             }
         }
         public bool Perdio()

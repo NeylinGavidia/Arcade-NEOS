@@ -50,56 +50,65 @@ namespace Game3
                 : juego.actual.opcionDerecha;
             // AGREGADO - imágenes
 
-            if (juego.actual.desc.Contains("INICIO"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/inicio.jpg");
-            }
+            //if (juego.actual.desc.Contains("explorador"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/inicio.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("Costa"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/costa.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("barco"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/barco.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("arena"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/playa.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("montañas"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/sierra.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("cueva"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/cueva.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("montaña"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/montana.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("selva"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/selva.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("río"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/rio.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("bosque"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/bosque.jpg");
+            //}
 
-            else if (juego.actual.desc.Contains("COSTA"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/costa.jpg");
-            }
+            // ===== AGREGADO =====
 
-            else if (juego.actual.desc.Contains("Ir al barco"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/barco.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("Buscar en la playa"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/playa.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("SIERRA"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/sierra.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("cueva"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/cueva.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("montaña"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/montana.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("SELVA"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/selva.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("río"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/rio.jpg");
-            }
-
-            else if (juego.actual.desc.Contains("bosque"))
-            {
-                picEscena.Image = Image.FromFile("Imagenes/bosque.jpg");
-            }
-
+            //else if (juego.actual.desc.Contains("Pieza 1"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/tesoro.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("Pieza 2"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/tesoro.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("Pieza 3"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/tesoro.jpg");
+            //}
+            //else if (juego.actual.desc.Contains("Llave"))
+            //{
+            //    picEscena.Image = Image.FromFile("Imagenes/tesoro.jpg");
+            //}
 
         }
         private void btnIzquierda_Click(object sender, EventArgs e)
@@ -145,5 +154,9 @@ namespace Game3
             ActualizarPantalla();
         }
 
+        private void picEscena_Click(object sender, EventArgs e)
+        {
+            picEscena.Image = Image.FromFile("Imagenes/inicio.jpg");
+        }
     }
 }

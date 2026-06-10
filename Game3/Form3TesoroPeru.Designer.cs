@@ -57,6 +57,7 @@
             this.picEscena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEscena.TabIndex = 1;
             this.picEscena.TabStop = false;
+            this.picEscena.Click += new System.EventHandler(this.picEscena_Click);
             // 
             // lblDescripcion
             // 
@@ -128,7 +129,7 @@
             this.Controls.Add(this.picEscena);
             this.Controls.Add(this.lblTitulo);
             this.Name = "Form3TesoroPeru";
-            this.Text = "Vacío";
+            this.Text = "El Tesoro Perdido del Perú";
             ((System.ComponentModel.ISupportInitialize)(this.picEscena)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
