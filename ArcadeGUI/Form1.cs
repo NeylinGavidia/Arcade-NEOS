@@ -35,7 +35,9 @@ namespace ArcadeGUI
 
         private void btnGame1_Click(object sender, EventArgs e)
         {
-
+            Form1 DetectiveNodo = new Form1();
+            DetectiveNodo.Show();
+            this.Hide();
         }
 
         private void btnGame2_Click(object sender, EventArgs e)
@@ -46,7 +48,7 @@ namespace ArcadeGUI
         }
         private void btnGame3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnGame4_Click(object sender, EventArgs e)
