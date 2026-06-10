@@ -459,7 +459,6 @@
             this.pnlOakyGary.Size = new System.Drawing.Size(905, 544);
             this.pnlOakyGary.TabIndex = 33;
             this.pnlOakyGary.Visible = false;
-            this.pnlOakyGary.Click += new System.EventHandler(this.pnlOakyGary_Click);
             // 
             // textBox8
             // 
@@ -614,7 +613,6 @@
             this.pnlGary.Size = new System.Drawing.Size(905, 545);
             this.pnlGary.TabIndex = 34;
             this.pnlGary.Visible = false;
-            this.pnlGary.Click += new System.EventHandler(this.pnlGary_Click);
             // 
             // pictureBox9
             // 
@@ -654,7 +652,6 @@
             this.pnlReto.Size = new System.Drawing.Size(905, 545);
             this.pnlReto.TabIndex = 35;
             this.pnlReto.Visible = false;
-            this.pnlReto.Click += new System.EventHandler(this.pnlReto_Click);
             // 
             // pnlBatalla
             // 

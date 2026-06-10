@@ -45,13 +45,12 @@ namespace Game5
             pnlGary.Click += pnlGary_Click;
             pnlReto.Click += pnlReto_Click;
             pnlBatalla.Click += pnlBatalla_Click;
-
-            pictureBox5.Click += pnlOakyGary_Click;
         }
 
         private void SiguienteDialogo()
         {
             pas++;
+            //MessageBox.Show("pas = " + pas); //este ayuda a ver el doble click solito
 
             if (pas == 1)
             {
