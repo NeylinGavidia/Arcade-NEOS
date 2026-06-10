@@ -68,5 +68,20 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagenes\barco.jpg" />
+    <Content Include="Imagenes\bosque.jpg" />
+    <Content Include="Imagenes\costa.jpg" />
+    <Content Include="Imagenes\cueva.jpg" />
+    <Content Include="Imagenes\inicio.jpg" />
+    <Content Include="Imagenes\montana.jpg" />
+    <Content Include="Imagenes\playa.jpg" />
+    <Content Include="Imagenes\rio.jpg" />
+    <Content Include="Imagenes\selva.jpg" />
+    <Content Include="Imagenes\sierra.jpg" />
+    <Content Include="Imagenes\tesoro.jpg" />
+    <Content Include="Imagenes\trampa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
