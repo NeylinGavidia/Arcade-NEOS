@@ -67,6 +67,7 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pnlBatalla = new System.Windows.Forms.Panel();
+            this.pnlOculto = new System.Windows.Forms.Panel();
             this.pnlVidaR = new System.Windows.Forms.Panel();
             this.pnlVidaP = new System.Windows.Forms.Panel();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -78,7 +79,10 @@
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picSquirtle = new System.Windows.Forms.PictureBox();
-            this.pnlOculto = new System.Windows.Forms.Panel();
+            this.btnLucha = new System.Windows.Forms.Button();
+            this.btnMochila = new System.Windows.Forms.Button();
+            this.btnPokemon = new System.Windows.Forms.Button();
+            this.btnHuida = new System.Windows.Forms.Button();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -565,6 +569,10 @@
             // pnlBatalla
             // 
             this.pnlBatalla.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlBatalla.Controls.Add(this.btnHuida);
+            this.pnlBatalla.Controls.Add(this.btnPokemon);
+            this.pnlBatalla.Controls.Add(this.btnMochila);
+            this.pnlBatalla.Controls.Add(this.btnLucha);
             this.pnlBatalla.Controls.Add(this.pnlOculto);
             this.pnlBatalla.Controls.Add(this.pnlVidaR);
             this.pnlBatalla.Controls.Add(this.pnlVidaP);
@@ -577,6 +585,14 @@
             this.pnlBatalla.TabIndex = 36;
             this.pnlBatalla.Visible = false;
             this.pnlBatalla.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
+            // pnlOculto
+            // 
+            this.pnlOculto.BackColor = System.Drawing.Color.Cornsilk;
+            this.pnlOculto.Location = new System.Drawing.Point(699, 263);
+            this.pnlOculto.Name = "pnlOculto";
+            this.pnlOculto.Size = new System.Drawing.Size(140, 21);
+            this.pnlOculto.TabIndex = 4;
             // 
             // pnlVidaR
             // 
@@ -609,10 +625,11 @@
             this.textBox11.TabStop = false;
             this.textBox11.Text = "\r\n";
             this.textBox11.Click += new System.EventHandler(this.pnlBatalla_Click);
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackgroundImage = global::Game5.Properties.Resources.squivschar;
+            this.pictureBox10.BackgroundImage = global::Game5.Properties.Resources.squivsbul;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10.Location = new System.Drawing.Point(0, 0);
             this.pictureBox10.Name = "pictureBox10";
@@ -710,13 +727,58 @@
             this.picSquirtle.TabStop = false;
             this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
             // 
-            // pnlOculto
+            // btnLucha
             // 
-            this.pnlOculto.BackColor = System.Drawing.Color.Cornsilk;
-            this.pnlOculto.Location = new System.Drawing.Point(720, 263);
-            this.pnlOculto.Name = "pnlOculto";
-            this.pnlOculto.Size = new System.Drawing.Size(119, 21);
-            this.pnlOculto.TabIndex = 4;
+            this.btnLucha.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLucha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLucha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLucha.Location = new System.Drawing.Point(40, 376);
+            this.btnLucha.Name = "btnLucha";
+            this.btnLucha.Size = new System.Drawing.Size(182, 27);
+            this.btnLucha.TabIndex = 5;
+            this.btnLucha.Text = "1. Luchar";
+            this.btnLucha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLucha.UseVisualStyleBackColor = true;
+            this.btnLucha.Click += new System.EventHandler(this.btnLucha_Click);
+            // 
+            // btnMochila
+            // 
+            this.btnMochila.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMochila.ForeColor = System.Drawing.Color.Black;
+            this.btnMochila.Location = new System.Drawing.Point(40, 409);
+            this.btnMochila.Name = "btnMochila";
+            this.btnMochila.Size = new System.Drawing.Size(182, 27);
+            this.btnMochila.TabIndex = 6;
+            this.btnMochila.Text = "2. Mochila";
+            this.btnMochila.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMochila.UseVisualStyleBackColor = true;
+            this.btnMochila.Click += new System.EventHandler(this.btnMochila_Click);
+            // 
+            // btnPokemon
+            // 
+            this.btnPokemon.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPokemon.ForeColor = System.Drawing.Color.Black;
+            this.btnPokemon.Location = new System.Drawing.Point(40, 444);
+            this.btnPokemon.Name = "btnPokemon";
+            this.btnPokemon.Size = new System.Drawing.Size(182, 27);
+            this.btnPokemon.TabIndex = 7;
+            this.btnPokemon.Text = "3. Pokemon";
+            this.btnPokemon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPokemon.UseVisualStyleBackColor = true;
+            this.btnPokemon.Click += new System.EventHandler(this.btnPokemon_Click);
+            // 
+            // btnHuida
+            // 
+            this.btnHuida.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuida.ForeColor = System.Drawing.Color.Black;
+            this.btnHuida.Location = new System.Drawing.Point(40, 477);
+            this.btnHuida.Name = "btnHuida";
+            this.btnHuida.Size = new System.Drawing.Size(182, 27);
+            this.btnHuida.TabIndex = 8;
+            this.btnHuida.Text = "4. Huida";
+            this.btnHuida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuida.UseVisualStyleBackColor = true;
+            this.btnHuida.Click += new System.EventHandler(this.btnHuida_Click);
             // 
             // GUIPokemon
             // 
@@ -838,5 +900,9 @@
         private System.Windows.Forms.PictureBox pictCharmander;
         private System.Windows.Forms.PictureBox picSquirtle;
         private System.Windows.Forms.Panel pnlOculto;
+        private System.Windows.Forms.Button btnLucha;
+        private System.Windows.Forms.Button btnHuida;
+        private System.Windows.Forms.Button btnPokemon;
+        private System.Windows.Forms.Button btnMochila;
     }
 }

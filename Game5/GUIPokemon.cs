@@ -194,7 +194,7 @@ namespace Game5
                 {
                     pictureBox10.Image = Properties.Resources.bulvschar;
                 }
-                else if(pjugador.code == 1 && prival.code == 7)
+                else if (pjugador.code == 1 && prival.code == 7)
                 {
                     pictureBox10.Image = Properties.Resources.bulvssqui;
                 }
@@ -215,11 +215,26 @@ namespace Game5
                     pictureBox10.Image = Properties.Resources.squivschar;
                 }
                 textBox11.Text = $"Los PS de {prival.name} son {prival.ps}. Nivel 5";
-                
+
             }
             else if (pas == 23)
             {
                 textBox11.Text = $"Los PS de tu {pjugador.name} son {pjugador.ps}. Nivel 5";
+            }
+            else if (pas == 24)
+            {
+                textBox11.Text = "¿Qué quieres hacer?";
+
+                btnLucha.Visible = true;
+                btnMochila.Visible = true;
+                btnPokemon.Visible = true;
+                btnHuida.Visible = true;
+
+                ActualizarVida();
+            }
+            else if (pas == 25)
+            {
+
             }
         }
         //ELECCCIONES DE POKEMON
@@ -302,6 +317,10 @@ namespace Game5
             CargarPokemon();
 
             MostrarPanel(pnlCarga);
+            btnLucha.Visible = false;
+            btnMochila.Visible = false;
+            btnPokemon.Visible = false;
+            btnHuida.Visible = false;
 
             timerCarga.Interval = 2000;
             timerCarga.Start();
@@ -434,7 +453,7 @@ namespace Game5
 
         private void label4_Click_1(object sender, EventArgs e) //bueno se me fue la mano xd pero son labels ahora para poder ahcerlo transparente
         {
-            
+
         }
         private void pnlHistoria3_Click(object sender, EventArgs e)
         {
@@ -492,6 +511,84 @@ namespace Game5
             else
                 pnlVidaR.BackColor = Color.Red;
         }
-    }
 
+        private void btnLucha_Click(object sender, EventArgs e)
+        {
+            Atacar();
+        }
+
+        private void btnMochila_Click(object sender, EventArgs e)
+        {
+            textBox11.Text = "No tienes objetos disponibles.";
+        }
+        private void btnPokemon_Click(object sender, EventArgs e)
+        {
+            textBox11.Text = "No tienes más Pokémon disponibles.";
+        }
+        private void btnHuida_Click(object sender, EventArgs e)
+        {
+            pjugador.ps = 0;
+            ActualizarVida();
+
+            btnLucha.Visible = false;
+            btnMochila.Visible = false;
+            btnPokemon.Visible = false;
+            btnHuida.Visible = false;
+
+            textBox11.Text = "(" + pjugador.name + " ha huido)\r\nGary: Sabía que no tenías coraje JAJAJA.";
+        }
+
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void Atacar()
+        {
+            btnLucha.Visible = false;
+            btnMochila.Visible = false;
+            btnPokemon.Visible = false;
+            btnHuida.Visible = false;
+
+            int dañoJugador = rnd.Next(1, pjugador.atq + 1);
+            int dfj = dañoJugador - (prival.def / 2);
+
+            if (dfj < 1)
+                dfj = 1;
+
+            prival.ps = prival.ps - dfj;
+            ActualizarVida();
+
+            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS.";
+
+            if (prival.ps <= 0)
+            {
+                textBox11.Text = "¡" + prival.name + " se debilitó!\r\nSistema: ¡Has ganado la batalla!";
+                return;
+            }
+
+            int dañoRival = rnd.Next(1, prival.atq + 1);
+            int dfr = dañoRival - (pjugador.def / 2);
+
+            if (dfr < 1)
+                dfr = 1;
+
+            pjugador.ps = pjugador.ps - dfr;
+            ActualizarVida();
+
+            textBox11.Text = textBox11.Text +"\r\n" + prival.name + " usó " + atqr + "\r\n" + pjugador.name + " perdió " + dfr + " PS.";
+
+            if (pjugador.ps <= 0)
+            {
+                textBox11.Text = textBox11.Text + "\r\n¡" + pjugador.name + " se debilitó!\r\nSistema: Has perdido la batalla.";
+                return;
+            }
+
+            btnLucha.Visible = true;
+            btnMochila.Visible = true;
+            btnPokemon.Visible = true;
+            btnHuida.Visible = true;
+        }
+
+    }
 }
