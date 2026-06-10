@@ -739,7 +739,7 @@
             // 
             // pnlVidaR
             // 
-            this.pnlVidaR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaR.BackColor = System.Drawing.Color.PaleGreen;
             this.pnlVidaR.Location = new System.Drawing.Point(193, 85);
             this.pnlVidaR.Name = "pnlVidaR";
             this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
@@ -747,7 +747,7 @@
             // 
             // pnlVidaP
             // 
-            this.pnlVidaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaP.BackColor = System.Drawing.Color.PaleGreen;
             this.pnlVidaP.Location = new System.Drawing.Point(656, 245);
             this.pnlVidaP.Name = "pnlVidaP";
             this.pnlVidaP.Size = new System.Drawing.Size(183, 12);

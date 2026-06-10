@@ -24,7 +24,7 @@ namespace Game5
         int pas = 0;
         string gender;
         string player;
-        int anchoVida = 150; //este es el panel para vida
+        int anchoVida = 140; //este es el panel para vida
         Random rnd = new Random(); //para randomizar;
         public GUIPokemon()
         {
@@ -148,7 +148,7 @@ namespace Game5
             }
             else if (pas == 15)
             {
-                MessageBox.Show("Estoy en paso 15");
+                
                 textBox8.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
             }
             else if (pas == 16)
@@ -515,14 +515,14 @@ namespace Game5
             pnlVidaR.Width = (prival.ps * anchoVida) / 20;
 
             if (pjugador.ps > 10)
-                pnlVidaP.BackColor = Color.LimeGreen;
+                pnlVidaP.BackColor = Color.PaleGreen;
             else if (pjugador.ps > 5)
                 pnlVidaP.BackColor = Color.Yellow;
             else
                 pnlVidaP.BackColor = Color.Red;
 
             if (prival.ps > 10)
-                pnlVidaR.BackColor = Color.LimeGreen;
+                pnlVidaR.BackColor = Color.PaleGreen;
             else if (prival.ps > 5)
                 pnlVidaR.BackColor = Color.Yellow;
             else
@@ -572,11 +572,11 @@ namespace Game5
             prival.ps = prival.ps - dfj;
             ActualizarVida();
 
-            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS.";
+            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS." +" (" + prival.ps + "/20)"; ;
 
             if (prival.ps <= 0)
             {
-                textBox11.Text = textBox11.Text + "\r\n"+ "¡" + prival.name + " se debilitó!\r\n\r\n Sistema: ¡Has ganado la batalla!";
+                textBox11.Text = textBox11.Text + "\r\n\r\n"+ "¡" + prival.name + " se debilitó!\r\n Sistema: ¡Has ganado la batalla!";
                 return; //sin esto no cargan los mensajes anteriores
             }
 
@@ -589,12 +589,11 @@ namespace Game5
             pjugador.ps = pjugador.ps - dfr;
             ActualizarVida();
 
-            textBox11.Text = textBox11.Text + "\r\n\r\n" +prival.name + " usó " + atqr + "\r\n" + pjugador.name + " perdió " + dfr + " PS.";
-
-            textBox11.Text = textBox11.Text + "\r\n\r\nPS de " + pjugador.name + ": " + Math.Max(pjugador.ps, 0) + "\r\nPS de " + prival.name + ": " + Math.Max(prival.ps, 0);
+            textBox11.Text = textBox11.Text + "\r\n\r\n" +prival.name + " usó " + atqr + "\r\n" + pjugador.name + " perdió " + dfr + " PS." +" (" + pjugador.ps + "/20)";
+            
             if (pjugador.ps <= 0)
             {
-                textBox11.Text = pjugador.name + " se debilitó!\r\n\r\n Sistema: Has perdido la batalla.";
+                textBox11.Text = pjugador.name + " se debilitó!\r\n Sistema: Has perdido la batalla.";
                 return;
             }
         }
