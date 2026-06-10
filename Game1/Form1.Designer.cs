@@ -39,6 +39,7 @@
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstSospechosos
@@ -82,10 +83,12 @@
             // 
             // btnInterrogar
             // 
-            this.btnInterrogar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnInterrogar.BackColor = System.Drawing.Color.Transparent;
+            this.btnInterrogar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnInterrogar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnInterrogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInterrogar.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInterrogar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnInterrogar.ForeColor = System.Drawing.Color.White;
             this.btnInterrogar.Location = new System.Drawing.Point(169, 328);
             this.btnInterrogar.Name = "btnInterrogar";
             this.btnInterrogar.Size = new System.Drawing.Size(100, 37);
@@ -97,6 +100,8 @@
             // btnAcusar
             // 
             this.btnAcusar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnAcusar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnAcusar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnAcusar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcusar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcusar.ForeColor = System.Drawing.Color.Red;
@@ -110,10 +115,12 @@
             // 
             // btnHistorial
             // 
-            this.btnHistorial.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnHistorial.BackColor = System.Drawing.Color.Transparent;
+            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHistorial.ForeColor = System.Drawing.Color.White;
             this.btnHistorial.Location = new System.Drawing.Point(484, 328);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(147, 37);
@@ -129,9 +136,12 @@
             // 
             // btnAnterior
             // 
-            this.btnAnterior.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnterior.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAnterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnterior.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAnterior.ForeColor = System.Drawing.Color.White;
             this.btnAnterior.Location = new System.Drawing.Point(36, 317);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(97, 23);
@@ -142,9 +152,12 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnSiguiente.BackColor = System.Drawing.Color.Transparent;
+            this.btnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSiguiente.ForeColor = System.Drawing.Color.White;
             this.btnSiguiente.Location = new System.Drawing.Point(308, 317);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(97, 23);
@@ -162,6 +175,22 @@
             this.lblTitulo.TabIndex = 8;
             this.lblTitulo.Text = "Cargando...";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.DimGray;
+            this.btnSalir.Location = new System.Drawing.Point(584, 392);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(101, 26);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +199,7 @@
             this.BackgroundImage = global::Game1.Properties.Resources.Fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(697, 430);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAnterior);
@@ -202,5 +232,6 @@
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
