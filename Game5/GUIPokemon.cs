@@ -51,8 +51,7 @@ namespace Game5
             pnlSalida.Click += pnlSalida_Click;
             pnlFin.Click += pnlFin_Click;
         }
-
-        private void SiguienteDialogo()
+        private void SiguienteDialogo() //casi toda la estructura y avance de la historia
         {
             pas++;
            /* MessageBox.Show("pas = " + pas);*/ //este ayuda a ver el doble click solito
@@ -363,6 +362,10 @@ namespace Game5
                 {
                     pnlFin.BackgroundImage = Properties.Resources.bulbasaur_ivysaur_and_venusaur_silhouette_vt0isdr6ga3w9m66;
                 }
+            }
+            else if (pas == 71) //salida para que vuelva al juego pues no se puede a menos que se cree dependencia circular y se malogra :(
+            {
+                this.Close();
             }
         }
         //ELECCCIONES DE POKEMON
