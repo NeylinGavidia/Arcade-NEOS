@@ -24,6 +24,7 @@ namespace Game5
         int pas = 0;
         string gender;
         string player;
+        int anchoVida = 183; //este es el panel para vida
         Random rnd = new Random(); //para randomizar;
         public GUIPokemon()
         {
@@ -187,6 +188,7 @@ namespace Game5
                 MostrarPanel(pnlBatalla);
                 pnlVidaR.Visible = true;
                 pnlVidaP.Visible = true;
+                pnlOculto.Visible = true;
 
                 if (pjugador.code == 1 && prival.code == 4) //que gusto de complicarme la vida qwq
                 {
@@ -469,6 +471,26 @@ namespace Game5
         private void pnlBatalla_Click(object sender, EventArgs e)
         {
             SiguienteDialogo();
+        }
+
+        private void ActualizarVida() //metodo para batalla para que baje la barra de vida
+        {
+            pnlVidaP.Width = (pjugador.ps * anchoVida) / 20;
+            pnlVidaR.Width = (prival.ps * anchoVida) / 20;
+
+            if (pjugador.ps > 10)
+                pnlVidaP.BackColor = Color.LimeGreen;
+            else if (pjugador.ps > 5)
+                pnlVidaP.BackColor = Color.Yellow;
+            else
+                pnlVidaP.BackColor = Color.Red;
+
+            if (prival.ps > 10)
+                pnlVidaR.BackColor = Color.LimeGreen;
+            else if (prival.ps > 5)
+                pnlVidaR.BackColor = Color.Yellow;
+            else
+                pnlVidaR.BackColor = Color.Red;
         }
     }
 

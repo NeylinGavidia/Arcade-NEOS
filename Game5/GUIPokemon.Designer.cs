@@ -34,43 +34,43 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlHistoria = new System.Windows.Forms.Panel();
+            this.pnlGenero = new System.Windows.Forms.Panel();
+            this.picChica = new System.Windows.Forms.PictureBox();
+            this.picChico = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerCarga = new System.Windows.Forms.Timer(this.components);
             this.pnlName = new System.Windows.Forms.Panel();
             this.btnOk = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlHistoria2 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlHistoria3 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pnlMisterioso = new System.Windows.Forms.Panel();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlRival = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnlOakyGary = new System.Windows.Forms.Panel();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.pnlGary = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnlReto = new System.Windows.Forms.Panel();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pnlBatalla = new System.Windows.Forms.Panel();
+            this.pnlVidaR = new System.Windows.Forms.Panel();
+            this.pnlVidaP = new System.Windows.Forms.Panel();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pnlGenero = new System.Windows.Forms.Panel();
-            this.picChica = new System.Windows.Forms.PictureBox();
-            this.picChico = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlVidaP = new System.Windows.Forms.Panel();
-            this.pnlVidaR = new System.Windows.Forms.Panel();
             this.pnlPok = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -78,30 +78,31 @@
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picSquirtle = new System.Windows.Forms.PictureBox();
+            this.pnlOculto = new System.Windows.Forms.Panel();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
-            this.pnlName.SuspendLayout();
-            this.pnlHistoria2.SuspendLayout();
-            this.pnlHistoria3.SuspendLayout();
-            this.pnlMisterioso.SuspendLayout();
-            this.pnlRival.SuspendLayout();
-            this.pnlOakyGary.SuspendLayout();
-            this.pnlGary.SuspendLayout();
-            this.pnlReto.SuspendLayout();
-            this.pnlBatalla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlGenero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnlHistoria2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlHistoria3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.pnlMisterioso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnlRival.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.pnlOakyGary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pnlGary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.pnlReto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pnlBatalla.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.pnlPok.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
@@ -165,6 +166,43 @@
             this.pnlHistoria.TabIndex = 1;
             this.pnlHistoria.Visible = false;
             // 
+            // pnlGenero
+            // 
+            this.pnlGenero.AutoSize = true;
+            this.pnlGenero.BackColor = System.Drawing.Color.Black;
+            this.pnlGenero.BackgroundImage = global::Game5.Properties.Resources.Gemini_Generated_Image_iqzh46iqzh46iqzh;
+            this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlGenero.Controls.Add(this.picChica);
+            this.pnlGenero.Controls.Add(this.picChico);
+            this.pnlGenero.Location = new System.Drawing.Point(0, 0);
+            this.pnlGenero.Name = "pnlGenero";
+            this.pnlGenero.Size = new System.Drawing.Size(904, 544);
+            this.pnlGenero.TabIndex = 5;
+            // 
+            // picChica
+            // 
+            this.picChica.BackColor = System.Drawing.Color.Transparent;
+            this.picChica.BackgroundImage = global::Game5.Properties.Resources.girl_removebg_preview;
+            this.picChica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picChica.Location = new System.Drawing.Point(519, 229);
+            this.picChica.Name = "picChica";
+            this.picChica.Size = new System.Drawing.Size(329, 302);
+            this.picChica.TabIndex = 1;
+            this.picChica.TabStop = false;
+            this.picChica.Click += new System.EventHandler(this.picChica_Click);
+            // 
+            // picChico
+            // 
+            this.picChico.BackColor = System.Drawing.Color.Transparent;
+            this.picChico.BackgroundImage = global::Game5.Properties.Resources._2005f1f8335b2ea0e281984abc10baaf_removebg_preview;
+            this.picChico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picChico.Location = new System.Drawing.Point(39, 87);
+            this.picChico.Name = "picChico";
+            this.picChico.Size = new System.Drawing.Size(390, 327);
+            this.picChico.TabIndex = 0;
+            this.picChico.TabStop = false;
+            this.picChico.Click += new System.EventHandler(this.picChico_Click);
+            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
@@ -180,6 +218,16 @@
             this.textBox1.Text = "\r\n  Hola, bienvenido/a al pueblo Paleta.\r\n\r\n  Soy el profesor Oak.";
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click_1);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Game5.Properties.Resources.uiu;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // timerCarga
             // 
@@ -235,6 +283,16 @@
             this.textBox2.TabStop = false;
             this.textBox2.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Game5.Properties.Resources.uiu;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
             // pnlHistoria2
             // 
             this.pnlHistoria2.BackColor = System.Drawing.Color.SeaShell;
@@ -261,6 +319,16 @@
             this.textBox4.TabIndex = 1;
             this.textBox4.TabStop = false;
             this.textBox4.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Game5.Properties.Resources.ii;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // pnlHistoria3
             // 
@@ -289,6 +357,16 @@
             this.textBox5.TabStop = false;
             this.textBox5.Text = "\r\nCuéntame un poco sobre ti, ¿cuál es tu nombre?";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
             // pnlMisterioso
             // 
             this.pnlMisterioso.BackColor = System.Drawing.Color.SeaShell;
@@ -315,6 +393,17 @@
             this.textBox6.TabIndex = 1;
             this.textBox6.TabStop = false;
             this.textBox6.Text = "\r\n";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Game5.Properties.Resources.gggg;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // pnlRival
             // 
@@ -345,6 +434,16 @@
             this.textBox7.Text = "\r\n";
             this.textBox7.Click += new System.EventHandler(this.pnlRival_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
             // pnlOakyGary
             // 
             this.pnlOakyGary.BackColor = System.Drawing.Color.SeaShell;
@@ -373,6 +472,17 @@
             this.textBox8.TabStop = false;
             this.textBox8.Text = "\r\n";
             this.textBox8.Click += new System.EventHandler(this.pnlOakyGary_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::Game5.Properties.Resources.pp;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // textBox9
             // 
@@ -403,6 +513,17 @@
             this.pnlGary.Visible = false;
             this.pnlGary.Click += new System.EventHandler(this.pnlGary_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::Game5.Properties.Resources.xdxdxdxd;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
             // pnlReto
             // 
             this.pnlReto.BackColor = System.Drawing.Color.SeaShell;
@@ -430,9 +551,21 @@
             this.textBox10.TabStop = false;
             this.textBox10.Text = "\r\n";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::Game5.Properties.Resources.images__1_;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
             // pnlBatalla
             // 
             this.pnlBatalla.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlBatalla.Controls.Add(this.pnlOculto);
             this.pnlBatalla.Controls.Add(this.pnlVidaR);
             this.pnlBatalla.Controls.Add(this.pnlVidaP);
             this.pnlBatalla.Controls.Add(this.textBox11);
@@ -444,6 +577,22 @@
             this.pnlBatalla.TabIndex = 36;
             this.pnlBatalla.Visible = false;
             this.pnlBatalla.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
+            // pnlVidaR
+            // 
+            this.pnlVidaR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaR.Location = new System.Drawing.Point(193, 85);
+            this.pnlVidaR.Name = "pnlVidaR";
+            this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
+            this.pnlVidaR.TabIndex = 3;
+            // 
+            // pnlVidaP
+            // 
+            this.pnlVidaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaP.Location = new System.Drawing.Point(656, 245);
+            this.pnlVidaP.Name = "pnlVidaP";
+            this.pnlVidaP.Size = new System.Drawing.Size(183, 12);
+            this.pnlVidaP.TabIndex = 2;
             // 
             // textBox11
             // 
@@ -472,153 +621,6 @@
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pnlBatalla_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::Game5.Properties.Resources.images__1_;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::Game5.Properties.Resources.xdxdxdxd;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Game5.Properties.Resources.pp;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Game5.Properties.Resources.gggg;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Game5.Properties.Resources.ii;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Game5.Properties.Resources.uiu;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pnlGenero
-            // 
-            this.pnlGenero.AutoSize = true;
-            this.pnlGenero.BackColor = System.Drawing.Color.Black;
-            this.pnlGenero.BackgroundImage = global::Game5.Properties.Resources.Gemini_Generated_Image_iqzh46iqzh46iqzh;
-            this.pnlGenero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlGenero.Controls.Add(this.picChica);
-            this.pnlGenero.Controls.Add(this.picChico);
-            this.pnlGenero.Location = new System.Drawing.Point(0, 0);
-            this.pnlGenero.Name = "pnlGenero";
-            this.pnlGenero.Size = new System.Drawing.Size(904, 544);
-            this.pnlGenero.TabIndex = 5;
-            // 
-            // picChica
-            // 
-            this.picChica.BackColor = System.Drawing.Color.Transparent;
-            this.picChica.BackgroundImage = global::Game5.Properties.Resources.girl_removebg_preview;
-            this.picChica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picChica.Location = new System.Drawing.Point(519, 229);
-            this.picChica.Name = "picChica";
-            this.picChica.Size = new System.Drawing.Size(329, 302);
-            this.picChica.TabIndex = 1;
-            this.picChica.TabStop = false;
-            this.picChica.Click += new System.EventHandler(this.picChica_Click);
-            // 
-            // picChico
-            // 
-            this.picChico.BackColor = System.Drawing.Color.Transparent;
-            this.picChico.BackgroundImage = global::Game5.Properties.Resources._2005f1f8335b2ea0e281984abc10baaf_removebg_preview;
-            this.picChico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picChico.Location = new System.Drawing.Point(39, 87);
-            this.picChico.Name = "picChico";
-            this.picChico.Size = new System.Drawing.Size(390, 327);
-            this.picChico.TabIndex = 0;
-            this.picChico.TabStop = false;
-            this.picChico.Click += new System.EventHandler(this.picChico_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Game5.Properties.Resources.uiu;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pnlVidaP
-            // 
-            this.pnlVidaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlVidaP.Location = new System.Drawing.Point(656, 245);
-            this.pnlVidaP.Name = "pnlVidaP";
-            this.pnlVidaP.Size = new System.Drawing.Size(183, 12);
-            this.pnlVidaP.TabIndex = 2;
-            // 
-            // pnlVidaR
-            // 
-            this.pnlVidaR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlVidaR.Location = new System.Drawing.Point(193, 85);
-            this.pnlVidaR.Name = "pnlVidaR";
-            this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
-            this.pnlVidaR.TabIndex = 3;
             // 
             // pnlPok
             // 
@@ -708,6 +710,14 @@
             this.picSquirtle.TabStop = false;
             this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
             // 
+            // pnlOculto
+            // 
+            this.pnlOculto.BackColor = System.Drawing.Color.Cornsilk;
+            this.pnlOculto.Location = new System.Drawing.Point(720, 263);
+            this.pnlOculto.Name = "pnlOculto";
+            this.pnlOculto.Size = new System.Drawing.Size(119, 21);
+            this.pnlOculto.TabIndex = 4;
+            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -736,37 +746,37 @@
             this.pnlCarga.PerformLayout();
             this.pnlHistoria.ResumeLayout(false);
             this.pnlHistoria.PerformLayout();
-            this.pnlName.ResumeLayout(false);
-            this.pnlName.PerformLayout();
-            this.pnlHistoria2.ResumeLayout(false);
-            this.pnlHistoria2.PerformLayout();
-            this.pnlHistoria3.ResumeLayout(false);
-            this.pnlHistoria3.PerformLayout();
-            this.pnlMisterioso.ResumeLayout(false);
-            this.pnlMisterioso.PerformLayout();
-            this.pnlRival.ResumeLayout(false);
-            this.pnlRival.PerformLayout();
-            this.pnlOakyGary.ResumeLayout(false);
-            this.pnlOakyGary.PerformLayout();
-            this.pnlGary.ResumeLayout(false);
-            this.pnlGary.PerformLayout();
-            this.pnlReto.ResumeLayout(false);
-            this.pnlReto.PerformLayout();
-            this.pnlBatalla.ResumeLayout(false);
-            this.pnlBatalla.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlGenero.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picChica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlName.ResumeLayout(false);
+            this.pnlName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnlHistoria2.ResumeLayout(false);
+            this.pnlHistoria2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlHistoria3.ResumeLayout(false);
+            this.pnlHistoria3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.pnlMisterioso.ResumeLayout(false);
+            this.pnlMisterioso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnlRival.ResumeLayout(false);
+            this.pnlRival.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.pnlOakyGary.ResumeLayout(false);
+            this.pnlOakyGary.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pnlGary.ResumeLayout(false);
+            this.pnlGary.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.pnlReto.ResumeLayout(false);
+            this.pnlReto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.pnlBatalla.ResumeLayout(false);
+            this.pnlBatalla.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.pnlPok.ResumeLayout(false);
             this.pnlPok.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
@@ -827,5 +837,6 @@
         private System.Windows.Forms.PictureBox picBulbasaur;
         private System.Windows.Forms.PictureBox pictCharmander;
         private System.Windows.Forms.PictureBox picSquirtle;
+        private System.Windows.Forms.Panel pnlOculto;
     }
 }
