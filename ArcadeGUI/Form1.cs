@@ -48,7 +48,8 @@ namespace ArcadeGUI
         }
         private void btnGame3_Click(object sender, EventArgs e)
         {
-            
+            Form3TesoroPeru juego3 = new Form3TesoroPeru();
+            juego3.Show();
         }
 
         private void btnGame4_Click(object sender, EventArgs e)

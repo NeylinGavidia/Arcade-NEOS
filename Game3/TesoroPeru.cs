@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 using System.Threading.Tasks;
 
 namespace Game3
@@ -51,7 +52,11 @@ namespace Game3
                 if (existe == false)
                 {
                     inventario.Add(actual.objeto);
+                    System.Windows.Forms.MessageBox.Show(
+                        "Has obtenido: " + actual.objeto +
+                        "\n\nRegresas al mapa principal.");
                 }
+                actual = arbol.raiz;
             }
         }
         public bool Perdio()

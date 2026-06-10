@@ -17,6 +17,8 @@ namespace Game3
         {
             raiz = new Nodo();
             raiz.desc = "INICIO";
+            raiz.desc ="Un antiguo explorador escondió un tesoro legendario." +
+            "\n\nDebes recorrer el Perú para encontrar las piezas del mapa.";
             raiz.opcionIzquierda = "Costa";//
             raiz.opcionDerecha = "Otras Regiones";//
 
@@ -25,6 +27,8 @@ namespace Game3
 
             Nodo costa = new Nodo();
             costa.desc = "COSTA";
+            costa.desc ="Has llegado a la Costa peruana." +
+            "\n\nEl sonido de las olas oculta secretos antiguos.";
             costa.opcionIzquierda = "Barco";//
             costa.opcionDerecha = "Playa";//
 
@@ -36,10 +40,12 @@ namespace Game3
             raiz.der = regiones;
             Nodo sierra = new Nodo();
             sierra.desc = "SIERRA";
+            sierra.desc ="Las montañas esconden misterios ancestrales.";
             sierra.opcionIzquierda = "Cueva";//
             sierra.opcionDerecha = "Montaña";//
             Nodo selva = new Nodo();
             selva.desc = "SELVA";
+            selva.desc = "La selva es oscura y llena de sonidos desconocidos.";
             selva.opcionIzquierda = "Río";//
             selva.opcionDerecha = "Bosque";//
             regiones.izq = sierra;
@@ -47,9 +53,9 @@ namespace Game3
 
             // COSTA
             Nodo barco = new Nodo();
-            barco.desc = "Ir al barco abandonado";
+            barco.desc = "Encuentras un viejo barco abandonado.";
             Nodo playa = new Nodo();
-            playa.desc = "Buscar en la playa";
+            playa.desc = "Buscas entre la arena y las rocas.";
             costa.izq = barco;
             costa.der = playa;
             Nodo camarote = new Nodo();
@@ -71,6 +77,7 @@ namespace Game3
             // SIERRA
             Nodo cueva = new Nodo();
             cueva.desc = "Entrar a una cueva";
+            cueva.desc = "Una antigua cueva guarda secretos ocultos.";
             Nodo montana = new Nodo();
             montana.desc = "Subir la montaña";
             sierra.izq = cueva;
@@ -95,6 +102,7 @@ namespace Game3
             // SELVA
             Nodo rio = new Nodo();
             rio.desc = "Seguir el río";
+            rio.desc = "Siguiendo el río descubres algo brillante.";
             Nodo bosque = new Nodo();
             bosque.desc = "Entrar al bosque";
             selva.izq = rio;
