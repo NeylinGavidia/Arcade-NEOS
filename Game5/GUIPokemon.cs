@@ -52,7 +52,7 @@ namespace Game5
         private void SiguienteDialogo()
         {
             pas++;
-            //MessageBox.Show("pas = " + pas); //este ayuda a ver el doble click solito
+            /*MessageBox.Show("pas = " + pas);*/ //este ayuda a ver el doble click solito
 
             if (pas == 1)
             {
@@ -231,7 +231,6 @@ namespace Game5
                 textBox11.Text = "¿Qué quieres hacer?";
                 MostrarBotonesBatalla();
                 ActualizarVida();
-
             }
             else if (pas == 30) //probando de 10 en 10, porque sino se cruzan >< este es ganar
             {
@@ -603,7 +602,8 @@ namespace Game5
             textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS." +" (" + prival.ps + "/20)"; ;
 
             if (prival.ps <= 0)
-            { 
+            {
+                SiguienteDialogo();
                 resultado = "Ganar";
                 pas = 29;
                 MostrarPanel(pnlResultado);
@@ -624,6 +624,7 @@ namespace Game5
             
             if (pjugador.ps <= 0)
             {
+                SiguienteDialogo();
                 resultado = "Perder";
                 pas = 39;
                 MostrarPanel(pnlResultado);
@@ -638,7 +639,6 @@ namespace Game5
             btnPokemon.Visible = false;
             btnHuida.Visible = false;
         }
-
         private void MostrarBotonesBatalla()
         {
             btnLucha.Visible = true;
