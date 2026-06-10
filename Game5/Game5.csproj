@@ -69,5 +69,95 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_9jsw1z9jsw1z9jsw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_iqzh46iqzh46iqzh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uiu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmremove-transformed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\147-1474864_pokemon-squirtle-icon-by-betatus-on-deviantart-squirtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2005f1f8335b2ea0e281984abc10baaf-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gggg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leafg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdxdxdxd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leafvsgary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvschar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvssqui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvschar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvssqui1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charvsbul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charvssqu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squivsbul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squivschar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

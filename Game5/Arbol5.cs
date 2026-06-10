@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace Game5
         public void Insertar(Pokemon d)  //tuve que hacer esto por haber puesto el Nodo en privado qwq
         {
             d.code = cont;
-            cont++;
+            cont+= 3;
             Insertar(ref raiz_pri, d);
         }
         private void Insertar(ref Nodo raiz, Pokemon d)
@@ -37,7 +37,7 @@ namespace Game5
                 Console.WriteLine("Dato duplicado");
             }
         }
-        public void Mostrar()
+        public void MostrarPok() //no funciono, obviamente es que es diferente en interfaz, hare un metodo apra uno solo
         {
             Mostrar(raiz_pri, 0);
         }
@@ -56,6 +56,11 @@ namespace Game5
 
                 Mostrar(raiz.iz, nivel + 1);
             }
+        }
+        public string Mostrar1(int c) //este public qwq
+        {
+            Pokemon p = Buscar(c);
+            return $"{p}"; //sino no me deja agregar nada >:(
         }
         public Pokemon Buscar(int code)
         {

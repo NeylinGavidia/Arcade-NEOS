@@ -87,7 +87,7 @@ namespace Game4
                 ataqueEnemigo = 15,
                 recompensaOro = 50
             };
-
+            //Comentario anonimo
             salaInundada.izq = puente;
             salaInundada.der = cueva;
 
@@ -104,7 +104,6 @@ namespace Game4
                 ataqueEnemigo = 25,
                 recompensaOro = 200
             };
-
             salonCristal.izq = jardin;
             salonCristal.der = camaraFinal;
         }

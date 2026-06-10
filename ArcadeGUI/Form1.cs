@@ -20,6 +20,7 @@ namespace ArcadeGUI
         public GUI()
         {
             InitializeComponent();
+            Cursor = Cursors.Hand;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,7 +40,9 @@ namespace ArcadeGUI
 
         private void btnGame2_Click(object sender, EventArgs e)
         {
-
+            FrmFnutivinanza frutivinanza = new FrmFnutivinanza();
+            frutivinanza.Show();
+            this.Hide();
         }
         private void btnGame3_Click(object sender, EventArgs e)
         {
@@ -61,6 +64,21 @@ namespace ArcadeGUI
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Salir sa = new Salir();
+            sa.Show();
+            this.Hide();
+            timer1.Interval = 2000;
+            timer1.Start();  
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            this.Close();
+        }
+
+        private void GUI_Load(object sender, EventArgs e)
         {
 
         }
