@@ -60,18 +60,6 @@
             this.pnlOakyGary = new System.Windows.Forms.Panel();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.pnlGary = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pnlReto = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pnlBatalla = new System.Windows.Forms.Panel();
-            this.pnlOculto = new System.Windows.Forms.Panel();
-            this.pnlVidaR = new System.Windows.Forms.Panel();
-            this.pnlVidaP = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pnlPok = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -79,10 +67,22 @@
             this.picBulbasaur = new System.Windows.Forms.PictureBox();
             this.pictCharmander = new System.Windows.Forms.PictureBox();
             this.picSquirtle = new System.Windows.Forms.PictureBox();
-            this.btnLucha = new System.Windows.Forms.Button();
-            this.btnMochila = new System.Windows.Forms.Button();
-            this.btnPokemon = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.pnlGary = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.pnlReto = new System.Windows.Forms.Panel();
+            this.pnlBatalla = new System.Windows.Forms.Panel();
             this.btnHuida = new System.Windows.Forms.Button();
+            this.btnPokemon = new System.Windows.Forms.Button();
+            this.btnMochila = new System.Windows.Forms.Button();
+            this.btnLucha = new System.Windows.Forms.Button();
+            this.pnlOculto = new System.Windows.Forms.Panel();
+            this.pnlVidaR = new System.Windows.Forms.Panel();
+            this.pnlVidaP = new System.Windows.Forms.Panel();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlGenero.SuspendLayout();
@@ -101,16 +101,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.pnlOakyGary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.pnlGary.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.pnlReto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.pnlBatalla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.pnlPok.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.pnlGary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pnlReto.SuspendLayout();
+            this.pnlBatalla.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCarga
@@ -488,157 +488,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox9.Location = new System.Drawing.Point(14, 329);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(877, 187);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.TabStop = false;
-            this.textBox9.Text = "\r\n";
-            this.textBox9.Click += new System.EventHandler(this.pnlGary_Click);
-            // 
-            // pnlGary
-            // 
-            this.pnlGary.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlGary.Controls.Add(this.textBox9);
-            this.pnlGary.Controls.Add(this.pictureBox6);
-            this.pnlGary.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlGary.Location = new System.Drawing.Point(0, -1);
-            this.pnlGary.Name = "pnlGary";
-            this.pnlGary.Size = new System.Drawing.Size(905, 545);
-            this.pnlGary.TabIndex = 34;
-            this.pnlGary.Visible = false;
-            this.pnlGary.Click += new System.EventHandler(this.pnlGary_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::Game5.Properties.Resources.xdxdxdxd;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pnlReto
-            // 
-            this.pnlReto.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlReto.Controls.Add(this.textBox10);
-            this.pnlReto.Controls.Add(this.pictureBox9);
-            this.pnlReto.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlReto.Location = new System.Drawing.Point(0, -1);
-            this.pnlReto.Name = "pnlReto";
-            this.pnlReto.Size = new System.Drawing.Size(905, 545);
-            this.pnlReto.TabIndex = 35;
-            this.pnlReto.Visible = false;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox10.Location = new System.Drawing.Point(14, 329);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(877, 187);
-            this.textBox10.TabIndex = 1;
-            this.textBox10.TabStop = false;
-            this.textBox10.Text = "\r\n";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::Game5.Properties.Resources.images__1_;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pnlBatalla
-            // 
-            this.pnlBatalla.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlBatalla.Controls.Add(this.btnHuida);
-            this.pnlBatalla.Controls.Add(this.btnPokemon);
-            this.pnlBatalla.Controls.Add(this.btnMochila);
-            this.pnlBatalla.Controls.Add(this.btnLucha);
-            this.pnlBatalla.Controls.Add(this.pnlOculto);
-            this.pnlBatalla.Controls.Add(this.pnlVidaR);
-            this.pnlBatalla.Controls.Add(this.pnlVidaP);
-            this.pnlBatalla.Controls.Add(this.textBox11);
-            this.pnlBatalla.Controls.Add(this.pictureBox10);
-            this.pnlBatalla.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlBatalla.Location = new System.Drawing.Point(0, -1);
-            this.pnlBatalla.Name = "pnlBatalla";
-            this.pnlBatalla.Size = new System.Drawing.Size(905, 544);
-            this.pnlBatalla.TabIndex = 36;
-            this.pnlBatalla.Visible = false;
-            this.pnlBatalla.Click += new System.EventHandler(this.pnlBatalla_Click);
-            // 
-            // pnlOculto
-            // 
-            this.pnlOculto.BackColor = System.Drawing.Color.Cornsilk;
-            this.pnlOculto.Location = new System.Drawing.Point(699, 263);
-            this.pnlOculto.Name = "pnlOculto";
-            this.pnlOculto.Size = new System.Drawing.Size(140, 21);
-            this.pnlOculto.TabIndex = 4;
-            // 
-            // pnlVidaR
-            // 
-            this.pnlVidaR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlVidaR.Location = new System.Drawing.Point(193, 85);
-            this.pnlVidaR.Name = "pnlVidaR";
-            this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
-            this.pnlVidaR.TabIndex = 3;
-            // 
-            // pnlVidaP
-            // 
-            this.pnlVidaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlVidaP.Location = new System.Drawing.Point(656, 245);
-            this.pnlVidaP.Name = "pnlVidaP";
-            this.pnlVidaP.Size = new System.Drawing.Size(183, 12);
-            this.pnlVidaP.TabIndex = 2;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox11.Enabled = false;
-            this.textBox11.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox11.Location = new System.Drawing.Point(14, 329);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(877, 187);
-            this.textBox11.TabIndex = 1;
-            this.textBox11.TabStop = false;
-            this.textBox11.Text = "\r\n";
-            this.textBox11.Click += new System.EventHandler(this.pnlBatalla_Click);
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::Game5.Properties.Resources.squivsbul;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pnlBatalla_Click);
-            // 
             // pnlPok
             // 
             this.pnlPok.BackColor = System.Drawing.Color.Black;
@@ -727,32 +576,118 @@
             this.picSquirtle.TabStop = false;
             this.picSquirtle.Click += new System.EventHandler(this.picSquirtle_Click);
             // 
-            // btnLucha
+            // pictureBox6
             // 
-            this.btnLucha.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLucha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLucha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLucha.Location = new System.Drawing.Point(40, 376);
-            this.btnLucha.Name = "btnLucha";
-            this.btnLucha.Size = new System.Drawing.Size(182, 27);
-            this.btnLucha.TabIndex = 5;
-            this.btnLucha.Text = "1. Luchar";
-            this.btnLucha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLucha.UseVisualStyleBackColor = true;
-            this.btnLucha.Click += new System.EventHandler(this.btnLucha_Click);
+            this.pictureBox6.BackgroundImage = global::Game5.Properties.Resources.xdxdxdxd;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
-            // btnMochila
+            // textBox9
             // 
-            this.btnMochila.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMochila.ForeColor = System.Drawing.Color.Black;
-            this.btnMochila.Location = new System.Drawing.Point(40, 409);
-            this.btnMochila.Name = "btnMochila";
-            this.btnMochila.Size = new System.Drawing.Size(182, 27);
-            this.btnMochila.TabIndex = 6;
-            this.btnMochila.Text = "2. Mochila";
-            this.btnMochila.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMochila.UseVisualStyleBackColor = true;
-            this.btnMochila.Click += new System.EventHandler(this.btnMochila_Click);
+            this.textBox9.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox9.Enabled = false;
+            this.textBox9.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox9.Location = new System.Drawing.Point(14, 329);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(877, 187);
+            this.textBox9.TabIndex = 1;
+            this.textBox9.TabStop = false;
+            this.textBox9.Text = "\r\n";
+            this.textBox9.Click += new System.EventHandler(this.pnlGary_Click);
+            // 
+            // pnlGary
+            // 
+            this.pnlGary.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlGary.Controls.Add(this.textBox9);
+            this.pnlGary.Controls.Add(this.pictureBox6);
+            this.pnlGary.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlGary.Location = new System.Drawing.Point(0, -1);
+            this.pnlGary.Name = "pnlGary";
+            this.pnlGary.Size = new System.Drawing.Size(905, 545);
+            this.pnlGary.TabIndex = 34;
+            this.pnlGary.Visible = false;
+            this.pnlGary.Click += new System.EventHandler(this.pnlGary_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::Game5.Properties.Resources.images__1_;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox10.Enabled = false;
+            this.textBox10.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox10.Location = new System.Drawing.Point(14, 329);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(877, 187);
+            this.textBox10.TabIndex = 1;
+            this.textBox10.TabStop = false;
+            this.textBox10.Text = "\r\n";
+            this.textBox10.Click += new System.EventHandler(this.pnlReto_Click);
+            // 
+            // pnlReto
+            // 
+            this.pnlReto.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlReto.Controls.Add(this.textBox10);
+            this.pnlReto.Controls.Add(this.pictureBox9);
+            this.pnlReto.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlReto.Location = new System.Drawing.Point(0, -1);
+            this.pnlReto.Name = "pnlReto";
+            this.pnlReto.Size = new System.Drawing.Size(905, 545);
+            this.pnlReto.TabIndex = 35;
+            this.pnlReto.Visible = false;
+            this.pnlReto.Click += new System.EventHandler(this.pnlReto_Click);
+            // 
+            // pnlBatalla
+            // 
+            this.pnlBatalla.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlBatalla.Controls.Add(this.btnHuida);
+            this.pnlBatalla.Controls.Add(this.btnPokemon);
+            this.pnlBatalla.Controls.Add(this.btnMochila);
+            this.pnlBatalla.Controls.Add(this.btnLucha);
+            this.pnlBatalla.Controls.Add(this.pnlOculto);
+            this.pnlBatalla.Controls.Add(this.pnlVidaR);
+            this.pnlBatalla.Controls.Add(this.pnlVidaP);
+            this.pnlBatalla.Controls.Add(this.textBox11);
+            this.pnlBatalla.Controls.Add(this.pictureBox10);
+            this.pnlBatalla.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlBatalla.Location = new System.Drawing.Point(0, -1);
+            this.pnlBatalla.Name = "pnlBatalla";
+            this.pnlBatalla.Size = new System.Drawing.Size(905, 544);
+            this.pnlBatalla.TabIndex = 38;
+            this.pnlBatalla.Visible = false;
+            this.pnlBatalla.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
+            // btnHuida
+            // 
+            this.btnHuida.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuida.ForeColor = System.Drawing.Color.Black;
+            this.btnHuida.Location = new System.Drawing.Point(40, 477);
+            this.btnHuida.Name = "btnHuida";
+            this.btnHuida.Size = new System.Drawing.Size(182, 27);
+            this.btnHuida.TabIndex = 8;
+            this.btnHuida.Text = "4. Huida";
+            this.btnHuida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuida.UseVisualStyleBackColor = true;
+            this.btnHuida.Click += new System.EventHandler(this.btnHuida_Click);
             // 
             // btnPokemon
             // 
@@ -767,18 +702,82 @@
             this.btnPokemon.UseVisualStyleBackColor = true;
             this.btnPokemon.Click += new System.EventHandler(this.btnPokemon_Click);
             // 
-            // btnHuida
+            // btnMochila
             // 
-            this.btnHuida.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuida.ForeColor = System.Drawing.Color.Black;
-            this.btnHuida.Location = new System.Drawing.Point(40, 477);
-            this.btnHuida.Name = "btnHuida";
-            this.btnHuida.Size = new System.Drawing.Size(182, 27);
-            this.btnHuida.TabIndex = 8;
-            this.btnHuida.Text = "4. Huida";
-            this.btnHuida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuida.UseVisualStyleBackColor = true;
-            this.btnHuida.Click += new System.EventHandler(this.btnHuida_Click);
+            this.btnMochila.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMochila.ForeColor = System.Drawing.Color.Black;
+            this.btnMochila.Location = new System.Drawing.Point(40, 409);
+            this.btnMochila.Name = "btnMochila";
+            this.btnMochila.Size = new System.Drawing.Size(182, 27);
+            this.btnMochila.TabIndex = 6;
+            this.btnMochila.Text = "2. Mochila";
+            this.btnMochila.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMochila.UseVisualStyleBackColor = true;
+            this.btnMochila.Click += new System.EventHandler(this.btnMochila_Click);
+            // 
+            // btnLucha
+            // 
+            this.btnLucha.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLucha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLucha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLucha.Location = new System.Drawing.Point(40, 376);
+            this.btnLucha.Name = "btnLucha";
+            this.btnLucha.Size = new System.Drawing.Size(182, 27);
+            this.btnLucha.TabIndex = 5;
+            this.btnLucha.Text = "1. Luchar";
+            this.btnLucha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLucha.UseVisualStyleBackColor = true;
+            this.btnLucha.Click += new System.EventHandler(this.btnLucha_Click);
+            // 
+            // pnlOculto
+            // 
+            this.pnlOculto.BackColor = System.Drawing.Color.Cornsilk;
+            this.pnlOculto.Location = new System.Drawing.Point(699, 263);
+            this.pnlOculto.Name = "pnlOculto";
+            this.pnlOculto.Size = new System.Drawing.Size(140, 21);
+            this.pnlOculto.TabIndex = 4;
+            // 
+            // pnlVidaR
+            // 
+            this.pnlVidaR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaR.Location = new System.Drawing.Point(193, 85);
+            this.pnlVidaR.Name = "pnlVidaR";
+            this.pnlVidaR.Size = new System.Drawing.Size(183, 12);
+            this.pnlVidaR.TabIndex = 3;
+            // 
+            // pnlVidaP
+            // 
+            this.pnlVidaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlVidaP.Location = new System.Drawing.Point(656, 245);
+            this.pnlVidaP.Name = "pnlVidaP";
+            this.pnlVidaP.Size = new System.Drawing.Size(183, 12);
+            this.pnlVidaP.TabIndex = 2;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox11.Enabled = false;
+            this.textBox11.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox11.Location = new System.Drawing.Point(14, 329);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(877, 187);
+            this.textBox11.TabIndex = 1;
+            this.textBox11.TabStop = false;
+            this.textBox11.Text = "\r\n";
+            this.textBox11.Click += new System.EventHandler(this.pnlBatalla_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
             // 
             // GUIPokemon
             // 
@@ -830,20 +829,20 @@
             this.pnlOakyGary.ResumeLayout(false);
             this.pnlOakyGary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.pnlGary.ResumeLayout(false);
-            this.pnlGary.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.pnlReto.ResumeLayout(false);
-            this.pnlReto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.pnlBatalla.ResumeLayout(false);
-            this.pnlBatalla.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.pnlPok.ResumeLayout(false);
             this.pnlPok.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBulbasaur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCharmander)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSquirtle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.pnlGary.ResumeLayout(false);
+            this.pnlGary.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.pnlReto.ResumeLayout(false);
+            this.pnlReto.PerformLayout();
+            this.pnlBatalla.ResumeLayout(false);
+            this.pnlBatalla.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -881,17 +880,6 @@
         private System.Windows.Forms.Panel pnlOakyGary;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Panel pnlGary;
-        private System.Windows.Forms.Panel pnlReto;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel pnlBatalla;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Panel pnlVidaR;
-        private System.Windows.Forms.Panel pnlVidaP;
         private System.Windows.Forms.Panel pnlPok;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -899,10 +887,21 @@
         private System.Windows.Forms.PictureBox picBulbasaur;
         private System.Windows.Forms.PictureBox pictCharmander;
         private System.Windows.Forms.PictureBox picSquirtle;
-        private System.Windows.Forms.Panel pnlOculto;
-        private System.Windows.Forms.Button btnLucha;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel pnlGary;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Panel pnlReto;
+        private System.Windows.Forms.Panel pnlBatalla;
         private System.Windows.Forms.Button btnHuida;
         private System.Windows.Forms.Button btnPokemon;
         private System.Windows.Forms.Button btnMochila;
+        private System.Windows.Forms.Button btnLucha;
+        private System.Windows.Forms.Panel pnlOculto;
+        private System.Windows.Forms.Panel pnlVidaR;
+        private System.Windows.Forms.Panel pnlVidaP;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }

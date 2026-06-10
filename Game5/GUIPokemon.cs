@@ -45,6 +45,7 @@ namespace Game5
             pnlGary.Click += pnlGary_Click;
             pnlReto.Click += pnlReto_Click;
             pnlBatalla.Click += pnlBatalla_Click;
+
         }
 
         private void SiguienteDialogo()
@@ -223,12 +224,12 @@ namespace Game5
             }
             else if (pas == 24)
             {
+                pnlBatalla.Click -= pnlBatalla_Click;
+                textBox11.Click -= pnlBatalla_Click;
+
                 textBox11.Text = "¿Qué quieres hacer?";
 
-                btnLucha.Visible = true;
-                btnMochila.Visible = true;
-                btnPokemon.Visible = true;
-                btnHuida.Visible = true;
+                MostrarBotonesBatalla();
 
                 ActualizarVida();
             }
@@ -489,12 +490,22 @@ namespace Game5
         }
         private void pnlBatalla_Click(object sender, EventArgs e)
         {
-            SiguienteDialogo();
+            if (pjugador.ps > 0 && prival.ps > 0)
+            {
+                textBox11.Text = "¿Qué quieres hacer?";
+                MostrarBotonesBatalla();
+            }
         }
 
         private void ActualizarVida() //metodo para batalla para que baje la barra de vida
         {
-            pnlVidaP.Width = (pjugador.ps * anchoVida) / 20;
+            if (pjugador.ps < 0) pjugador.ps = 0;
+            if (prival.ps < 0) prival.ps = 0;
+
+            if (pjugador.ps > 20) pjugador.ps = 20;
+            if (prival.ps > 20) prival.ps = 20;
+
+            pnlVidaP.Width = (pjugador.ps * anchoVida) / 20; //esto es para el ancho de la vida
             pnlVidaR.Width = (prival.ps * anchoVida) / 20;
 
             if (pjugador.ps > 10)
@@ -520,22 +531,21 @@ namespace Game5
         private void btnMochila_Click(object sender, EventArgs e)
         {
             textBox11.Text = "No tienes objetos disponibles.";
+            OcultarBotonesBatalla();
         }
         private void btnPokemon_Click(object sender, EventArgs e)
         {
             textBox11.Text = "No tienes más Pokémon disponibles.";
+            OcultarBotonesBatalla();
         }
         private void btnHuida_Click(object sender, EventArgs e)
         {
             pjugador.ps = 0;
             ActualizarVida();
 
-            btnLucha.Visible = false;
-            btnMochila.Visible = false;
-            btnPokemon.Visible = false;
-            btnHuida.Visible = false;
+            OcultarBotonesBatalla();
 
-            textBox11.Text = "(" + pjugador.name + " ha huido)\r\nGary: Sabía que no tenías coraje JAJAJA.";
+            textBox11.Text = "(" + pjugador.name + " ha huido)\r\n\nGary: Sabía que no tenías coraje JAJAJA.";
         }
 
 
@@ -545,10 +555,7 @@ namespace Game5
         }
         private void Atacar()
         {
-            btnLucha.Visible = false;
-            btnMochila.Visible = false;
-            btnPokemon.Visible = false;
-            btnHuida.Visible = false;
+            OcultarBotonesBatalla(); //ojala
 
             int dañoJugador = rnd.Next(1, pjugador.atq + 1);
             int dfj = dañoJugador - (prival.def / 2);
@@ -559,11 +566,11 @@ namespace Game5
             prival.ps = prival.ps - dfj;
             ActualizarVida();
 
-            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS.";
+            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n\n" + prival.name + " perdió " + dfj + " PS.";
 
             if (prival.ps <= 0)
             {
-                textBox11.Text = "¡" + prival.name + " se debilitó!\r\nSistema: ¡Has ganado la batalla!";
+                textBox11.Text = "¡" + prival.name + " se debilitó!\r\n\n Sistema: ¡Has ganado la batalla!";
                 return;
             }
 
@@ -576,19 +583,28 @@ namespace Game5
             pjugador.ps = pjugador.ps - dfr;
             ActualizarVida();
 
-            textBox11.Text = textBox11.Text +"\r\n" + prival.name + " usó " + atqr + "\r\n" + pjugador.name + " perdió " + dfr + " PS.";
+            textBox11.Text = prival.name + " usó " + atqr + "\r\n\n" + pjugador.name + " perdió " + dfr + " PS.";
 
             if (pjugador.ps <= 0)
             {
-                textBox11.Text = textBox11.Text + "\r\n¡" + pjugador.name + " se debilitó!\r\nSistema: Has perdido la batalla.";
+                textBox11.Text = pjugador.name + " se debilitó!\r\n\n Sistema: Has perdido la batalla.";
                 return;
             }
+        }
+        private void OcultarBotonesBatalla()
+        {
+            btnLucha.Visible = false;
+            btnMochila.Visible = false;
+            btnPokemon.Visible = false;
+            btnHuida.Visible = false;
+        }
 
+        private void MostrarBotonesBatalla()
+        {
             btnLucha.Visible = true;
             btnMochila.Visible = true;
             btnPokemon.Visible = true;
             btnHuida.Visible = true;
         }
-
     }
 }
