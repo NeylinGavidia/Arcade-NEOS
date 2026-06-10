@@ -67,6 +67,11 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.pnlDespedida = new System.Windows.Forms.Panel();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.pnlSalida = new System.Windows.Forms.Panel();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.pnlFin = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pokeball = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -89,6 +94,8 @@
             this.picChica = new System.Windows.Forms.PictureBox();
             this.picChico = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pnlCarga.SuspendLayout();
             this.pnlHistoria.SuspendLayout();
             this.pnlName.SuspendLayout();
@@ -102,6 +109,10 @@
             this.pnlBatalla.SuspendLayout();
             this.pnlResultado.SuspendLayout();
             this.pnlDespedida.SuspendLayout();
+            this.pnlSalida.SuspendLayout();
+            this.pnlFin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokeball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -587,8 +598,9 @@
             // pnlDespedida
             // 
             this.pnlDespedida.BackColor = System.Drawing.Color.SeaShell;
-            this.pnlDespedida.Controls.Add(this.textBox13);
+            this.pnlDespedida.Controls.Add(this.pokeball);
             this.pnlDespedida.Controls.Add(this.pictureBox12);
+            this.pnlDespedida.Controls.Add(this.textBox13);
             this.pnlDespedida.ForeColor = System.Drawing.SystemColors.Control;
             this.pnlDespedida.Location = new System.Drawing.Point(0, 0);
             this.pnlDespedida.Name = "pnlDespedida";
@@ -612,16 +624,79 @@
             this.textBox13.Text = "\r\n";
             this.textBox13.Click += new System.EventHandler(this.pnlDespedida_Click);
             // 
+            // pnlSalida
+            // 
+            this.pnlSalida.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlSalida.Controls.Add(this.pictureBox14);
+            this.pnlSalida.Controls.Add(this.textBox14);
+            this.pnlSalida.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlSalida.Location = new System.Drawing.Point(0, -1);
+            this.pnlSalida.Name = "pnlSalida";
+            this.pnlSalida.Size = new System.Drawing.Size(904, 545);
+            this.pnlSalida.TabIndex = 41;
+            this.pnlSalida.Visible = false;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox14.Enabled = false;
+            this.textBox14.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox14.Location = new System.Drawing.Point(14, 329);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(877, 187);
+            this.textBox14.TabIndex = 1;
+            this.textBox14.TabStop = false;
+            this.textBox14.Text = "\r\n";
+            this.textBox14.Click += new System.EventHandler(this.pnlSalida_Click);
+            // 
+            // pnlFin
+            // 
+            this.pnlFin.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlFin.BackgroundImage = global::Game5.Properties.Resources.pokemon_wallpaper_preview1;
+            this.pnlFin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFin.Controls.Add(this.label8);
+            this.pnlFin.Controls.Add(this.label7);
+            this.pnlFin.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlFin.Location = new System.Drawing.Point(0, 0);
+            this.pnlFin.Name = "pnlFin";
+            this.pnlFin.Size = new System.Drawing.Size(905, 544);
+            this.pnlFin.TabIndex = 42;
+            this.pnlFin.Visible = false;
+            this.pnlFin.Click += new System.EventHandler(this.pnlFin_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::Game5.Properties.Resources.pueblol;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox14.Location = new System.Drawing.Point(6, 9);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(894, 293);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 2;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pokeball
+            // 
+            this.pokeball.BackColor = System.Drawing.SystemColors.Control;
+            this.pokeball.BackgroundImage = global::Game5.Properties.Resources.Poké_Ball_icon_svg;
+            this.pokeball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pokeball.Location = new System.Drawing.Point(445, 328);
+            this.pokeball.Name = "pokeball";
+            this.pokeball.Size = new System.Drawing.Size(37, 42);
+            this.pokeball.TabIndex = 3;
+            this.pokeball.TabStop = false;
+            // 
             // pictureBox12
             // 
             this.pictureBox12.BackgroundImage = global::Game5.Properties.Resources.despedida;
             this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Image = global::Game5.Properties.Resources.garyseva;
-            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Location = new System.Drawing.Point(6, 9);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(901, 304);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.Size = new System.Drawing.Size(894, 293);
+            this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
             // 
             // pictureBox11
@@ -864,12 +939,38 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(131, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(655, 36);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Gracias por jugar la versión de PokeNeos";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(217, 479);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(511, 36);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Algún día actualizaremos xd ;-;";
+            // 
             // GUIPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlFin);
+            this.Controls.Add(this.pnlSalida);
             this.Controls.Add(this.pnlDespedida);
             this.Controls.Add(this.pnlResultado);
             this.Controls.Add(this.pnlBatalla);
@@ -916,6 +1017,12 @@
             this.pnlResultado.PerformLayout();
             this.pnlDespedida.ResumeLayout(false);
             this.pnlDespedida.PerformLayout();
+            this.pnlSalida.ResumeLayout(false);
+            this.pnlSalida.PerformLayout();
+            this.pnlFin.ResumeLayout(false);
+            this.pnlFin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokeball)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1002,5 +1109,12 @@
         private System.Windows.Forms.Panel pnlDespedida;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pokeball;
+        private System.Windows.Forms.Panel pnlSalida;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Panel pnlFin;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }

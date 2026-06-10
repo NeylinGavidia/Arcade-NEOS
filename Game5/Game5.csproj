@@ -165,5 +165,29 @@
   <ItemGroup>
     <None Include="Resources\despedida.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poké_Ball_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pueblor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pueblol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulbasaur-ivysaur-and-venusaur-silhouette-vt0isdr6ga3w9m66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemon-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-silhouette-of-wartortle-x0k0kuaxp9wiq8ct.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokemon-wallpaper-preview1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,12 +48,14 @@ namespace Game5
             pnlBatalla.Click += pnlBatalla_Click;
             pnlResultado.Click += pnlResultado_Click;
             pnlDespedida.Click += pnlDespedida_Click;
+            pnlSalida.Click += pnlSalida_Click;
+            pnlFin.Click += pnlFin_Click;
         }
 
         private void SiguienteDialogo()
         {
             pas++;
-            /*MessageBox.Show("pas = " + pas);*/ //este ayuda a ver el doble click solito
+           /* MessageBox.Show("pas = " + pas);*/ //este ayuda a ver el doble click solito
 
             if (pas == 1)
             {
@@ -249,6 +251,7 @@ namespace Game5
             {
                 MostrarPanel(pnlDespedida);
                 textBox13.Text = "Profesor Oak: Disculpa a mi sobrino, ese muchacho es demasiado orgulloso *suspira*"; //continua ganar
+                pas = 59;
             }
             else if (pas == 40) //perder
             {
@@ -274,6 +277,7 @@ namespace Game5
             else if (pas == 45)
             {
                 textBox13.Text = "Profesor Oak: Ahora tu pokemon debe descansar hasta recuperarse";
+                pas = 59;
             }
             else if (pas == 50) //huir
             {
@@ -289,11 +293,76 @@ namespace Game5
             }
             else if (pas == 53)
             {
+                MostrarPanel(pnlDespedida);
                 textBox13.Text = "Profesor Oak: *se aclara la garganta* Disculpa a mi sobrino, está muy empeñado en luchar."; //continua huida
+                pas = 59;
             }
             else if (pas == 60)
             {
                 textBox13.Text = "Profesor Oak: ..."; //general
+            }
+            else if (pas == 61)
+            {
+                textBox13.Text = "Profesor Oak: De todos modos, toma esto...";
+            }
+            else if (pas == 62)
+            {
+                pokeball.Visible = true;
+                textBox13.Text = "Sistema: Recibiste [1 pokebola]";
+            }
+            else if (pas == 63)
+            {
+                pokeball.Visible = false;
+                textBox13.Text = "Profesor Oak: Esto te será muy útil en tu aventura de hoy en más";
+            }
+            else if (pas == 64)
+            {
+                textBox13.Text = "Profesor Oak: Con esto podrás capturar más pokemones y completar tu Pokedex";
+            }
+            else if (pas == 65)
+            {
+                textBox13.Text = "Profesor Oak: Increíble, ¿verdad?";
+            }
+            else if (pas == 66)
+            {
+                textBox13.Text = "Sistema: Pokebola se ha añadido a tu bolsa de objetos";
+            }
+            else if (pas == 67)
+            {
+                textBox13.Text = "Profesor Oak: Usa esto cuando el pokemon salvaje tenga menos vida, sino podría escapar";
+            }
+            else if (pas == 68)
+            {
+                textBox13.Text = $"Profesor Oak: ¡Bueno! No te quito más tiempo. Ve y diviertete en tu aventura, {player}";
+            }
+            else if (pas == 69)
+            {
+                MostrarPanel(pnlSalida);
+                if (gender == "Chico")
+                {
+                    pictureBox14.Image = Properties.Resources.pueblor;
+                }
+                else
+                {
+                    pictureBox14.Image = Properties.Resources.pueblol;
+                }
+                textBox14.Text = "Sistema: Sales del laboratorio y vas hacia las afueras del Pueblo Paleta";
+            }
+            else if (pas == 70)
+            {
+                MostrarPanel(pnlFin);
+                if (pjugador.code == 4)
+                {
+                    pnlFin.BackgroundImage = Properties.Resources.pokemon_wallpaper_preview1;
+                }
+                else if (pjugador.code == 7)
+                {
+                    pnlFin.BackgroundImage = Properties.Resources.black_silhouette_of_wartortle_x0k0kuaxp9wiq8ct;
+                }
+                else
+                {
+                    pnlFin.BackgroundImage = Properties.Resources.bulbasaur_ivysaur_and_venusaur_silhouette_vt0isdr6ga3w9m66;
+                }
             }
         }
         //ELECCCIONES DE POKEMON
@@ -380,6 +449,7 @@ namespace Game5
             btnMochila.Visible = false;
             btnPokemon.Visible = false;
             btnHuida.Visible = false;
+            pokeball.Visible = false;
 
             timerCarga.Interval = 2000;
             timerCarga.Start();
@@ -507,6 +577,8 @@ namespace Game5
             pnlBatalla.Visible = false;
             pnlResultado.Visible = false;
             pnlDespedida.Visible = false;
+            pnlSalida.Visible = false;
+            pnlFin.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
@@ -679,6 +751,14 @@ namespace Game5
             SiguienteDialogo();
         }
         private void pnlDespedida_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlSalida_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlFin_Click(object sender, EventArgs e)
         {
             SiguienteDialogo();
         }

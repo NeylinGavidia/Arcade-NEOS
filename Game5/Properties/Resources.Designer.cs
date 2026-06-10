@@ -103,6 +103,26 @@ namespace Game5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap black_silhouette_of_wartortle_x0k0kuaxp9wiq8ct {
+            get {
+                object obj = ResourceManager.GetObject("black-silhouette-of-wartortle-x0k0kuaxp9wiq8ct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bulbasaur_ivysaur_and_venusaur_silhouette_vt0isdr6ga3w9m66 {
+            get {
+                object obj = ResourceManager.GetObject("bulbasaur-ivysaur-and-venusaur-silhouette-vt0isdr6ga3w9m66", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bulvschar {
             get {
                 object obj = ResourceManager.GetObject("bulvschar", resourceCulture);
@@ -303,9 +323,69 @@ namespace Game5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Poké_Ball_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("Poké_Ball_icon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokemon_wallpaper_preview {
+            get {
+                object obj = ResourceManager.GetObject("pokemon-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokemon_wallpaper_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("pokemon-wallpaper-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pp {
             get {
                 object obj = ResourceManager.GetObject("pp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pueblol {
+            get {
+                object obj = ResourceManager.GetObject("pueblol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pueblor {
+            get {
+                object obj = ResourceManager.GetObject("pueblor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red {
+            get {
+                object obj = ResourceManager.GetObject("red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
