@@ -50,6 +50,7 @@ namespace Game1
             txtPantalla.Text = "========================================\r\n" +
                                " 🕒 HORA DEL REPORTE: 01:30 A.M.\r\n" +
                                " LUGAR DEL CRIMEN: Mansión Hillside\r\n" +
+                               " ❤️ OPORTUNIDADES: " + dtn.vd + "\r\n" +
                                "========================================\r\n\r\n" +
                                "🕵️‍ DETECTIVE NODO: El crimen ocurrió hace poco más de una hora, entre la medianoche y las 12:30.\r\n\r\n" +
                                "Los 5 sospechosos siguen dentro de la casa. Selecciona uno en el expediente para comenzar el interrogatorio.";
@@ -89,6 +90,12 @@ namespace Game1
 
         private void btnAcusar_Click(object sender, EventArgs e)
         {
+            if (dtn.vd <= 0)
+            {
+                MessageBox.Show("El juego ha terminado. Ya no tienes más oportunidades.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (lstSospechosos.SelectedIndex != -1)
             {
                 string nombre = lstSospechosos.SelectedItem.ToString();
@@ -98,12 +105,23 @@ namespace Game1
                     MessageBox.Show("¡CASO RESUELTO!\r\n\r\nEl verdadero asesino es " + nombre + ". ¡Buen trabajo, detective!", "¡Felicidades!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPantalla.Clear();
                     txtPantalla.Text = "🚨 CASO CERRADO: El culpable está tras las rejas.";
+                    DeshabilitaControles();
                 }
                 else
                 {
-                    MessageBox.Show("INCORRECTO\r\n\r\n" + nombre + " es inocente. Te has equivocado y el culpable sigue libre.", "Sigue investigando", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtPantalla.Clear();
-                    txtPantalla.Text = "❌ INFORME: Acusación fallida contra " + nombre + ". Revisa las pistas de nuevo.";
+                    if (dtn.vd > 0)
+                    {
+                        MessageBox.Show("INCORRECTO\r\n\r\n" + nombre + " es inocente.\r\nTe quedan " + dtn.vd + " intentos.", "Sigue investigando", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtPantalla.Clear();
+                        txtPantalla.Text = "❌ INFORME: Acusación fallida contra " + nombre + ".\r\n⚠️ OPORTUNIDADES RESTANTES: " + dtn.vd;
+                    }
+                    else
+                    {
+                        MessageBox.Show("¡GAME OVER!\r\n\r\nTe has quedado sin oportunidades. El verdadero asesino era: " + dtn.ases.nomb, "Caso Fallido", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        txtPantalla.Clear();
+                        txtPantalla.Text = "💀 CASO PERDIDO: El asesino burló la investigación.";
+                        DeshabilitaControles();
+                    }
                 }
             }
         }
@@ -170,6 +188,16 @@ namespace Game1
                 }
                 temp = temp.sig;
             } while (temp != dtn.ls.prim && !encontrado);
+        }
+
+        //bloquea los controles al terminar
+        private void DeshabilitaControles()
+        {
+            btnInterrogar.Enabled = false;
+            btnAcusar.Enabled = false;
+            btnAnterior.Enabled = false;
+            btnSiguiente.Enabled = false;
+            lstSospechosos.Enabled = false;
         }
     }
 }

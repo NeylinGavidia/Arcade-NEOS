@@ -11,6 +11,7 @@ namespace Game1
         Random r = new Random();
         public Persona ases;
         public Persona vict;
+        public int vd = 3;
         public ListaDobleCircular ls = new ListaDobleCircular();
         public Pila pl = new Pila();
 
@@ -141,62 +142,62 @@ namespace Game1
             switch (nomb)
             {
                 case "Selene":
-                    if (habi == "Biblioteca")
+                    if (p.nomb == ases.nomb)
                     {
-                        test = "\"Yo me quedé en la biblioteca ordenando unos archivos viejos casi hasta la medianoche. Estoy segura de que salí a las 00:15 porque miré mi teléfono... aunque el reloj de pared de aquí marcaba otra hora. No sé si alguien lo movió.\"";
+                        test = "\"¡Yo no hice nada! No podía dormir y me quedé caminando por los pasillos oscuros... de verdad, ¡soy inocente!\"";
                     }
                     else
                     {
-                        test = "\"Yo solo fui a la zona de " + habi + " porque me pareció escuchar un ruido extraño por ahí. Cuando entré a revisar, me di cuenta de que la luz principal parpadeaba raro, como si alguien hubiera estado jugando con el interruptor.\"";
+                        test = "\"Yo me quedé en la zona de " + habi + " ordenando unos archivos viejos. Estaba muy concentrada y no escuché nada raro hasta que llegó la policía.\"";
                     }
                     break;
 
                 case "Dante":
-                    if (habi == "Sala")
+                    if (p.nomb == ases.nomb)
                     {
-                        test = "\"Yo estuve en la sala hasta tarde revisando unos papeles sobre la mesa. Cuando me fui a dormir, les juro que dejé todo perfectamente ordenado y limpio. Quien haya entrado después, desarregló las cosas.\"";
+                        test = "\"¿Yo? No sé de qué me habla, detective. Estaba dando vueltas por los pasillos buscando un vaso de agua... no vi a nadie.\"";
                     }
                     else
                     {
-                        test = "\"Estaba cansado y caminé hacia el área de " + habi + " para despejarme un poco. Lo único extraño es que la puerta de este sector estaba completamente abierta... y por seguridad siempre debería estar cerrada con llave a esa hora.\"";
+                        test = "\"Yo estuve todo el tiempo en el área de " + habi + " revisando unos papeles importantes sobre mi escritorio. Dejé todo perfectamente limpio al terminar.\"";
                     }
                     break;
 
                 case "Damián":
-                    if (habi == "Comedor")
+                    if (p.nomb == ases.nomb)
                     {
-                        test = "\"Yo me quedé en la mesa del comedor avanzando el informe técnico que debo entregar mañana. Alrededor de las 23:45 escuché unos pasos apurados afuera en el pasillo... era una silueta oscura que llevaba un maletín grande.\"";
+                        test = "\"¡Esto es un error! Yo solo caminaba por los pasillos del fondo porque me sentía un poco mareado. No estuve cerca de la víctima.\"";
                     }
                     else
                     {
-                        test = "\"Iba de pasada hacia el sector de " + habi + " cuando vi de reojo que alguien salía corriendo hacia el pasillo del fondo. No le vi la cara porque todo estaba muy oscuro, pero caminaba muy rápido, como escondiéndose.\"";
+                        test = "\"Estaba avanzando mi informe técnico en el sector de " + habi + ". De repente escuché unos pasos apurados afuera, pero no quise asomarme por miedo.\"";
                     }
                     break;
 
                 case "Astrid":
-                    if (habi == "Patio")
+                    if (p.nomb == ases.nomb)
                     {
-                        test = "\"Salí un momento al patio porque me sentía un poco abrumada adentro. Estaba caminando cerca de la entrada trasera y noté que había unas huellas de barro frescas en el suelo... alguien entró por ahí hace poco, estoy segura.\"";
+                        test = "\"Le juro que soy inocente. Salí a caminar por los pasillos para tomar un poco de aire porque hacía calor en mi habitación, eso es todo.\"";
                     }
                     else
                     {
-                        test = "\"Sé que me encontraron aquí en el área de " + habi + " y que eso me hace ver sospechosa, pero de verdad no tengo nada que ocultar. Yo solo estaba haciendo mi ronda de rutina; cualquiera pudo haber caminado por este pasillo.\"";
+                        test = "\"Yo estaba haciendo mi ronda de rutina por el área de " + habi + ". Todo se veía tranquilo por aquí, no entiendo en qué momento ocurrió esa desgracia.\"";
                     }
                     break;
 
                 case "Bruno":
-                    if (habi == "Cocina")
+                    if (p.nomb == ases.nomb)
                     {
-                        test = "\"Yo bajé a la cocina a prepararme un café cargado porque el sueño me estaba ganando. Justo cuando estaba ahí, entre las 11:30 y la medianoche, se cortó la luz por completo en este sector. Me quedé a oscuras un buen rato.\"";
+                        test = "\"¡Es una trampa! Yo no salí de los pasillos principales en toda la noche. Estaba desorientado porque se cortó la luz y no supe qué pasó.\"";
                     }
                     else
                     {
-                        test = "\"Estaba buscando un duplicado de las llaves en el mueble de esta zona. Lo raro fue que, justo al encender la luz aquí en " + habi + ", escuché un zumbido fuerte, como si el sistema de ventilación forzada se hubiera encendido de golpe.\"";
+                        test = "\"Bajé un momento a la zona de " + habi + " a prepararme un café bien cargado para el sueño. Justo en ese instante las luces parpadearon muy extraño.\"";
                     }
                     break;
 
                 default:
-                    test = "\"No pienso decir nada más sobre qué hacía en el área de " + habi + " hasta que pueda hablar con alguien que me asesore. Esto es un error.\"";
+                    test = "\"No pienso decir nada más sobre qué hacía en " + habi + " sin un abogado.\"";
                     break;
             }
             return tl + test;
@@ -210,6 +211,7 @@ namespace Game1
             }
             else
             {
+                vd = vd - 1; //resta vida
                 return false;
             }
         }
