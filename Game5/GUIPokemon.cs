@@ -47,6 +47,7 @@ namespace Game5
             pnlReto.Click += pnlReto_Click;
             pnlBatalla.Click += pnlBatalla_Click;
             pnlResultado.Click += pnlResultado_Click;
+            pnlDespedida.Click += pnlDespedida_Click;
         }
 
         private void SiguienteDialogo()
@@ -242,7 +243,12 @@ namespace Game5
             }
             else if (pas == 32)
             {
-                textBox12.Text = "Sistema: Gary sale del laboratorio.";
+                textBox12.Text = "Sistema: Gary sale del laboratorio."; //acaba ganar
+            }
+            else if (pas == 33)
+            {
+                MostrarPanel(pnlDespedida);
+                textBox13.Text = "Profesor Oak: Disculpa a mi sobrino, ese muchacho es demasiado orgulloso *suspira*"; //continua ganar
             }
             else if (pas == 40) //perder
             {
@@ -256,17 +262,38 @@ namespace Game5
             {
                 textBox12.Text = "Gary: JAJAJA, ya no eres interesante. Iré a entrenar.";
             }
+            else if (pas == 43)
+            {
+                textBox12.Text = "Sistema: Gary sale del laboratorio, orgulloso."; //acaba perder
+            }
+            else if (pas == 44)
+            {
+                MostrarPanel(pnlDespedida);
+                textBox13.Text = "Profesor Oak: Disculpa a mi sobrino, tenía muchas ganas de competir contigo."; //continua perder
+            }
+            else if (pas == 45)
+            {
+                textBox13.Text = "Profesor Oak: Ahora tu pokemon debe descansar hasta recuperarse";
+            }
             else if (pas == 50) //huir
             {
-                textBox12.Text = "Sistema: Gary sale del laboratorio con decepción.";
+                textBox12.Text = $"Sistema: ({pjugador.name} ha huido) 0-0";
             }
             else if (pas == 51)
             {
-                textBox12.Text = "Profesor Oak: ...";
+                textBox12.Text = "Gary: Sabía que no tenías coraje JAJAJA.";
             }
             else if (pas == 52)
             {
-                textBox12.Text = "Profesor Oak: Disculpa a mi sobrino, está muy empeñado en luchar.";
+                textBox12.Text = "Sistema: Gary sale del laboratorio con decepción."; //acaba huida
+            }
+            else if (pas == 53)
+            {
+                textBox13.Text = "Profesor Oak: *se aclara la garganta* Disculpa a mi sobrino, está muy empeñado en luchar."; //continua huida
+            }
+            else if (pas == 60)
+            {
+                textBox13.Text = "Profesor Oak: ..."; //general
             }
         }
         //ELECCCIONES DE POKEMON
@@ -479,6 +506,7 @@ namespace Game5
             pnlReto.Visible = false;
             pnlBatalla.Visible = false;
             pnlResultado.Visible = false;
+            pnlDespedida.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
@@ -647,6 +675,10 @@ namespace Game5
             btnHuida.Visible = true;
         }
         private void pnlResultado_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
+        }
+        private void pnlDespedida_Click(object sender, EventArgs e)
         {
             SiguienteDialogo();
         }

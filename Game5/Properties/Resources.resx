@@ -130,11 +130,17 @@
   <data name="bulvssqui1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulvssqui1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="charvssqu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charvssqu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="leafg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leafg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xdxdxdxd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xdxdxdxd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_9jsw1z9jsw1z9jsw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_9jsw1z9jsw1z9jsw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,9 +154,6 @@
   <data name="ii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="squivsbul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\squivsbul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,14 +163,14 @@
   <data name="pp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="garyseva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garyseva.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\44-449210_charmander-sticker-pokemon-fire-red-charmander-sprite-hd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="uiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uiu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="squivschar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\squivschar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_iqzh46iqzh46iqzh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_iqzh46iqzh46iqzh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +193,8 @@
   <data name="leafvsgary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leafvsgary.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xdxdxdxd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xdxdxdxd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="squivsbul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squivsbul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="redg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\redg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,10 +208,10 @@
   <data name="bulvschar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulvschar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="charvssqu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\charvssqu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="squivschar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squivschar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="garyseva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garyseva.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="despedida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\despedida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

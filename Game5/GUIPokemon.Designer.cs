@@ -65,6 +65,9 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.pnlResultado = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.pnlDespedida = new System.Windows.Forms.Panel();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -98,6 +101,8 @@
             this.pnlReto.SuspendLayout();
             this.pnlBatalla.SuspendLayout();
             this.pnlResultado.SuspendLayout();
+            this.pnlDespedida.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -557,9 +562,9 @@
             this.pnlResultado.Controls.Add(this.textBox12);
             this.pnlResultado.Controls.Add(this.pictureBox11);
             this.pnlResultado.ForeColor = System.Drawing.SystemColors.Control;
-            this.pnlResultado.Location = new System.Drawing.Point(8, 7);
+            this.pnlResultado.Location = new System.Drawing.Point(0, -1);
             this.pnlResultado.Name = "pnlResultado";
-            this.pnlResultado.Size = new System.Drawing.Size(905, 544);
+            this.pnlResultado.Size = new System.Drawing.Size(905, 545);
             this.pnlResultado.TabIndex = 39;
             this.pnlResultado.Visible = false;
             // 
@@ -578,6 +583,46 @@
             this.textBox12.TabStop = false;
             this.textBox12.Text = "\r\n";
             this.textBox12.Click += new System.EventHandler(this.pnlResultado_Click);
+            // 
+            // pnlDespedida
+            // 
+            this.pnlDespedida.BackColor = System.Drawing.Color.SeaShell;
+            this.pnlDespedida.Controls.Add(this.textBox13);
+            this.pnlDespedida.Controls.Add(this.pictureBox12);
+            this.pnlDespedida.ForeColor = System.Drawing.SystemColors.Control;
+            this.pnlDespedida.Location = new System.Drawing.Point(0, 0);
+            this.pnlDespedida.Name = "pnlDespedida";
+            this.pnlDespedida.Size = new System.Drawing.Size(905, 543);
+            this.pnlDespedida.TabIndex = 40;
+            this.pnlDespedida.Visible = false;
+            // 
+            // textBox13
+            // 
+            this.textBox13.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox13.Enabled = false;
+            this.textBox13.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox13.Location = new System.Drawing.Point(14, 329);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(877, 187);
+            this.textBox13.TabIndex = 1;
+            this.textBox13.TabStop = false;
+            this.textBox13.Text = "\r\n";
+            this.textBox13.Click += new System.EventHandler(this.pnlDespedida_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::Game5.Properties.Resources.despedida;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Image = global::Game5.Properties.Resources.garyseva;
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(901, 304);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
             // 
             // pictureBox11
             // 
@@ -825,6 +870,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 543);
+            this.Controls.Add(this.pnlDespedida);
             this.Controls.Add(this.pnlResultado);
             this.Controls.Add(this.pnlBatalla);
             this.Controls.Add(this.pnlReto);
@@ -868,6 +914,9 @@
             this.pnlBatalla.PerformLayout();
             this.pnlResultado.ResumeLayout(false);
             this.pnlResultado.PerformLayout();
+            this.pnlDespedida.ResumeLayout(false);
+            this.pnlDespedida.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -950,5 +999,8 @@
         private System.Windows.Forms.Panel pnlResultado;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel pnlDespedida;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }
