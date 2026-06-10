@@ -52,7 +52,7 @@ namespace Game5
         private void SiguienteDialogo()
         {
             pas++;
-            MessageBox.Show("pas = " + pas); //este ayuda a ver el doble click solito
+            //MessageBox.Show("pas = " + pas); //este ayuda a ver el doble click solito
 
             if (pas == 1)
             {
@@ -221,9 +221,9 @@ namespace Game5
             else if (pas == 23)
             {
                 MostrarPanel(pnlBatalla);
-                textBox11.Text = $"Los PS de {prival.name} son {prival.ps}. Nivel 5\r\n\nLos PS de tu {pjugador.name} son {pjugador.ps} Nivel 5";
+                textBox11.Text = $"Los PS de {prival.name} son {prival.ps}. Nivel 5\r\n\nLos PS de tu {pjugador.name} son {pjugador.ps}. Nivel 5";
                 OcultarBotonesBatalla();
-                
+
             }
             else if (pas == 24)
             {
@@ -233,22 +233,41 @@ namespace Game5
                 ActualizarVida();
 
             }
-            else if (pas == 25)
+            else if (pas == 30) //probando de 10 en 10, porque sino se cruzan >< este es ganar
             {
-                
-            }
-            else if (pas == 26)
-            {
-                MostrarPanel(pnlResultado);
                 textBox12.Text = $"Gary: Tsk... ganaste esta vez, {player}.";
             }
-            else if (pas == 35)
+            else if (pas == 31)
             {
                 textBox12.Text = $"Gary: Tsk, no importa. La próxima vez te ganaré {player}. ¡Me voy a entrenar!";
             }
-            else if (pas == 45)
+            else if (pas == 32)
+            {
+                textBox12.Text = "Sistema: Gary sale del laboratorio.";
+            }
+            else if (pas == 40) //perder
+            {
+                textBox12.Text = "Gary: JAJAJA, sabía que mi Pokémon era mejor.";
+            }
+            else if (pas == 41)
+            {
+                textBox12.Text = "Sistema: Has perdido la batalla.";
+            }
+            else if (pas == 42)
+            {
+                textBox12.Text = "Gary: JAJAJA, ya no eres interesante. Iré a entrenar.";
+            }
+            else if (pas == 50) //huir
             {
                 textBox12.Text = "Sistema: Gary sale del laboratorio con decepción.";
+            }
+            else if (pas == 51)
+            {
+                textBox12.Text = "Profesor Oak: ...";
+            }
+            else if (pas == 52)
+            {
+                textBox12.Text = "Profesor Oak: Disculpa a mi sobrino, está muy empeñado en luchar.";
             }
         }
         //ELECCCIONES DE POKEMON
@@ -559,7 +578,9 @@ namespace Game5
             ActualizarVida();
             OcultarBotonesBatalla();
             resultado = "Huir";
-            pas = 44;
+            pas = 49;
+            MostrarPanel(pnlResultado);
+            SiguienteDialogo(); // tmre al fin funciono con esto qwq tmre, sino fuese por los pasos del inciio no lo noto
             textBox11.Text = "(" + pjugador.name + " ha huido)\r\n\r\nGary: Sabía que no tenías coraje JAJAJA.";
         }
         private void textBox11_TextChanged(object sender, EventArgs e)
@@ -584,7 +605,9 @@ namespace Game5
             if (prival.ps <= 0)
             { 
                 resultado = "Ganar";
-                pas = 25;
+                pas = 29;
+                MostrarPanel(pnlResultado);
+                SiguienteDialogo();
                 return; //sin esto no cargan los mensajes anteriores
             }
 
@@ -602,7 +625,9 @@ namespace Game5
             if (pjugador.ps <= 0)
             {
                 resultado = "Perder";
-                pas = 34;
+                pas = 39;
+                MostrarPanel(pnlResultado);
+                SiguienteDialogo();
                 return;
             }
         }
