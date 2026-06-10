@@ -8,15 +8,6 @@ namespace Game4
 {
     public class Nodo
     {
-        public string nombreSala;
-        public string descripcion;
 
-        public Nodo izq;
-        public Nodo der;
-
-        public Enemigo enemigo;
-
-        public int recompensaOro;
-        public int recompensaVida;
     }
 }
