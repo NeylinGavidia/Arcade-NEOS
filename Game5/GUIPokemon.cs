@@ -24,7 +24,7 @@ namespace Game5
         int pas = 0;
         string gender;
         string player;
-        int anchoVida = 183; //este es el panel para vida
+        int anchoVida = 150; //este es el panel para vida
         Random rnd = new Random(); //para randomizar;
         public GUIPokemon()
         {
@@ -46,6 +46,7 @@ namespace Game5
             pnlReto.Click += pnlReto_Click;
             pnlBatalla.Click += pnlBatalla_Click;
 
+            pictureBox5.Click += pnlOakyGary_Click;
         }
 
         private void SiguienteDialogo()
@@ -147,6 +148,7 @@ namespace Game5
             }
             else if (pas == 15)
             {
+                MessageBox.Show("Estoy en paso 15");
                 textBox8.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
             }
             else if (pas == 16)
@@ -499,11 +501,15 @@ namespace Game5
 
         private void ActualizarVida() //metodo para batalla para que baje la barra de vida
         {
-            if (pjugador.ps < 0) pjugador.ps = 0;
-            if (prival.ps < 0) prival.ps = 0;
+            if (pjugador.ps < 0) //mas ordenadito
+                pjugador.ps = 0;
+            if (prival.ps < 0) 
+                prival.ps = 0;
 
-            if (pjugador.ps > 20) pjugador.ps = 20;
-            if (prival.ps > 20) prival.ps = 20;
+            if (pjugador.ps > 20) 
+                pjugador.ps = 20;
+            if (prival.ps > 20) 
+                prival.ps = 20;
 
             pnlVidaP.Width = (pjugador.ps * anchoVida) / 20; //esto es para el ancho de la vida
             pnlVidaR.Width = (prival.ps * anchoVida) / 20;
@@ -545,7 +551,7 @@ namespace Game5
 
             OcultarBotonesBatalla();
 
-            textBox11.Text = "(" + pjugador.name + " ha huido)\r\n\nGary: Sabía que no tenías coraje JAJAJA.";
+            textBox11.Text = "(" + pjugador.name + " ha huido)\r\n\r\nGary: Sabía que no tenías coraje JAJAJA.";
         }
 
 
@@ -566,12 +572,12 @@ namespace Game5
             prival.ps = prival.ps - dfj;
             ActualizarVida();
 
-            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n\n" + prival.name + " perdió " + dfj + " PS.";
+            textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS.";
 
             if (prival.ps <= 0)
             {
-                textBox11.Text = "¡" + prival.name + " se debilitó!\r\n\n Sistema: ¡Has ganado la batalla!";
-                return;
+                textBox11.Text = textBox11.Text + "\r\n"+ "¡" + prival.name + " se debilitó!\r\n\r\n Sistema: ¡Has ganado la batalla!";
+                return; //sin esto no cargan los mensajes anteriores
             }
 
             int dañoRival = rnd.Next(1, prival.atq + 1);
@@ -583,11 +589,12 @@ namespace Game5
             pjugador.ps = pjugador.ps - dfr;
             ActualizarVida();
 
-            textBox11.Text = prival.name + " usó " + atqr + "\r\n\n" + pjugador.name + " perdió " + dfr + " PS.";
+            textBox11.Text = textBox11.Text + "\r\n\r\n" +prival.name + " usó " + atqr + "\r\n" + pjugador.name + " perdió " + dfr + " PS.";
 
+            textBox11.Text = textBox11.Text + "\r\n\r\nPS de " + pjugador.name + ": " + Math.Max(pjugador.ps, 0) + "\r\nPS de " + prival.name + ": " + Math.Max(prival.ps, 0);
             if (pjugador.ps <= 0)
             {
-                textBox11.Text = pjugador.name + " se debilitó!\r\n\n Sistema: Has perdido la batalla.";
+                textBox11.Text = pjugador.name + " se debilitó!\r\n\r\n Sistema: Has perdido la batalla.";
                 return;
             }
         }
