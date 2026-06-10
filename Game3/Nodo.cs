@@ -13,5 +13,7 @@ namespace Game3
         public Nodo der;
         public string objeto;
         public bool derrota;
+        public string opcionIzquierda;
+        public string opcionDerecha;
     }
 }
