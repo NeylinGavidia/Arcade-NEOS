@@ -26,6 +26,7 @@ namespace Game5
         string player;
         int anchoVida = 140; //este es el panel para vida
         Random rnd = new Random(); //para randomizar;
+        string resultado; //esto para la batalla, sino no puedo moverme
         public GUIPokemon()
         {
             InitializeComponent();
@@ -45,12 +46,13 @@ namespace Game5
             pnlGary.Click += pnlGary_Click;
             pnlReto.Click += pnlReto_Click;
             pnlBatalla.Click += pnlBatalla_Click;
+            pnlResultado.Click += pnlResultado_Click;
         }
 
         private void SiguienteDialogo()
         {
             pas++;
-            //MessageBox.Show("pas = " + pas); //este ayuda a ver el doble click solito
+            MessageBox.Show("pas = " + pas); //este ayuda a ver el doble click solito
 
             if (pas == 1)
             {
@@ -147,7 +149,6 @@ namespace Game5
             }
             else if (pas == 15)
             {
-                
                 textBox8.Text = "Profesor Oak: Bueno, ahora ambos tienen una gran responsabilidad, así que cuiden bien de esos pokemones.";
             }
             else if (pas == 16)
@@ -187,7 +188,7 @@ namespace Game5
             }
             else if (pas == 22)
             {
-                MostrarPanel(pnlBatalla);
+                OcultarBotonesBatalla();
                 pnlVidaR.Visible = true;
                 pnlVidaP.Visible = true;
                 pnlOculto.Visible = true;
@@ -216,27 +217,38 @@ namespace Game5
                 {
                     pictureBox10.Image = Properties.Resources.squivschar;
                 }
-                textBox11.Text = $"Los PS de {prival.name} son {prival.ps}. Nivel 5";
-
             }
             else if (pas == 23)
             {
-                textBox11.Text = $"Los PS de tu {pjugador.name} son {pjugador.ps}. Nivel 5";
+                MostrarPanel(pnlBatalla);
+                textBox11.Text = $"Los PS de {prival.name} son {prival.ps}. Nivel 5\r\n\nLos PS de tu {pjugador.name} son {pjugador.ps} Nivel 5";
+                OcultarBotonesBatalla();
+                
             }
             else if (pas == 24)
             {
-                pnlBatalla.Click -= pnlBatalla_Click;
-                textBox11.Click -= pnlBatalla_Click;
-
+                MostrarPanel(pnlBatalla);
                 textBox11.Text = "¿Qué quieres hacer?";
-
                 MostrarBotonesBatalla();
-
                 ActualizarVida();
+
             }
             else if (pas == 25)
             {
-
+                
+            }
+            else if (pas == 26)
+            {
+                MostrarPanel(pnlResultado);
+                textBox12.Text = $"Gary: Tsk... ganaste esta vez, {player}.";
+            }
+            else if (pas == 35)
+            {
+                textBox12.Text = $"Gary: Tsk, no importa. La próxima vez te ganaré {player}. ¡Me voy a entrenar!";
+            }
+            else if (pas == 45)
+            {
+                textBox12.Text = "Sistema: Gary sale del laboratorio con decepción.";
             }
         }
         //ELECCCIONES DE POKEMON
@@ -448,6 +460,7 @@ namespace Game5
             pnlGary.Visible = false;
             pnlReto.Visible = false;
             pnlBatalla.Visible = false;
+            pnlResultado.Visible = false;
 
             panel.Visible = true;
             panel.BringToFront();
@@ -497,7 +510,6 @@ namespace Game5
                 MostrarBotonesBatalla();
             }
         }
-
         private void ActualizarVida() //metodo para batalla para que baje la barra de vida
         {
             if (pjugador.ps < 0) //mas ordenadito
@@ -527,12 +539,10 @@ namespace Game5
             else
                 pnlVidaR.BackColor = Color.Red;
         }
-
         private void btnLucha_Click(object sender, EventArgs e)
         {
             Atacar();
         }
-
         private void btnMochila_Click(object sender, EventArgs e)
         {
             textBox11.Text = "No tienes objetos disponibles.";
@@ -547,13 +557,11 @@ namespace Game5
         {
             pjugador.ps = 0;
             ActualizarVida();
-
             OcultarBotonesBatalla();
-
+            resultado = "Huir";
+            pas = 44;
             textBox11.Text = "(" + pjugador.name + " ha huido)\r\n\r\nGary: Sabía que no tenías coraje JAJAJA.";
         }
-
-
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
 
@@ -574,13 +582,14 @@ namespace Game5
             textBox11.Text = pjugador.name + " usó " + atqp +"\r\n" + prival.name + " perdió " + dfj + " PS." +" (" + prival.ps + "/20)"; ;
 
             if (prival.ps <= 0)
-            {
-                textBox11.Text = textBox11.Text + "\r\n\r\n"+ "¡" + prival.name + " se debilitó!\r\n Sistema: ¡Has ganado la batalla!";
+            { 
+                resultado = "Ganar";
+                pas = 25;
                 return; //sin esto no cargan los mensajes anteriores
             }
 
             int dañoRival = rnd.Next(1, prival.atq + 1);
-            int dfr = dañoRival - (pjugador.def / 2);
+            int dfr = dañoRival - ((pjugador.def / 2)+1);
 
             if (dfr < 1)
                 dfr = 1;
@@ -592,7 +601,8 @@ namespace Game5
             
             if (pjugador.ps <= 0)
             {
-                textBox11.Text = pjugador.name + " se debilitó!\r\n Sistema: Has perdido la batalla.";
+                resultado = "Perder";
+                pas = 34;
                 return;
             }
         }
@@ -610,6 +620,10 @@ namespace Game5
             btnMochila.Visible = true;
             btnPokemon.Visible = true;
             btnHuida.Visible = true;
+        }
+        private void pnlResultado_Click(object sender, EventArgs e)
+        {
+            SiguienteDialogo();
         }
     }
 }
