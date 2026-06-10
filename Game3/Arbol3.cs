@@ -17,18 +17,31 @@ namespace Game3
         {
             raiz = new Nodo();
             raiz.desc = "INICIO";
+            raiz.opcionIzquierda = "Costa";//
+            raiz.opcionDerecha = "Otras Regiones";//
+
 
             // REGIONES
+
             Nodo costa = new Nodo();
             costa.desc = "COSTA";
+            costa.opcionIzquierda = "Barco";//
+            costa.opcionDerecha = "Playa";//
+
             Nodo regiones = new Nodo();
             regiones.desc = "OTRAS REGIONES";
+            regiones.opcionIzquierda = "Sierra";//
+            regiones.opcionDerecha = "Selva";//
             raiz.izq = costa;
             raiz.der = regiones;
             Nodo sierra = new Nodo();
             sierra.desc = "SIERRA";
+            sierra.opcionIzquierda = "Cueva";//
+            sierra.opcionDerecha = "Montaña";//
             Nodo selva = new Nodo();
             selva.desc = "SELVA";
+            selva.opcionIzquierda = "Río";//
+            selva.opcionDerecha = "Bosque";//
             regiones.izq = sierra;
             regiones.der = selva;
 

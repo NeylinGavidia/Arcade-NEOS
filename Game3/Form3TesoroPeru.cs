@@ -16,5 +16,10 @@ namespace Game3
         {
             InitializeComponent();
         }
+
+        private void lblDescripcion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

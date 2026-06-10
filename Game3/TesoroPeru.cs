@@ -28,7 +28,7 @@ namespace Game3
         }
         public void IrDerecha()
         {
-            if (actual.izq != null)
+            if (actual.der != null)
             {
                 actual = actual.der;
                 ObtenerObjeto();
