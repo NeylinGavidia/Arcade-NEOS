@@ -39,6 +39,7 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnComenzar = new System.Windows.Forms.Button();
             this.picJuego = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picJuego)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,12 +159,25 @@
             this.picJuego.TabStop = false;
             this.picJuego.Visible = false;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(242, 521);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(107, 47);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // DUNGEON_TREE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(579, 569);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.picJuego);
             this.Controls.Add(this.btnComenzar);
             this.Controls.Add(this.txtNombre);
@@ -198,5 +212,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnComenzar;
         private System.Windows.Forms.PictureBox picJuego;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
