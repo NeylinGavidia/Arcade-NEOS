@@ -51,20 +51,5 @@ namespace Game2
 
             return Buscar(raiz.der, codigo);
         }
-
-        public void Mostrar()
-        {
-            Mostrar(raiz);
-        }
-
-        private void Mostrar(Nodo raiz)
-        {
-            if (raiz != null)
-            {
-                Mostrar(raiz.izq);
-                Console.WriteLine(raiz.dato);
-                Mostrar(raiz.der);
-            }
-        }
     }
 }

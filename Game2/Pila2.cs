@@ -20,17 +20,5 @@ namespace Game2
 
             cima = nuevo;
         }
-
-        public void Mostrar()
-        {
-
-            Nodo temp = cima;
-
-            while (temp != null)
-            {
-                Console.WriteLine(temp.dato.nombre);
-                temp = temp.sig;
-            }
-        }
     }
 }

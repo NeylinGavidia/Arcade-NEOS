@@ -61,7 +61,16 @@ namespace Game2
                 {
                     MessageBox.Show("Incorrecto");
 
-                    lstIntentos.Items.Add(codigo);
+                    Fruta f = juego.arbol.Buscar(codigo);
+
+                    if (f != null)
+                    {
+                        lstIntentos.Items.Add(f.codigo + " - " + f.nombre);
+                    }
+                    else
+                    {
+                        lstIntentos.Items.Add("Código " + codigo + " no existe");
+                    }
                 }
 
                 lblVidas.Text = "Vidas: " + juego.vidas;

@@ -14,6 +14,7 @@ namespace Game2
 
         public int vidas = 3;
         public int puntaje = 0;
+        public int intentos = 0;
 
         public void CargarDatos()
         {
@@ -104,22 +105,34 @@ namespace Game2
 
             if (seleccionada == null)
             {
+                intentos++;
                 vidas--;
+
+                if (intentos >= 2)
+                {
+                    cola.Desencolar();
+                    intentos = 0;
+                }
+
                 return false;
             }
 
             if (seleccionada.codigo == cola.VerFrente().codigo)
             {
                 puntaje += 10;
-
                 cola.Desencolar();
+                intentos = 0;
 
                 return true;
             }
-
+            intentos++;
             vidas--;
             pila.Apilar(seleccionada);
-
+            if (intentos >= 2)
+            {
+                cola.Desencolar();
+                intentos = 0;
+            }
             return false;
         }
 
@@ -131,11 +144,6 @@ namespace Game2
         public bool Perdiste()
         {
             return vidas <= 0;
-        }
-
-        public void MostrarIntentos()
-        {
-            pila.Mostrar();
         }
         public string MensajeFinal()
         {

@@ -16,12 +16,12 @@ namespace Game2
 
         public override string ToString()
         {
-            return "==================================\n" +
+            return "**********************************\n" +
                    "Codigo: " + codigo + "\n" +
                    "Nombre: " + nombre + "\n" +
-                   "Color: " + color + "\n" +
+                   "Color:  " + color  + "\n" +
                    "Origen: " + origen + "\n" +
-                   "==================================\n";
+                   "**********************************\n";
         }
     }
 }
