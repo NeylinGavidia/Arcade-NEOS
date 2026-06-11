@@ -158,5 +158,10 @@ namespace Game3
         {
             picEscena.Image = Image.FromFile("Imagenes/inicio.jpg");
         }
+
+        private void btnReiniciar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
