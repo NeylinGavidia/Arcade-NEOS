@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DUNGEON_TREE));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblPregunta = new System.Windows.Forms.Label();
             this.btnSi = new System.Windows.Forms.Button();
@@ -48,9 +47,10 @@
             this.lblTitulo.BackColor = System.Drawing.Color.DarkBlue;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(129, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(97, 7);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(357, 38);
+            this.lblTitulo.Size = new System.Drawing.Size(268, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "ÁRBOL DE DECISIONES";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,9 +59,10 @@
             // 
             this.lblPregunta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblPregunta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPregunta.Location = new System.Drawing.Point(-1, 304);
+            this.lblPregunta.Location = new System.Drawing.Point(-1, 247);
+            this.lblPregunta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(579, 140);
+            this.lblPregunta.Size = new System.Drawing.Size(435, 114);
             this.lblPregunta.TabIndex = 1;
             this.lblPregunta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -70,9 +71,10 @@
             this.btnSi.BackColor = System.Drawing.Color.LightGreen;
             this.btnSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSi.Location = new System.Drawing.Point(12, 473);
+            this.btnSi.Location = new System.Drawing.Point(9, 384);
+            this.btnSi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSi.Name = "btnSi";
-            this.btnSi.Size = new System.Drawing.Size(96, 42);
+            this.btnSi.Size = new System.Drawing.Size(72, 34);
             this.btnSi.TabIndex = 2;
             this.btnSi.Text = "A)";
             this.btnSi.UseVisualStyleBackColor = false;
@@ -83,9 +85,10 @@
             this.btnNo.BackColor = System.Drawing.Color.LightCoral;
             this.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNo.Location = new System.Drawing.Point(472, 473);
+            this.btnNo.Location = new System.Drawing.Point(354, 384);
+            this.btnNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(96, 42);
+            this.btnNo.Size = new System.Drawing.Size(72, 34);
             this.btnNo.TabIndex = 3;
             this.btnNo.Text = "B)";
             this.btnNo.UseVisualStyleBackColor = false;
@@ -96,9 +99,10 @@
             this.btnReiniciar.BackColor = System.Drawing.Color.Khaki;
             this.btnReiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReiniciar.Location = new System.Drawing.Point(242, 473);
+            this.btnReiniciar.Location = new System.Drawing.Point(182, 384);
+            this.btnReiniciar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(107, 42);
+            this.btnReiniciar.Size = new System.Drawing.Size(80, 34);
             this.btnReiniciar.TabIndex = 4;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = false;
@@ -108,9 +112,10 @@
             // 
             this.lblHistoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHistoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistoria.Location = new System.Drawing.Point(-1, 166);
+            this.lblHistoria.Location = new System.Drawing.Point(-1, 135);
+            this.lblHistoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHistoria.Name = "lblHistoria";
-            this.lblHistoria.Size = new System.Drawing.Size(579, 138);
+            this.lblHistoria.Size = new System.Drawing.Size(435, 112);
             this.lblHistoria.TabIndex = 5;
             this.lblHistoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -118,18 +123,20 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(85, 67);
+            this.lblNombre.Location = new System.Drawing.Point(64, 54);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(163, 23);
+            this.lblNombre.Size = new System.Drawing.Size(136, 19);
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Ingresa tu nombre:";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(267, 60);
+            this.txtNombre.Location = new System.Drawing.Point(200, 49);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(206, 30);
+            this.txtNombre.Size = new System.Drawing.Size(156, 26);
             this.txtNombre.TabIndex = 7;
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -139,9 +146,10 @@
             this.btnComenzar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComenzar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComenzar.ForeColor = System.Drawing.Color.White;
-            this.btnComenzar.Location = new System.Drawing.Point(218, 105);
+            this.btnComenzar.Location = new System.Drawing.Point(164, 85);
+            this.btnComenzar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnComenzar.Name = "btnComenzar";
-            this.btnComenzar.Size = new System.Drawing.Size(131, 49);
+            this.btnComenzar.Size = new System.Drawing.Size(98, 40);
             this.btnComenzar.TabIndex = 8;
             this.btnComenzar.Text = "COMENZAR";
             this.btnComenzar.UseVisualStyleBackColor = false;
@@ -150,10 +158,11 @@
             // picJuego
             // 
             this.picJuego.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picJuego.Image = ((System.Drawing.Image)(resources.GetObject("picJuego.Image")));
-            this.picJuego.Location = new System.Drawing.Point(-1, 50);
+            this.picJuego.Image = global::Game4.Properties.Resources.Imagen1;
+            this.picJuego.Location = new System.Drawing.Point(-1, 41);
+            this.picJuego.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picJuego.Name = "picJuego";
-            this.picJuego.Size = new System.Drawing.Size(579, 254);
+            this.picJuego.Size = new System.Drawing.Size(435, 207);
             this.picJuego.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picJuego.TabIndex = 9;
             this.picJuego.TabStop = false;
@@ -163,9 +172,10 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(242, 521);
+            this.btnSalir.Location = new System.Drawing.Point(182, 423);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(107, 47);
+            this.btnSalir.Size = new System.Drawing.Size(80, 38);
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -173,10 +183,10 @@
             // 
             // DUNGEON_TREE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(579, 569);
+            this.ClientSize = new System.Drawing.Size(434, 462);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.picJuego);
             this.Controls.Add(this.btnComenzar);
@@ -189,6 +199,7 @@
             this.Controls.Add(this.lblPregunta);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeBox = false;
             this.Name = "DUNGEON_TREE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
