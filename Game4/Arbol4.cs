@@ -23,37 +23,19 @@ namespace Game4
             return raiz;
         }
         //RECORRIDO PREORDEN
-        // Raíz - Izquierda - Derecha
         public void PreOrden(Nodo nodo)
         {
-            if (nodo != null)
-            {
-                Console.WriteLine(nodo.texto);
-                PreOrden(nodo.Izquierda);
-                PreOrden(nodo.Derecha);
-            }
+            //No se utiliza xd
         }
         //RECORRIDO INORDEN
-        // Izquierda - Raíz - Derecha
         public void InOrden(Nodo nodo)
         {
-            if (nodo != null)
-            {
-                InOrden(nodo.Izquierda);
-                Console.WriteLine(nodo.texto);
-                InOrden(nodo.Derecha);
-            }
+            //Tampoco se utiliza xd
         }
         //RECORRIDO POSTORDEN
-        // Izquierda - Derecha - Raíz
         public void PostOrden(Nodo nodo)
         {
-            if (nodo != null)
-            {
-                PostOrden(nodo.Izquierda);
-                PostOrden(nodo.Derecha);
-                Console.WriteLine(nodo.texto);
-            }
+            //De este ni que decir :v
         }
     }
 }

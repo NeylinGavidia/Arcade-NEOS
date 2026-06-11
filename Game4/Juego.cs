@@ -18,6 +18,7 @@ namespace Game4
 
         private void ConstruirArbol()
         {
+            //Si no toco nada sigue funcionado :v
             //HOJAS (RESULTADOS)
             Nodo llegaTarde = new Nodo("Llegas tarde a clase, pero igual entras. El profesor te mira raro, pero al menos no faltaste. Eso demuestra responsabilidad");
             Nodo atrasasCurso = new Nodo("Decidiste no ir a clases y ahora te estás atrasando. Será más difícil recuperar el tema después. Fue una mala decision");
@@ -39,8 +40,6 @@ namespace Game4
             Nodo raiz = new Nodo("Tu alarma suena fuerte... ¿te levantas o sigues acostado un rato más?" +
                                  "\nA) Levantarse " +
                                  "\nB) Seguir acostado");
-
-            //CONEXIONES
 
             // RAÍZ
             raiz.Izquierda = irClaseTarde;   // NO

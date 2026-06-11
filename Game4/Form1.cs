@@ -21,10 +21,11 @@ namespace Game4
         }
         private void DUNGEON_TREE_Load(object sender, EventArgs e)
         {
+            // INICIALIZAR EL JUEGO Y OBTENER LA RAÍZ DEL ÁRBOL
             juego = new Juego();
             actual = juego.ObtenerRaiz();
 
-            // OCULTAR JUEGO AL INICIO
+            // OCULTA LOS CONTROLES DEL JUEGO HASTA QUE EL JUGADOR COMIENCE
             lblPregunta.Visible = false;
             btnSi.Visible = false;
             btnNo.Visible = false;
@@ -55,33 +56,36 @@ namespace Game4
             actual = juego.ObtenerRaiz();
             lblPregunta.Text = actual.texto;
         }
-
+        
         private void btnComenzar_Click(object sender, EventArgs e)
         {
             nombreJugador = txtNombre.Text;
 
-            // Historia personalizada
+            // Historia inicial con el nombre del jugadro ._.
             lblHistoria.Text = nombreJugador +
                 ", acabas de despertar en tu habitación. La luz del sol entra por la ventana y tu celular no deja de sonar. " +
                 "Tus padres ya han salido a trabajar y hoy tienes clases importantes en la universidad. " +
                 "Dependiendo de tus decisiones, tu día puede salir bien o convertirse en un desastre...";
 
-            // Ocultar inicio
+            // Oculta elementos de inicio como el nombre y el botón de comenzar
             txtNombre.Visible = false;
             btnComenzar.Visible = false;
             lblNombre.Visible = false;
 
+            // Oculta la historia inicial y muestra la imagen del juego
             lblHistoria.Visible = false;
             picJuego.Visible = true;
 
-            // Mostrar juego
+            // Muestra los controles del juego
             lblPregunta.Visible = true;
             btnSi.Visible = true;
             btnNo.Visible = true;
             btnReiniciar.Visible = true;
 
-            // Iniciar árbol
+            //Posiciona al jugador en la raíz del árbol
             actual = juego.ObtenerRaiz();
+
+            //Muestra la primera pregunta
             lblPregunta.Text = actual.texto;
         }
 
