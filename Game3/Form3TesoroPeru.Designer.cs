@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3TesoroPeru));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.picEscena = new System.Windows.Forms.PictureBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -47,15 +46,15 @@
             this.lblTitulo.Location = new System.Drawing.Point(77, 23);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(483, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(481, 29);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "🏆 EL TESORO PERDIDO DEL PERÚ 🏆";
             // 
             // picEscena
             // 
-            this.picEscena.Image = ((System.Drawing.Image)(resources.GetObject("picEscena.Image")));
+            this.picEscena.Image = global::Game3.Properties.Resources._11;
             this.picEscena.Location = new System.Drawing.Point(97, 54);
-            this.picEscena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picEscena.Margin = new System.Windows.Forms.Padding(2);
             this.picEscena.Name = "picEscena";
             this.picEscena.Size = new System.Drawing.Size(463, 247);
             this.picEscena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,7 +101,7 @@
             // 
             this.btnIzquierda.BackColor = System.Drawing.Color.DimGray;
             this.btnIzquierda.Location = new System.Drawing.Point(303, 383);
-            this.btnIzquierda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIzquierda.Margin = new System.Windows.Forms.Padding(2);
             this.btnIzquierda.Name = "btnIzquierda";
             this.btnIzquierda.Size = new System.Drawing.Size(100, 34);
             this.btnIzquierda.TabIndex = 5;
@@ -113,7 +112,7 @@
             // 
             this.btnDerecha.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnDerecha.Location = new System.Drawing.Point(430, 383);
-            this.btnDerecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDerecha.Margin = new System.Windows.Forms.Padding(2);
             this.btnDerecha.Name = "btnDerecha";
             this.btnDerecha.Size = new System.Drawing.Size(112, 34);
             this.btnDerecha.TabIndex = 6;
@@ -124,7 +123,7 @@
             // 
             this.btnReiniciar.BackColor = System.Drawing.Color.Red;
             this.btnReiniciar.Location = new System.Drawing.Point(245, 451);
-            this.btnReiniciar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReiniciar.Margin = new System.Windows.Forms.Padding(2);
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(112, 31);
             this.btnReiniciar.TabIndex = 7;
@@ -146,7 +145,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.picEscena);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3TesoroPeru";
             this.Text = "El Tesoro Perdido del Perú";
             ((System.ComponentModel.ISupportInitialize)(this.picEscena)).EndInit();
