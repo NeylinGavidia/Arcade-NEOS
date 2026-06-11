@@ -119,13 +119,11 @@ namespace Game3
 
             if (juego.Perdio())
             {
-                picEscena.Image = Image.FromFile("Imagenes/trampa.jpg");
                 MessageBox.Show("GAME OVER\n\nHas caído en una trampa.");
             }
 
             if (juego.Gano())
             {
-                picEscena.Image = Image.FromFile("Imagenes/tesoro.jpg");
                 MessageBox.Show("FELICIDADES\n\n¡Encontraste el Tesoro Perdido del Perú!");
             }
         }
